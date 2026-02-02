@@ -1,0 +1,7042 @@
+[
+  {
+    "question": "Who won the Nobel Prize for \"One Hundred Years of Solitude\"?",
+    "options": [
+      "Pablo Neruda",
+      "Octavio Paz",
+      "Gabriel García Márquez"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "Literature"
+  },
+  {
+    "question": "Where is Middle-earth located?",
+    "options": [
+      "Narnia",
+      "Westeros",
+      "Tolkien's Legendarium"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who wrote \"Romeo and Juliet\"?",
+    "options": [
+      "Christopher Marlowe",
+      "Ben Jonson",
+      "William Shakespeare"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who authored \"Crime and Punishment\"?",
+    "options": [
+      "Leo Tolstoy",
+      "Fyodor Dostoevsky",
+      "Anton Chekhov"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "Literature"
+  },
+  {
+    "question": "Who created detective Hercule Poirot?",
+    "options": [
+      "Arthur Conan Doyle",
+      "Agatha Christie",
+      "Raymond Chandler"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What ancient poem features Odysseus?",
+    "options": [
+      "The Aeneid",
+      "The Iliad",
+      "The Odyssey"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who wrote \"The Handmaid's Tale\"?",
+    "options": [
+      "Margaret Atwood",
+      "Ursula K. Le Guin",
+      "Toni Morrison"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Where is \"Wuthering Heights\" set?",
+    "options": [
+      "Yorkshire Moors",
+      "Scottish Highlands",
+      "Cornwall"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who penned \"Things Fall Apart\"?",
+    "options": [
+      "Chinua Achebe",
+      "Wole Soyinka",
+      "Ngũgĩ wa Thiong'o"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who wrote \"Leaves of Grass\"?",
+    "options": [
+      "Emily Dickinson",
+      "T.S. Eliot",
+      "Walt Whitman"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who created \"Alice in Wonderland\"?",
+    "options": [
+      "J.M. Barrie",
+      "Lewis Carroll",
+      "Roald Dahl"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which Japanese poet wrote \"The Narrow Road to the Deep North\"?",
+    "options": [
+      "Yukio Mishima",
+      "Matsuo Bashō",
+      "Haruki Murakami"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "Literature"
+  },
+  {
+    "question": "Who authored \"Les Misérables\"?",
+    "options": [
+      "Alexandre Dumas",
+      "Victor Hugo",
+      "Gustave Flaubert"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "Literature"
+  },
+  {
+    "question": "What is the setting of \"To Kill a Mockingbird\"?",
+    "options": [
+      "Maycomb, Alabama",
+      "Yoknapatawpha County",
+      "Grover's Corners"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "History"
+  },
+  {
+    "question": "In which novel do yellow butterflies symbolize love?",
+    "options": [
+      "Like Water for Chocolate",
+      "One Hundred Years of Solitude",
+      "Love in the Time of Cholera"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "Literature"
+  },
+  {
+    "question": "Who wrote \"Thus Spoke Zarathustra\"?",
+    "options": [
+      "Søren Kierkegaard",
+      "Immanuel Kant",
+      "Friedrich Nietzsche"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who wrote \"The Diary of a Young Girl\"?",
+    "options": [
+      "Anne Frank",
+      "Elie Wiesel",
+      "Primo Levi"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which author wrote \"Animal Farm\"?",
+    "options": [
+      "Aldous Huxley",
+      "George Orwell",
+      "Kurt Vonnegut"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "Literature"
+  },
+  {
+    "question": "Who wrote \"A Doll's House\"?",
+    "options": [
+      "Henrik Ibsen",
+      "August Strindberg",
+      "Anton Chekhov"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What novel features the line: \"All animals are equal, but some are more equal than others\"?",
+    "options": [
+      "Brave New World",
+      "Animal Farm",
+      "Lord of the Flies"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "Literature"
+  },
+  {
+    "question": "Who wrote \"Do not go gentle into that good night\"?",
+    "options": [
+      "Dylan Thomas",
+      "W.H. Auden",
+      "Robert Frost"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What is the name of the whale in \"Pinocchio\"?",
+    "options": [
+      "Moby Dick",
+      "Monstro",
+      "Leviathan"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who authored \"The Road\"?",
+    "options": [
+      "Cormac McCarthy",
+      "Don DeLillo",
+      "Thomas Pynchon"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "Literature"
+  },
+  {
+    "question": "What is Okonkwo's tragic flaw in \"Things Fall Apart\"?",
+    "options": [
+      "Greed",
+      "Hubris",
+      "Fear of weakness"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who created the \"Dark Materials\" trilogy?",
+    "options": [
+      "Terry Pratchett",
+      "Philip Pullman",
+      "Neil Gaiman"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What animal represents Stalin in \"Animal Farm\"?",
+    "options": [
+      "Napoleon (pig)",
+      "Snowball (pig)",
+      "Squealer (pig)"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What is Meursault prosecuted for in \"The Stranger\"?",
+    "options": [
+      "Murder",
+      "Theft",
+      "Treason"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who is Elizabeth Bennet's suitor in \"Pride and Prejudice\"?",
+    "options": [
+      "Mr. Bingley",
+      "Colonel Fitzwilliam",
+      "Mr. Darcy"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who wrote \"The Love Song of J. Alfred Prufrock\"?",
+    "options": [
+      "E.E. Cummings",
+      "Wallace Stevens",
+      "T.S. Eliot"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What is the \"red badge\" in Stephen Crane's novel?",
+    "options": [
+      "Medal of Honor",
+      "Blood from a wound",
+      "Courage under fire"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "Literature"
+  },
+  {
+    "question": "Who penned \"One Hundred Years of Solitude\"?",
+    "options": [
+      "Isabel Allende",
+      "Julio Cortázar",
+      "Gabriel García Márquez"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What house number is haunted in \"The Haunting of Hill House\"?",
+    "options": [
+      "Hill House",
+      "13 Beacon Street",
+      "112 Ocean Avenue"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who wrote \"Long Day's Journey into Night\"?",
+    "options": [
+      "Tennessee Williams",
+      "Arthur Miller",
+      "Eugene O'Neill"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What is Hercule Poirot's signature trait?",
+    "options": [
+      "Pipe",
+      "Magnifying glass",
+      "Mustache"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What platform does Harry Potter use to catch the Hogwarts Express?",
+    "options": [
+      "Platform 7",
+      "Platform 9¾",
+      "Platform 13"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "History"
+  },
+  {
+    "question": "Who falsely accuses Tom Robinson in \"To Kill a Mockingbird\"?",
+    "options": [
+      "Bob Ewell",
+      "Boo Radley",
+      "Heck Tate"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "History"
+  },
+  {
+    "question": "How does Jay Gatsby die?",
+    "options": [
+      "Car accident",
+      "Gunshot",
+      "Suicide"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who kills Hector in \"The Iliad\"?",
+    "options": [
+      "Agamemnon",
+      "Achilles",
+      "Odysseus"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What is the protagonist's number in \"Brave New World\"?",
+    "options": [
+      "Alpha-12",
+      "Bernard Marx",
+      "John the Savage"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What prevents Odysseus from returning home initially?",
+    "options": [
+      "War",
+      "Poseidon's wrath",
+      "Sirens"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who is Count Dracula's nemesis?",
+    "options": [
+      "Jonathan Harker",
+      "Abraham Van Helsing",
+      "Renfield"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "First Latin American Nobel Literature winner?",
+    "options": [
+      "Pablo Neruda",
+      "Octavio Paz",
+      "Gabriela Mistral"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "Literature"
+  },
+  {
+    "question": "Who wrote \"The Feminine Mystique\"?",
+    "options": [
+      "Gloria Steinem",
+      "Betty Friedan",
+      "Simone de Beauvoir"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What represents purity in \"Crime and Punishment\"?",
+    "options": [
+      "Sonya's cross",
+      "The axe",
+      "The yellow ticket"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "\"It was a bright cold day in April...\" starts which novel?",
+    "options": [
+      "Fahrenheit 451",
+      "1984",
+      "Brave New World"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "Literature"
+  },
+  {
+    "question": "Who wrote \"I Know Why the Caged Bird Sings\"?",
+    "options": [
+      "Toni Morrison",
+      "Zora Neale Hurston",
+      "Maya Angelou"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What is Aslan's allegorical role in Narnia?",
+    "options": [
+      "God",
+      "King Arthur",
+      "Moses"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Where is \"The Road\" set?",
+    "options": [
+      "Post-apocalyptic USA",
+      "Nuclear winter Russia",
+      "Dystopian UK"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Why is Okonkwo exiled in \"Things Fall Apart\"?",
+    "options": [
+      "Murder",
+      "Theft",
+      "Accidentally killing a boy"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What is Frodo's last name?",
+    "options": [
+      "Gamgee",
+      "Baggins",
+      "Brandybuck"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who says: \"Four legs good, two legs better!\" in \"Animal Farm\"?",
+    "options": [
+      "Napoleon",
+      "Boxer",
+      "Squealer"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Why is Meursault condemned in \"The Stranger\"?",
+    "options": [
+      "For not crying at funeral",
+      "For being Arab",
+      "For atheism"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What is Mr. Darcy's estate called?",
+    "options": [
+      "Netherfield",
+      "Rosings Park",
+      "Pemberley"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who wrote \"Ode to a Nightingale\"?",
+    "options": [
+      "William Wordsworth",
+      "John Keats",
+      "Percy Bysshe Shelley"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What is Henry Fleming's internal conflict in \"The Red Badge of Courage\"?",
+    "options": [
+      "Fear of battle",
+      "Love triangle",
+      "Class struggle"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What is Santiago's treasure in \"The Alchemist\"?",
+    "options": [
+      "Gold coins",
+      "Personal Legend",
+      "Emerald Tablet"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who inherits Hill House?",
+    "options": [
+      "Dr. Montague",
+      "Eleanor Vance",
+      "Luke Sanderson"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who wrote \"Who's Afraid of Virginia Woolf?\"?",
+    "options": [
+      "Arthur Miller",
+      "Tennessee Williams",
+      "Edward Albee"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Where does Hercule Poirot live?",
+    "options": [
+      "Paris",
+      "London",
+      "Brussels"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What creature guards the Sorcerer's Stone?",
+    "options": [
+      "Fluffy",
+      "Norbert",
+      "Aragog"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who saves Scout and Jem in \"To Kill a Mockingbird\"?",
+    "options": [
+      "Atticus Finch",
+      "Calpurnia",
+      "Boo Radley"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "History"
+  },
+  {
+    "question": "What is the last line of \"The Great Gatsby\"?",
+    "options": [
+      "\"So we beat on...\"",
+      "\"Tomorrow is another day\"",
+      "\"After all, tomorrow is another day\""
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "---",
+    "options": [
+      "---",
+      "---",
+      "---"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What is Earth's largest ocean?",
+    "options": [
+      "Atlantic",
+      "Indian",
+      "Pacific"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "Geography"
+  },
+  {
+    "question": "What is Australia's capital?",
+    "options": [
+      "Sydney",
+      "Melbourne",
+      "Canberra"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Where is Mount Everest?",
+    "options": [
+      "India",
+      "Nepal",
+      "Bhutan"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which river flows through Egypt?",
+    "options": [
+      "Tigris",
+      "Euphrates",
+      "Nile"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What is the world's largest desert?",
+    "options": [
+      "Sahara",
+      "Arabian",
+      "Antarctic"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "How many countries border Brazil?",
+    "options": [
+      "8",
+      "10",
+      "12"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What is the largest island?",
+    "options": [
+      "Greenland",
+      "Australia",
+      "Borneo"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Where is the Angkor Wat temple?",
+    "options": [
+      "Thailand",
+      "Cambodia",
+      "Vietnam"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which country has the most people?",
+    "options": [
+      "India",
+      "China",
+      "USA"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "Geography"
+  },
+  {
+    "question": "What is Earth's southernmost continent?",
+    "options": [
+      "Australia",
+      "Antarctica",
+      "South America"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "Geography"
+  },
+  {
+    "question": "Which city spans two continents?",
+    "options": [
+      "Istanbul",
+      "Cairo",
+      "Athens"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "Geography"
+  },
+  {
+    "question": "Where is Victoria Falls?",
+    "options": [
+      "Zambia/Zimbabwe",
+      "Brazil",
+      "Canada"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "In which country is the Grand Canyon?",
+    "options": [
+      "Mexico",
+      "Canada",
+      "USA"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "Geography"
+  },
+  {
+    "question": "Where is Mount Fuji?",
+    "options": [
+      "China",
+      "South Korea",
+      "Japan"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What sea is the Dead Sea in?",
+    "options": [
+      "Red Sea",
+      "Mediterranean",
+      "No sea (landlocked)"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which African country has no coastline?",
+    "options": [
+      "Uganda",
+      "Kenya",
+      "Ethiopia"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "Geography"
+  },
+  {
+    "question": "What is Canada's capital?",
+    "options": [
+      "Toronto",
+      "Vancouver",
+      "Ottawa"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which river runs through Paris?",
+    "options": [
+      "Thames",
+      "Seine",
+      "Danube"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Where are the Andes Mountains?",
+    "options": [
+      "Europe",
+      "Asia",
+      "South America"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What desert covers parts of Mongolia/China?",
+    "options": [
+      "Gobi",
+      "Kalahari",
+      "Atacama"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which archipelago has over 17,000 islands?",
+    "options": [
+      "Philippines",
+      "Japan",
+      "Indonesia"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Where is Petra located?",
+    "options": [
+      "Egypt",
+      "Jordan",
+      "Saudi Arabia"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What is the world's northernmost capital?",
+    "options": [
+      "Oslo",
+      "Reykjavik",
+      "Helsinki"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which lake holds 20% of Earth's freshwater?",
+    "options": [
+      "Superior",
+      "Victoria",
+      "Baikal"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Where is the Mariana Trench?",
+    "options": [
+      "Atlantic Ocean",
+      "Indian Ocean",
+      "Pacific Ocean"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which country has the most time zones?",
+    "options": [
+      "USA",
+      "Russia",
+      "France"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "Geography"
+  },
+  {
+    "question": "What is South Africa's capital?",
+    "options": [
+      "Johannesburg",
+      "Cape Town",
+      "Pretoria"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Where is Kilimanjaro?",
+    "options": [
+      "Kenya",
+      "Uganda",
+      "Tanzania"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which river forms the Grand Canyon?",
+    "options": [
+      "Mississippi",
+      "Colorado",
+      "Rio Grande"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which desert is in the USA?",
+    "options": [
+      "Atacama",
+      "Sonoran",
+      "Kalahari"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Where is the Galápagos Islands?",
+    "options": [
+      "Ecuador",
+      "Peru",
+      "Chile"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "In which country is Timbuktu?",
+    "options": [
+      "Niger",
+      "Mali",
+      "Chad"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "Geography"
+  },
+  {
+    "question": "What is Europe's most populous city?",
+    "options": [
+      "London",
+      "Paris",
+      "Moscow"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "Geography"
+  },
+  {
+    "question": "Which country owns Greenland?",
+    "options": [
+      "Canada",
+      "Denmark",
+      "Norway"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "Geography"
+  },
+  {
+    "question": "Which city is built on 118 islands?",
+    "options": [
+      "Venice",
+      "Amsterdam",
+      "Stockholm"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "Geography"
+  },
+  {
+    "question": "Where is Iguazu Falls?",
+    "options": [
+      "Venezuela",
+      "Argentina/Brazil",
+      "Zambia"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Where is the Great Barrier Reef?",
+    "options": [
+      "Caribbean Sea",
+      "Indian Ocean",
+      "Coral Sea"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Where is Mount Vesuvius?",
+    "options": [
+      "Greece",
+      "Italy",
+      "Turkey"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What sea borders Ukraine?",
+    "options": [
+      "Black Sea",
+      "Baltic Sea",
+      "Caspian Sea"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which country borders 14 nations?",
+    "options": [
+      "Russia",
+      "China",
+      "Brazil"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "Geography"
+  },
+  {
+    "question": "What is Bolivia's capital?",
+    "options": [
+      "La Paz",
+      "Sucre",
+      "Cochabamba"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which river flows through Baghdad?",
+    "options": [
+      "Tigris",
+      "Nile",
+      "Indus"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What is the world's highest capital?",
+    "options": [
+      "Quito",
+      "Bogotá",
+      "La Paz"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which Great Lake is entirely in the USA?",
+    "options": [
+      "Michigan",
+      "Superior",
+      "Erie"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Where is the Iberian Peninsula?",
+    "options": [
+      "Scandinavia",
+      "Southern Europe",
+      "Southeast Asia"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Where is Chichen Itza?",
+    "options": [
+      "Peru",
+      "Guatemala",
+      "Mexico"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What is Japan's largest island?",
+    "options": [
+      "Kyushu",
+      "Shikoku",
+      "Honshu"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which continent has no landlocked countries?",
+    "options": [
+      "Africa",
+      "South America",
+      "North America"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "Geography"
+  },
+  {
+    "question": "Where are the Rocky Mountains?",
+    "options": [
+      "USA/Canada",
+      "Mexico",
+      "Chile"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Where is the Atacama Desert?",
+    "options": [
+      "Africa",
+      "South America",
+      "Australia"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which sea separates Europe and Africa?",
+    "options": [
+      "Red Sea",
+      "Mediterranean Sea",
+      "Black Sea"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What is Myanmar's capital?",
+    "options": [
+      "Yangon",
+      "Mandalay",
+      "Naypyidaw"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Where are the Alps?",
+    "options": [
+      "France/Italy",
+      "Norway/Sweden",
+      "Chile/Argentina"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which river flows through London?",
+    "options": [
+      "Thames",
+      "Seine",
+      "Rhine"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which desert spans Namibia/Botswana?",
+    "options": [
+      "Sahara",
+      "Kalahari",
+      "Atacama"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Where is Madagascar located?",
+    "options": [
+      "Pacific Ocean",
+      "Atlantic Ocean",
+      "Indian Ocean"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "In which country is the Taj Mahal?",
+    "options": [
+      "Pakistan",
+      "India",
+      "Bangladesh"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "Geography"
+  },
+  {
+    "question": "What is Africa's most populous country?",
+    "options": [
+      "South Africa",
+      "Egypt",
+      "Nigeria"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "Geography"
+  },
+  {
+    "question": "Which country has the world's northernmost settlement?",
+    "options": [
+      "Canada",
+      "Norway",
+      "Russia"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "Geography"
+  },
+  {
+    "question": "What city is nicknamed \"The Eternal City\"?",
+    "options": [
+      "Athens",
+      "Jerusalem",
+      "Rome"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "Geography"
+  },
+  {
+    "question": "Where is Angel Falls?",
+    "options": [
+      "Brazil",
+      "Venezuela",
+      "Argentina"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Where is Mount Rushmore?",
+    "options": [
+      "Colorado",
+      "South Dakota",
+      "Wyoming"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which country has over 100 active volcanoes?",
+    "options": [
+      "Japan",
+      "Indonesia",
+      "Iceland"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "Geography"
+  },
+  {
+    "question": "What sea surrounds the Maldives?",
+    "options": [
+      "Arabian Sea",
+      "Andaman Sea",
+      "Coral Sea"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which country shares the longest border with Russia?",
+    "options": [
+      "China",
+      "Kazakhstan",
+      "Mongolia"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "Geography"
+  },
+  {
+    "question": "What is Switzerland's de facto capital?",
+    "options": [
+      "Geneva",
+      "Zurich",
+      "Bern"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which river flows through Cairo?",
+    "options": [
+      "Euphrates",
+      "Tigris",
+      "Nile"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What is the lowest capital city below sea level?",
+    "options": [
+      "Amsterdam",
+      "Baku",
+      "Djibouti City"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "Geography"
+  },
+  {
+    "question": "Where is Lake Superior located?",
+    "options": [
+      "Canada/USA",
+      "Russia",
+      "East Africa"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Where is the Korean Peninsula?",
+    "options": [
+      "Southeast Asia",
+      "Northeast Asia",
+      "South Asia"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Where is Machu Picchu?",
+    "options": [
+      "Colombia",
+      "Peru",
+      "Bolivia"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which island is shared by 3 countries?",
+    "options": [
+      "Borneo",
+      "New Guinea",
+      "Hispaniola"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which South American country has no coast?",
+    "options": [
+      "Paraguay",
+      "Uruguay",
+      "Bolivia"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "Geography"
+  },
+  {
+    "question": "Where is Denali?",
+    "options": [
+      "Canada",
+      "USA",
+      "Russia"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which strait connects Atlantic/Pacific?",
+    "options": [
+      "Gibraltar",
+      "Bering",
+      "Magellan"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which country has the most UNESCO sites?",
+    "options": [
+      "China",
+      "Italy",
+      "Spain"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "Geography"
+  },
+  {
+    "question": "What is New Zealand's capital?",
+    "options": [
+      "Auckland",
+      "Christchurch",
+      "Wellington"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Where is Mount Elbrus?",
+    "options": [
+      "Georgia",
+      "Russia",
+      "Turkey"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which river flows through Vienna/Budapest/Belgrade?",
+    "options": [
+      "Rhine",
+      "Danube",
+      "Seine"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which desert is in China?",
+    "options": [
+      "Gobi",
+      "Karakum",
+      "Thar"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Where is Sicily located?",
+    "options": [
+      "Adriatic Sea",
+      "Mediterranean Sea",
+      "Aegean Sea"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "In which country is Easter Island?",
+    "options": [
+      "Fiji",
+      "Chile",
+      "New Zealand"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "Geography"
+  },
+  {
+    "question": "What is Asia's smallest country by area?",
+    "options": [
+      "Maldives",
+      "Singapore",
+      "Bahrain"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "Geography"
+  },
+  {
+    "question": "Which country claims the North Pole?",
+    "options": [
+      "Russia",
+      "Canada",
+      "Norway"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "Geography"
+  },
+  {
+    "question": "Which city is below sea level?",
+    "options": [
+      "Venice",
+      "New Orleans",
+      "Amsterdam"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "Geography"
+  },
+  {
+    "question": "Where is Niagara Falls?",
+    "options": [
+      "Canada/USA",
+      "Brazil/Argentina",
+      "Zambia/Zimbabwe"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Where is the Acropolis?",
+    "options": [
+      "Rome",
+      "Athens",
+      "Cairo"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Where is Mount Etna?",
+    "options": [
+      "Greece",
+      "Italy",
+      "Portugal"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What sea is between Greece and Turkey?",
+    "options": [
+      "Adriatic",
+      "Ionian",
+      "Aegean"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which country borders Spain and Brazil?",
+    "options": [
+      "France",
+      "Morocco",
+      "Portugal"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "Geography"
+  },
+  {
+    "question": "What is South Korea's capital?",
+    "options": [
+      "Busan",
+      "Seoul",
+      "Incheon"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which river forms the US-Mexico border?",
+    "options": [
+      "Colorado",
+      "Rio Grande",
+      "Mississippi"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What is the world's southernmost city?",
+    "options": [
+      "Ushuaia",
+      "Punta Arenas",
+      "Hobart"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "Geography"
+  },
+  {
+    "question": "Where is Lake Victoria?",
+    "options": [
+      "East Africa",
+      "Central Asia",
+      "South America"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Where is the Yucatán Peninsula?",
+    "options": [
+      "Central America",
+      "South America",
+      "Caribbean"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Where is the Colosseum?",
+    "options": [
+      "Athens",
+      "Istanbul",
+      "Rome"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What Caribbean island is shared by 2 countries?",
+    "options": [
+      "Cuba",
+      "Hispaniola",
+      "Jamaica"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which European country is double-landlocked?",
+    "options": [
+      "Austria",
+      "Liechtenstein",
+      "Switzerland"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "Geography"
+  },
+  {
+    "question": "Where are the Drakensberg Mountains?",
+    "options": [
+      "Morocco",
+      "South Africa",
+      "Kenya"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which canal connects the Atlantic and Pacific?",
+    "options": [
+      "Panama",
+      "Suez",
+      "Kiel"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "---",
+    "options": [
+      "---",
+      "---",
+      "---"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which film won the first Best Picture Oscar?",
+    "options": [
+      "Gone with the Wind",
+      "Wings",
+      "Casablanca"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who sang \"Bohemian Rhapsody\"?",
+    "options": [
+      "The Rolling Stones",
+      "Led Zeppelin",
+      "Queen"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who painted \"The Starry Night\"?",
+    "options": [
+      "Picasso",
+      "Monet",
+      "Van Gogh"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What 1997 film starred Leo DiCaprio and Kate Winslet?",
+    "options": [
+      "Inception",
+      "The Great Gatsby",
+      "Titanic"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who composed \"Swan Lake\"?",
+    "options": [
+      "Tchaikovsky",
+      "Mozart",
+      "Beethoven"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which K-pop band has the most-viewed YouTube video?",
+    "options": [
+      "BLACKPINK",
+      "EXO",
+      "BTS"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Where is the \"Mona Lisa\" displayed?",
+    "options": [
+      "Vatican Museums",
+      "Louvre Museum",
+      "Uffizi Gallery"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who directed \"Jurassic Park\"?",
+    "options": [
+      "James Cameron",
+      "Steven Spielberg",
+      "George Lucas"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who wrote \"Thriller\"?",
+    "options": [
+      "Prince",
+      "Michael Jackson",
+      "Stevie Wonder"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who carved \"David\"?",
+    "options": [
+      "Donatello",
+      "Michelangelo",
+      "Bernini"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What show features \"Stranger Things\"?",
+    "options": [
+      "Sci-fi",
+      "Fantasy",
+      "Horror"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who is the \"King of Pop\"?",
+    "options": [
+      "Elvis Presley",
+      "Michael Jackson",
+      "Prince"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "History"
+  },
+  {
+    "question": "Which art style did Frida Kahlo use?",
+    "options": [
+      "Cubism",
+      "Baroque",
+      "Surrealism"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who played Iron Man?",
+    "options": [
+      "Chris Evans",
+      "Chris Hemsworth",
+      "Robert Downey Jr."
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What instrument did Jimi Hendrix play?",
+    "options": [
+      "Drums",
+      "Bass",
+      "Guitar"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who made \"Inception\"?",
+    "options": [
+      "Quentin Tarantino",
+      "Christopher Nolan",
+      "Denis Villeneuve"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which female artist has the most Grammys?",
+    "options": [
+      "Adele",
+      "Beyoncé",
+      "Taylor Swift"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who painted the Sistine Chapel ceiling?",
+    "options": [
+      "Raphael",
+      "Leonardo da Vinci",
+      "Michelangelo"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What movie won 11 Oscars in 2004?",
+    "options": [
+      "Gladiator",
+      "The Lord of the Rings: Return of the King",
+      "Titanic"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which band has \"Stairway to Heaven\"?",
+    "options": [
+      "Pink Floyd",
+      "The Who",
+      "Led Zeppelin"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What is Jackson Pollock known for?",
+    "options": [
+      "Watercolors",
+      "Action Painting",
+      "Still Life"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who voiced Genie in \"Aladdin\"?",
+    "options": [
+      "Eddie Murphy",
+      "Will Smith",
+      "Robin Williams"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who released \"Like a Rolling Stone\"?",
+    "options": [
+      "Elvis Presley",
+      "Bob Dylan",
+      "Bruce Springsteen"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who wrote \"Romeo and Juliet\"?",
+    "options": [
+      "Charles Dickens",
+      "William Shakespeare",
+      "Jane Austen"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What musical features \"Defying Gravity\"?",
+    "options": [
+      "Les Misérables",
+      "Wicked",
+      "Hamilton"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who played Jack Sparrow?",
+    "options": [
+      "Orlando Bloom",
+      "Johnny Depp",
+      "Robert Downey Jr."
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which singer performed at the 2007 Super Bowl with a broken leg?",
+    "options": [
+      "Lady Gaga",
+      "Prince",
+      "Beyoncé"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who painted \"Water Lilies\"?",
+    "options": [
+      "Salvador Dalí",
+      "Claude Monet",
+      "Edvard Munch"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What's the highest-grossing film franchise?",
+    "options": [
+      "Marvel",
+      "Star Wars",
+      "Harry Potter"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who composed \"The Four Seasons\"?",
+    "options": [
+      "Vivaldi",
+      "Bach",
+      "Handel"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which film features \"Hakuna Matata\"?",
+    "options": [
+      "The Jungle Book",
+      "Aladdin",
+      "The Lion King"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What was Elvis's first hit?",
+    "options": [
+      "Jailhouse Rock",
+      "Heartbreak Hotel",
+      "Hound Dog"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Where is \"The Scream\" displayed?",
+    "options": [
+      "MOMA",
+      "National Gallery",
+      "Van Gogh Museum"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who directed \"Avatar\"?",
+    "options": [
+      "James Cameron",
+      "Ridley Scott",
+      "Steven Spielberg"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which rapper has the most Grammy wins?",
+    "options": [
+      "Jay-Z",
+      "Eminem",
+      "Kanye West"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who sculpted \"Pieta\"?",
+    "options": [
+      "Donatello",
+      "Michelangelo",
+      "Bernini"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What's the highest-grossing animated film?",
+    "options": [
+      "Frozen",
+      "The Lion King",
+      "Incredibles 2"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who wrote \"Hamilton\"?",
+    "options": [
+      "Stephen Sondheim",
+      "Andrew Lloyd Webber",
+      "Lin-Manuel Miranda"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which band released \"Dark Side of the Moon\"?",
+    "options": [
+      "The Beatles",
+      "Pink Floyd",
+      "Queen"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who played Catwoman in \"The Dark Knight Rises\"?",
+    "options": [
+      "Halle Berry",
+      "Michelle Pfeiffer",
+      "Anne Hathaway"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What style is \"Guernica\"?",
+    "options": [
+      "Cubism",
+      "Surrealism",
+      "Abstract"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who has the most Billboard #1 hits?",
+    "options": [
+      "Madonna",
+      "The Beatles",
+      "Elvis"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who filmed \"Pulp Fiction\"?",
+    "options": [
+      "Martin Scorsese",
+      "Quentin Tarantino",
+      "David Fincher"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who composed \"Carmen\"?",
+    "options": [
+      "Verdi",
+      "Puccini",
+      "Bizet"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who voiced Mufasa?",
+    "options": [
+      "Morgan Freeman",
+      "James Earl Jones",
+      "Samuel L. Jackson"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What K-pop group sang \"Dynamite\"?",
+    "options": [
+      "BLACKPINK",
+      "EXO",
+      "BTS"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who created \"The Persistence of Memory\"?",
+    "options": [
+      "Picasso",
+      "Dalí",
+      "Magritte"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which movie won Best Picture in 2020?",
+    "options": [
+      "Joker",
+      "Parasite",
+      "1917"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who wrote \"Purple Haze\"?",
+    "options": [
+      "Eric Clapton",
+      "Jimmy Page",
+      "Jimi Hendrix"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which musical features \"Memory\"?",
+    "options": [
+      "Cats",
+      "Phantom of the Opera",
+      "Les Misérables"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who played the Joker in \"The Dark Knight\"?",
+    "options": [
+      "Jared Leto",
+      "Heath Ledger",
+      "Joaquin Phoenix"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which band pioneered grunge?",
+    "options": [
+      "Pearl Jam",
+      "Soundgarden",
+      "Nirvana"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who created the \"Fountain\" urinal artwork?",
+    "options": [
+      "Andy Warhol",
+      "Marcel Duchamp",
+      "Salvador Dalí"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What film's tagline is \"In space no one can hear you scream\"?",
+    "options": [
+      "Star Wars",
+      "Alien",
+      "The Matrix"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who composed \"Moonlight Sonata\"?",
+    "options": [
+      "Mozart",
+      "Chopin",
+      "Beethoven"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which studio made \"Spirited Away\"?",
+    "options": [
+      "Pixar",
+      "Studio Ghibli",
+      "DreamWorks"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Where is Van Gogh's \"Sunflowers\"?",
+    "options": [
+      "Musée d'Orsay",
+      "Rijksmuseum",
+      "National Gallery"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What's the best-selling rap album?",
+    "options": [
+      "The Eminem Show",
+      "The Marshall Mathers LP",
+      "Licensed to Ill"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who made \"Get Out\"?",
+    "options": [
+      "Spike Lee",
+      "Jordan Peele",
+      "Ryan Coogler"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who wrote \"A Streetcar Named Desire\"?",
+    "options": [
+      "Arthur Miller",
+      "Tennessee Williams",
+      "Eugene O'Neill"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who sang \"WAP\" with Cardi B?",
+    "options": [
+      "Nicki Minaj",
+      "Megan Thee Stallion",
+      "Doja Cat"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What's the first fully computer-animated film?",
+    "options": [
+      "Shrek",
+      "Toy Story",
+      "Finding Nemo"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which style features dream imagery?",
+    "options": [
+      "Impressionism",
+      "Surrealism",
+      "Baroque"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Whose debut album is \"Appetite for Destruction\"?",
+    "options": [
+      "Metallica",
+      "Guns N' Roses",
+      "AC/DC"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who played Hermione Granger?",
+    "options": [
+      "Emma Roberts",
+      "Emma Stone",
+      "Emma Watson"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who composed \"Take the A Train\"?",
+    "options": [
+      "Louis Armstrong",
+      "Miles Davis",
+      "Duke Ellington"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who directed \"Black Panther\"?",
+    "options": [
+      "Ava DuVernay",
+      "Ryan Coogler",
+      "Patty Jenkins"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who painted \"Girl with a Pearl Earring\"?",
+    "options": [
+      "Rembrandt",
+      "Vermeer",
+      "Caravaggio"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which artist has the most Billboard 200 #1 albums?",
+    "options": [
+      "Taylor Swift",
+      "The Beatles",
+      "Jay-Z"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What non-English film won Best Picture?",
+    "options": [
+      "Roma",
+      "Parasite",
+      "Life Is Beautiful"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who sang \"Levitating\" with Dua Lipa?",
+    "options": [
+      "The Weeknd",
+      "DaBaby",
+      "Justin Bieber"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Where was \"Game of Thrones\" primarily filmed?",
+    "options": [
+      "Ireland",
+      "New Zealand",
+      "Croatia"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "Sports"
+  },
+  {
+    "question": "Who made \"The Thinker\"?",
+    "options": [
+      "Donatello",
+      "Rodin",
+      "Michelangelo"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What show has the most Emmy wins?",
+    "options": [
+      "Game of Thrones",
+      "The Sopranos",
+      "Saturday Night Live"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which musical features \"Don't Cry for Me Argentina\"?",
+    "options": [
+      "Chicago",
+      "Evita",
+      "Miss Saigon"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who sang the Bond theme \"Skyfall\"?",
+    "options": [
+      "Adele",
+      "Taylor Swift",
+      "Lady Gaga"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which actor has the most Oscar nominations?",
+    "options": [
+      "Jack Nicholson",
+      "Meryl Streep",
+      "Katharine Hepburn"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who founded Pop Art?",
+    "options": [
+      "Roy Lichtenstein",
+      "Jasper Johns",
+      "Andy Warhol"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Whose final tour was \"Renaissance\"?",
+    "options": [
+      "Taylor Swift",
+      "Madonna",
+      "Beyoncé"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What film used the first CGI character?",
+    "options": [
+      "Jurassic Park",
+      "Terminator 2",
+      "Tron"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who wrote \"The Phantom of the Opera\"?",
+    "options": [
+      "Stephen Sondheim",
+      "Andrew Lloyd Webber",
+      "Lin-Manuel Miranda"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Where is Michelangelo's \"David\"?",
+    "options": [
+      "Vatican City",
+      "Uffizi Gallery",
+      "Accademia Gallery"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which rapper starred in \"8 Mile\"?",
+    "options": [
+      "Snoop Dogg",
+      "50 Cent",
+      "Eminem"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who composed \"Frozen\"'s \"Let It Go\"?",
+    "options": [
+      "Alan Menken",
+      "Lin-Manuel Miranda",
+      "Robert Lopez"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who inducted Nirvana into the Rock Hall?",
+    "options": [
+      "Dave Grohl",
+      "Paul McCartney",
+      "Michael Stipe"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who was the first woman to win Best Director?",
+    "options": [
+      "Greta Gerwig",
+      "Kathryn Bigelow",
+      "Sofia Coppola"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who painted \"The Birth of Venus\"?",
+    "options": [
+      "Caravaggio",
+      "Titian",
+      "Botticelli"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which group has the most RIAA diamond albums?",
+    "options": [
+      "The Beatles",
+      "Eagles",
+      "Pink Floyd"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who played Neo in \"The Matrix\"?",
+    "options": [
+      "Brad Pitt",
+      "Will Smith",
+      "Keanu Reeves"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Whose signature move is the moonwalk?",
+    "options": [
+      "James Brown",
+      "Prince",
+      "Michael Jackson"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which K-pop soloist went #1 on Billboard Hot 100?",
+    "options": [
+      "PSY",
+      "Rain",
+      "Jennie"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who filmed \"Schindler's List\"?",
+    "options": [
+      "Steven Spielberg",
+      "Quentin Tarantino",
+      "Martin Scorsese"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What Broadway show features \"Alexander Hamilton\"?",
+    "options": [
+      "Dear Evan Hansen",
+      "Hamilton",
+      "In the Heights"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who painted \"The Persistence of Memory\"?",
+    "options": [
+      "René Magritte",
+      "Salvador Dalí",
+      "Max Ernst"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What's the highest-grossing R-rated film?",
+    "options": [
+      "Deadpool",
+      "Joker",
+      "The Matrix"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who composed \"The Barber of Seville\"?",
+    "options": [
+      "Verdi",
+      "Puccini",
+      "Rossini"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What series finale had 76M viewers?",
+    "options": [
+      "Friends",
+      "M*A*S*H",
+      "Game of Thrones"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who played the solo on \"Beat It\"?",
+    "options": [
+      "Eddie Van Halen",
+      "Slash",
+      "Eric Clapton"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which actor has won the most Oscars?",
+    "options": [
+      "Jack Nicholson",
+      "Daniel Day-Lewis",
+      "Katharine Hepburn"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What musical has the longest Broadway run?",
+    "options": [
+      "Chicago",
+      "Cats",
+      "The Phantom of the Opera"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "---",
+    "options": [
+      "---",
+      "---",
+      "---"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What is the smallest unit of life?",
+    "options": [
+      "Atom",
+      "Cell",
+      "Molecule"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which gas makes up 78% of Earth's atmosphere?",
+    "options": [
+      "Oxygen",
+      "Carbon Dioxide",
+      "Nitrogen"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What force keeps planets in orbit?",
+    "options": [
+      "Electromagnetism",
+      "Gravity",
+      "Friction"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What shape is DNA's structure?",
+    "options": [
+      "Single helix",
+      "Triple helix",
+      "Double helix"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which planet has the most moons?",
+    "options": [
+      "Jupiter",
+      "Saturn",
+      "Uranus"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What is H₂O's common name?",
+    "options": [
+      "Hydrogen Peroxide",
+      "Salt",
+      "Water"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "How many bones in the human body?",
+    "options": [
+      "206",
+      "300",
+      "150"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What travels faster: light or sound?",
+    "options": [
+      "Sound",
+      "Light",
+      "Depends"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What causes tides?",
+    "options": [
+      "Wind",
+      "Moon's gravity",
+      "Earth's rotation"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who formulated the laws of motion?",
+    "options": [
+      "Einstein",
+      "Newton",
+      "Galileo"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What galaxy is Earth in?",
+    "options": [
+      "Andromeda",
+      "Triangulum",
+      "Milky Way"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What do plants release during photosynthesis?",
+    "options": [
+      "Oxygen",
+      "Carbon Dioxide",
+      "Methane"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What scale measures earthquake strength?",
+    "options": [
+      "Fahrenheit",
+      "Beaufort",
+      "Richter"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which particle has a negative charge?",
+    "options": [
+      "Proton",
+      "Neutron",
+      "Electron"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What organ produces insulin?",
+    "options": [
+      "Liver",
+      "Pancreas",
+      "Kidney"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What process recycles carbon in nature?",
+    "options": [
+      "Photosynthesis",
+      "Carbon Fixation",
+      "Carbon Cycle"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What is the symbol for gold?",
+    "options": [
+      "Ag",
+      "Go",
+      "Au"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What state of matter is lightning?",
+    "options": [
+      "Solid",
+      "Plasma",
+      "Gas"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What causes a solar eclipse?",
+    "options": [
+      "Earth's shadow",
+      "Moon's shadow",
+      "Comet dust"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What is human blood's pH level?",
+    "options": [
+      "5.4",
+      "7.4",
+      "8.2"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which is NOT a noble gas?",
+    "options": [
+      "Helium",
+      "Argon",
+      "Chlorine"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who discovered penicillin?",
+    "options": [
+      "Marie Curie",
+      "Alexander Fleming",
+      "Louis Pasteur"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What is the deepest ocean trench?",
+    "options": [
+      "Java Trench",
+      "Mariana Trench",
+      "Puerto Rico Trench"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "Geography"
+  },
+  {
+    "question": "How many chromosomes do humans have?",
+    "options": [
+      "23",
+      "46",
+      "64"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What is the Sun primarily made of?",
+    "options": [
+      "Hydrogen",
+      "Helium",
+      "Oxygen"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "---",
+    "options": [
+      "---",
+      "---",
+      "---"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What particle is light made of?",
+    "options": [
+      "Atoms",
+      "Electrons",
+      "Photons"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What is the powerhouse of the cell?",
+    "options": [
+      "Nucleus",
+      "Ribosome",
+      "Mitochondria"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What pH indicates neutrality?",
+    "options": [
+      "0",
+      "7",
+      "14"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which planet spins clockwise?",
+    "options": [
+      "Mars",
+      "Venus",
+      "Uranus"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What rock forms from cooled lava?",
+    "options": [
+      "Sedimentary",
+      "Metamorphic",
+      "Igneous"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What unit measures force?",
+    "options": [
+      "Joule",
+      "Newton",
+      "Watt"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What is DNA's full form?",
+    "options": [
+      "Deoxyribonucleic Acid",
+      "Dinucleic Acid",
+      "Ribonucleic Acid"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which metal is liquid at room temperature?",
+    "options": [
+      "Sodium",
+      "Gallium",
+      "Mercury"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What gas do plants absorb?",
+    "options": [
+      "Oxygen",
+      "Carbon Dioxide",
+      "Nitrogen"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What causes the Northern Lights?",
+    "options": [
+      "Solar flares",
+      "Magnetic storms",
+      "Moon reflection"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Where are red blood cells made?",
+    "options": [
+      "Liver",
+      "Bone marrow",
+      "Spleen"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What is CO₂'s common name?",
+    "options": [
+      "Carbonic Acid",
+      "Dry Ice",
+      "Methane"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What law states \"energy cannot be created\"?",
+    "options": [
+      "Newton's 1st",
+      "Thermodynamics 1st",
+      "Faraday's Law"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What scale measures mineral hardness?",
+    "options": [
+      "Richter",
+      "Beaufort",
+      "Mohs"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who discovered radioactivity?",
+    "options": [
+      "Marie Curie",
+      "Niels Bohr",
+      "Ernest Rutherford"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What is studied in entomology?",
+    "options": [
+      "Birds",
+      "Insects",
+      "Fungi"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What is a supernova?",
+    "options": [
+      "Black hole",
+      "Dying star",
+      "New planet"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "How many heart chambers do fish have?",
+    "options": [
+      "1",
+      "2",
+      "4"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who proposed evolution by natural selection?",
+    "options": [
+      "Darwin",
+      "Lamarck",
+      "Mendel"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What is table salt chemically?",
+    "options": [
+      "NaCl",
+      "KCl",
+      "CaCO₃"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What color has the longest wavelength?",
+    "options": [
+      "Violet",
+      "Red",
+      "Green"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What layer protects Earth from solar radiation?",
+    "options": [
+      "Troposphere",
+      "Ozone",
+      "Magnetosphere"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What is Jupiter's Great Red Spot?",
+    "options": [
+      "Volcano",
+      "Storm",
+      "Impact crater"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What do genes code for?",
+    "options": [
+      "Minerals",
+      "Vitamins",
+      "Proteins"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "How many Earths fit across the Sun?",
+    "options": [
+      "100",
+      "109",
+      "1,000"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "---",
+    "options": [
+      "---",
+      "---",
+      "---"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What principle states particles can be in two places at once?",
+    "options": [
+      "Uncertainty",
+      "Superposition",
+      "Entanglement"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What process creates egg/sperm cells?",
+    "options": [
+      "Mitosis",
+      "Meiosis",
+      "Binary fission"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What is the lightest element?",
+    "options": [
+      "Helium",
+      "Hydrogen",
+      "Lithium"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which planet has diamond rain?",
+    "options": [
+      "Jupiter",
+      "Neptune",
+      "Uranus"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What rock type is marble?",
+    "options": [
+      "Igneous",
+      "Sedimentary",
+      "Metamorphic"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What unit measures electric current?",
+    "options": [
+      "Volt",
+      "Ohm",
+      "Ampere"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What is CRISPR used for?",
+    "options": [
+      "Gene editing",
+      "Protein synthesis",
+      "Cell division"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which element has the atomic number 1?",
+    "options": [
+      "Helium",
+      "Oxygen",
+      "Hydrogen"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What biome has permafrost?",
+    "options": [
+      "Desert",
+      "Tundra",
+      "Rainforest"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What is a light-year?",
+    "options": [
+      "Time",
+      "Distance",
+      "Brightness"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What hormone regulates sleep?",
+    "options": [
+      "Adrenaline",
+      "Melatonin",
+      "Insulin"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What is vinegar's main acid?",
+    "options": [
+      "Citric",
+      "Sulfuric",
+      "Acetic"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What travels at 299,792 km/s?",
+    "options": [
+      "Sound",
+      "Light",
+      "Electricity"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What supercontinent existed 300M years ago?",
+    "options": [
+      "Gondwana",
+      "Pangea",
+      "Laurasia"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "Geography"
+  },
+  {
+    "question": "Who discovered X-rays?",
+    "options": [
+      "Marie Curie",
+      "Wilhelm Röntgen",
+      "Thomas Edison"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What is studied in herpetology?",
+    "options": [
+      "Birds",
+      "Reptiles",
+      "Insects"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What causes a blue moon?",
+    "options": [
+      "Atmospheric dust",
+      "Second full moon",
+      "Eclipse"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "How many stomachs do cows have?",
+    "options": [
+      "1",
+      "2",
+      "4"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who discovered DNA's structure?",
+    "options": [
+      "Watson & Crick",
+      "Rosalind Franklin",
+      "Mendel"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What is rust chemically?",
+    "options": [
+      "Fe₂O₃",
+      "FeCl₂",
+      "CuO"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What force opposes motion?",
+    "options": [
+      "Momentum",
+      "Friction",
+      "Inertia"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What gas dominates Venus's atmosphere?",
+    "options": [
+      "Nitrogen",
+      "Carbon Dioxide",
+      "Methane"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What is a neutron star remnant?",
+    "options": [
+      "White dwarf",
+      "Black hole",
+      "Pulsar"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What percentage of DNA do humans share with bananas?",
+    "options": [
+      "10%",
+      "41%",
+      "60%"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "How long is a Martian day?",
+    "options": [
+      "24h 37m",
+      "23h 56m",
+      "25h 39m"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "---",
+    "options": [
+      "---",
+      "---",
+      "---"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What is the human body's largest organ?",
+    "options": [
+      "Liver",
+      "Brain",
+      "Skin"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which acid is in vinegar?",
+    "options": [
+      "Hydrochloric",
+      "Sulfuric",
+      "Acetic"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What type of energy powers solar panels?",
+    "options": [
+      "Nuclear",
+      "Thermal",
+      "Electromagnetic"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What is the Sun's outermost layer?",
+    "options": [
+      "Photosphere",
+      "Corona",
+      "Chromosphere"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What % of Earth's water is freshwater?",
+    "options": [
+      "3%",
+      "20%",
+      "50%"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which blood type is the universal donor?",
+    "options": [
+      "AB+",
+      "O-",
+      "B+"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "How many human genes are there?",
+    "options": [
+      "~10,000",
+      "~20,000",
+      "~100,000"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What is the symbol for silver?",
+    "options": [
+      "Si",
+      "Sv",
+      "Ag"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What law explains floating objects?",
+    "options": [
+      "Pascal's",
+      "Hooke's",
+      "Archimedes'"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which planet has the hottest surface?",
+    "options": [
+      "Mercury",
+      "Venus",
+      "Mars"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What process converts nitrates to nitrogen gas?",
+    "options": [
+      "Fixation",
+      "Nitrification",
+      "Denitrification"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Where does digestion begin?",
+    "options": [
+      "Stomach",
+      "Small intestine",
+      "Mouth"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who invented the telephone?",
+    "options": [
+      "Edison",
+      "Bell",
+      "Tesla"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What mineral is the hardest?",
+    "options": [
+      "Quartz",
+      "Diamond",
+      "Topaz"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What is a light-year unit of?",
+    "options": [
+      "Time",
+      "Brightness",
+      "Distance"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What plant hormone controls ripening?",
+    "options": [
+      "Auxin",
+      "Ethylene",
+      "Gibberellin"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who discovered electrons?",
+    "options": [
+      "Rutherford",
+      "Thomson",
+      "Bohr"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What is rust chemically?",
+    "options": [
+      "FeO",
+      "Fe₂O₃",
+      "Fe₃O₄"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What color is pure light?",
+    "options": [
+      "White",
+      "Yellow",
+      "Blue"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What causes seasons?",
+    "options": [
+      "Earth's distance",
+      "Tilted axis",
+      "Moon's gravity"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which moon has active volcanoes?",
+    "options": [
+      "Europa",
+      "Titan",
+      "Io"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What does RNA stand for?",
+    "options": [
+      "Ribonucleic Acid",
+      "Reactive Nitrogen Agent",
+      "Ribosomal Nucleotide Array"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What particle gives mass to others?",
+    "options": [
+      "Neutrino",
+      "Graviton",
+      "Higgs boson"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "How long is a Martian year?",
+    "options": [
+      "687 days",
+      "365 days",
+      "500 days"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What is Earth's core primarily made of?",
+    "options": [
+      "Nickel",
+      "Iron",
+      "Uranium"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "---",
+    "options": [
+      "---",
+      "---",
+      "---"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who unified Germany?",
+    "options": [
+      "Otto von Bismarck",
+      "**Wilhelm I**",
+      "Frederick the Great"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "---",
+    "options": [
+      "---",
+      "---",
+      "---"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which Ethiopian emperor modernized the country's infrastructure?",
+    "options": [
+      "Tewodros II",
+      "Yohannes IV",
+      "Menelik II"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "Geography"
+  },
+  {
+    "question": "What ancient Ethiopian kingdom preceded Aksum?",
+    "options": [
+      "D'mt",
+      "Punt",
+      "Kush"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "History"
+  },
+  {
+    "question": "Who was the first woman to win a Nobel Prize?",
+    "options": [
+      "Rosalind Franklin",
+      "Marie Curie",
+      "Florence Nightingale"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "Literature"
+  },
+  {
+    "question": "Which Ethiopian city is called \"Africa's Camelot\"?",
+    "options": [
+      "Harar",
+      "Lalibela",
+      "Gondar"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "Geography"
+  },
+  {
+    "question": "What ended the Solomonic Dynasty?",
+    "options": [
+      "Italian invasion",
+      "Communist coup",
+      "Famine"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which civilization built Machu Picchu?",
+    "options": [
+      "Maya",
+      "Aztec",
+      "Inca"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who led Ethiopia's resistance against Italy in 1935-41?",
+    "options": [
+      "Haile Selassie",
+      "Ras Tafari",
+      "Abebe Bikila"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What was the first written constitution in Africa?",
+    "options": [
+      "1931 Ethiopian",
+      "1960 Nigerian",
+      "1957 Ghanaian"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which emperor founded Addis Ababa?",
+    "options": [
+      "Fasilides",
+      "Tewodros II",
+      "Menelik II"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Where was Africa's oldest university?",
+    "options": [
+      "Timbuktu",
+      "Axum",
+      "Alexandria"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who was Ethiopia's first female president?",
+    "options": [
+      "Sahle-Work Zewde",
+      "Ellen Johnson Sirleaf",
+      "Joyce Banda"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "History"
+  },
+  {
+    "question": "Which empire controlled Ethiopia 1936-41?",
+    "options": [
+      "Ottoman",
+      "British",
+      "Italian"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "History"
+  },
+  {
+    "question": "What ancient trade route connected Ethiopia to Rome?",
+    "options": [
+      "Silk Road",
+      "Incense Route",
+      "Trans-Saharan"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who painted the Sistine Chapel?",
+    "options": [
+      "Donatello",
+      "Michelangelo",
+      "Raphael"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which Ethiopian saint is credited with the Kebra Nagast?",
+    "options": [
+      "Tekle Haymanot",
+      "Yared",
+      "Abba Garima"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What triggered WWI?",
+    "options": [
+      "Pearl Harbor",
+      "Assassination of Franz Ferdinand",
+      "Invasion of Poland"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which African nation was never colonized?",
+    "options": [
+      "Ethiopia",
+      "Liberia",
+      "Egypt"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who discovered America in 1492?",
+    "options": [
+      "Vasco da Gama",
+      "Christopher Columbus",
+      "Ferdinand Magellan"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What Ethiopian lake is the source of the Blue Nile?",
+    "options": [
+      "Lake Tana",
+      "Lake Victoria",
+      "Lake Tanganyika"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who wrote *The Art of War*?",
+    "options": [
+      "Confucius",
+      "Sun Tzu",
+      "Lao Tzu"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "History"
+  },
+  {
+    "question": "Which Ethiopian festival celebrates Epiphany?",
+    "options": [
+      "Enkutatash",
+      "Timkat",
+      "Meskel"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who was the first female ruler of the Ethiopian Empire?",
+    "options": [
+      "Gudit",
+      "Taytu Betul",
+      "Zewditu"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "History"
+  },
+  {
+    "question": "Where did the Renaissance begin?",
+    "options": [
+      "France",
+      "Italy",
+      "Greece"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What ancient Ethiopian artifact is in Rome?",
+    "options": [
+      "Ark of Covenant",
+      "Obelisk of Axum",
+      "Lalibela Cross"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who built the Great Wall of China?",
+    "options": [
+      "Han Dynasty",
+      "Ming Dynasty",
+      "Qin Shi Huang"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "---",
+    "options": [
+      "---",
+      "---",
+      "---"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which Ethiopian battle inspired Pan-African resistance?",
+    "options": [
+      "Battle of Adwa",
+      "Battle of Maqdala",
+      "Battle of Gallabat"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who was the first ruler of the Zagwe Dynasty?",
+    "options": [
+      "Yemrehana Krestos",
+      "Mara Takla Haymanot",
+      "Lalibela"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Where was the Magna Carta signed?",
+    "options": [
+      "Paris",
+      "London",
+      "Runnymede"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which Ethiopian region resisted Egyptian expansion?",
+    "options": [
+      "Shoa",
+      "Gojjam",
+      "Wollo"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who commissioned the Rosetta Stone?",
+    "options": [
+      "Ptolemy V",
+      "Cleopatra",
+      "Ramses II"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What ancient Ethiopian text details Solomon & Sheba?",
+    "options": [
+      "Fetha Nagast",
+      "Kebra Nagast",
+      "Book of Enoch"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who led Haiti's revolution?",
+    "options": [
+      "Simón Bolívar",
+      "Toussaint Louverture",
+      "José Martí"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which emperor revived Ethiopian Orthodox power?",
+    "options": [
+      "Iyasu I",
+      "Fasilides",
+      "Susenyos I"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What ended the Byzantine Empire?",
+    "options": [
+      "Mongol invasion",
+      "Ottoman conquest",
+      "Crusader sack"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "History"
+  },
+  {
+    "question": "Where was Africa's first independent black nation?",
+    "options": [
+      "Liberia",
+      "Ethiopia",
+      "Haiti"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who founded Addis Ababa's first modern school?",
+    "options": [
+      "Menelik II",
+      "Haile Selassie",
+      "Empress Taitu"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which treaty returned Ethiopia's sovereignty in 1941?",
+    "options": [
+      "Treaty of Addis Ababa",
+      "Anglo-Ethiopian Agreement",
+      "Wuchale Treaty"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who built the Hagia Sophia?",
+    "options": [
+      "Suleiman I",
+      "Justinian I",
+      "Constantine"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which Ethiopian saint composed liturgical music?",
+    "options": [
+      "Abba Garima",
+      "Saint Yared",
+      "Tekle Haymanot"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What triggered the French Revolution?",
+    "options": [
+      "Famine",
+      "Tennis Court Oath",
+      "Storming of Bastille"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which Ethiopian queen allied with Portugal?",
+    "options": [
+      "Gudit",
+      "Eleni",
+      "Zewditu"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who unified Mongolia?",
+    "options": [
+      "Kublai Khan",
+      "Genghis Khan",
+      "Attila"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What ancient Ethiopian site has 11 rock churches?",
+    "options": [
+      "Axum",
+      "Harar",
+      "Lalibela"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which civilization invented gunpowder?",
+    "options": [
+      "India",
+      "China",
+      "Persia"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who painted \"The Last Supper\"?",
+    "options": [
+      "Raphael",
+      "Michelangelo",
+      "Leonardo da Vinci"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which Ethiopian emperor imprisoned British diplomats?",
+    "options": [
+      "Menelik II",
+      "Tewodros II",
+      "Yohannes IV"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Where was the first democracy born?",
+    "options": [
+      "Rome",
+      "Athens",
+      "Egypt"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who wrote Ethiopia's first modern constitution?",
+    "options": [
+      "Haile Selassie",
+      "Menelik II",
+      "Zera Yacob"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which African empire traded gold with Aksum?",
+    "options": [
+      "Mali",
+      "Ghana",
+      "Songhai"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "History"
+  },
+  {
+    "question": "Who discovered the sea route to India?",
+    "options": [
+      "Columbus",
+      "Vasco da Gama",
+      "Magellan"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "---",
+    "options": [
+      "---",
+      "---",
+      "---"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "How did Emperor Tewodros II die?",
+    "options": [
+      "Battle wound",
+      "Illness",
+      "Suicide"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which Ethiopian festival marks the New Year?",
+    "options": [
+      "Timkat",
+      "Enkutatash",
+      "Meskel"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who was the first African woman to win the Nobel Peace Prize?",
+    "options": [
+      "Ellen Johnson Sirleaf",
+      "Wangari Maathai",
+      "Rigoberta Menchú"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "Literature"
+  },
+  {
+    "question": "What unique feature defines the Ethiopian calendar?",
+    "options": [
+      "10-month year",
+      "13 months",
+      "Lunar cycles"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which emperor's reign inspired Rastafarianism?",
+    "options": [
+      "Menelik II",
+      "Haile Selassie",
+      "Iyasu V"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Where was the first European Renaissance university?",
+    "options": [
+      "Paris",
+      "Bologna",
+      "Oxford"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which Ethiopian runner won barefoot at the 1960 Olympics?",
+    "options": [
+      "Haile Gebrselassie",
+      "Mamo Wolde",
+      "Abebe Bikila"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "Sports"
+  },
+  {
+    "question": "What ended the Cold War?",
+    "options": [
+      "Cuban Missile Crisis",
+      "Berlin Wall fall",
+      "Vietnam War"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "History"
+  },
+  {
+    "question": "Which ancient Ethiopian kingdom traded frankincense?",
+    "options": [
+      "Aksum",
+      "Punt",
+      "Damot"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "History"
+  },
+  {
+    "question": "Who led the Mau Mau uprising?",
+    "options": [
+      "Nelson Mandela",
+      "Jomo Kenyatta",
+      "Dedan Kimathi"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What sacred relic is housed in Axum?",
+    "options": [
+      "Menelik's Crown",
+      "Ark of Covenant",
+      "Lalibela Cross"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who designed Ethiopia's flag with Pan-African colors?",
+    "options": [
+      "Menelik II",
+      "Haile Selassie",
+      "Abebe Bikila"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which civilization built Angkor Wat?",
+    "options": [
+      "Khmer",
+      "Champa",
+      "Majapahit"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What Ethiopian title means \"King of Kings\"?",
+    "options": [
+      "Ras",
+      "Negus",
+      "Negusa Nagast"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "History"
+  },
+  {
+    "question": "Who discovered gravity's laws?",
+    "options": [
+      "Galileo",
+      "Newton",
+      "Copernicus"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which empire ruled Ethiopia during WWII?",
+    "options": [
+      "British",
+      "Italian",
+      "Ottoman"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "History"
+  },
+  {
+    "question": "Where was ancient Africa's largest library?",
+    "options": [
+      "Alexandria",
+      "Timbuktu",
+      "Axum"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What Ethiopian lake has island monasteries?",
+    "options": [
+      "Lake Chamo",
+      "Lake Tana",
+      "Lake Ziway"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who first circumnavigated Africa?",
+    "options": [
+      "Vasco da Gama",
+      "Phoenicians",
+      "Zheng He"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who wrote the *Iliad* and *Odyssey*?",
+    "options": [
+      "Virgil",
+      "Sophocles",
+      "Homer"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which Ethiopian region resisted Mussolini's occupation?",
+    "options": [
+      "Arbegnoch",
+      "Shoa",
+      "Tigray"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What ended apartheid in South Africa?",
+    "options": [
+      "Sharpeville Massacre",
+      "Mandela's release",
+      "Soweto Uprising"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who founded the city of Carthage?",
+    "options": [
+      "Hannibal",
+      "Dido",
+      "Scipio"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "Geography"
+  },
+  {
+    "question": "Which Ethiopian emperor allied with Britain against Sudan?",
+    "options": [
+      "Tewodros II",
+      "Yohannes IV",
+      "Menelik II"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What ancient wonder was in Rhodes?",
+    "options": [
+      "Mausoleum",
+      "Colossus",
+      "Pharos Lighthouse"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "---",
+    "options": [
+      "---",
+      "---",
+      "---"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What does \"HTTP\" stand for?",
+    "options": [
+      "Hyper Transfer Text Protocol",
+      "Hyperlink Transfer Text Process",
+      "HyperText Transfer Protocol"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who co-founded Microsoft?",
+    "options": [
+      "Steve Jobs",
+      "Steve Wozniak",
+      "Bill Gates"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What does \"CPU\" stand for?",
+    "options": [
+      "Central Processing Unit",
+      "Computer Processing Unit",
+      "Core Power Unit"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which company created the first smartphone?",
+    "options": [
+      "Apple",
+      "Nokia",
+      "IBM"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What is the main programming language of Android?",
+    "options": [
+      "Swift",
+      "Java",
+      "Python"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What year was Google founded?",
+    "options": [
+      "1996",
+      "1998",
+      "2000"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which device converts AC to DC?",
+    "options": [
+      "Transformer",
+      "Resistor",
+      "Rectifier"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What does \"AI\" stand for?",
+    "options": [
+      "Automated Intelligence",
+      "Artificial Interface",
+      "Artificial Intelligence"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which protocol secures website connections?",
+    "options": [
+      "HTTP",
+      "FTP",
+      "HTTPS"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who invented the World Wide Web?",
+    "options": [
+      "Bill Gates",
+      "Tim Berners-Lee",
+      "Mark Zuckerberg"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What is Linux?",
+    "options": [
+      "A web browser",
+      "An operating system",
+      "A programming language"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which company developed the first GUI?",
+    "options": [
+      "Microsoft",
+      "Apple",
+      "Xerox"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What does \"GPU\" stand for?",
+    "options": [
+      "Graphics Processing Unit",
+      "General Processing Unit",
+      "Global Power Unit"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which language is used for web styling?",
+    "options": [
+      "JavaScript",
+      "HTML",
+      "CSS"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What does \"VPN\" stand for?",
+    "options": [
+      "Virtual Private Network",
+      "Verified Public Network",
+      "Virtual Public Node"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which device amplifies Wi-Fi signals?",
+    "options": [
+      "Modem",
+      "Router",
+      "Repeater"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What is the oldest programming language?",
+    "options": [
+      "Python",
+      "FORTRAN",
+      "C"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who founded Tesla?",
+    "options": [
+      "Jeff Bezos",
+      "Martin Eberhard",
+      "Elon Musk"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What does \"SSD\" stand for?",
+    "options": [
+      "Solid State Drive",
+      "Super Speed Disk",
+      "System Storage Device"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which company created the first computer mouse?",
+    "options": [
+      "Apple",
+      "Microsoft",
+      "Xerox"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What is \"phishing\"?",
+    "options": [
+      "A coding error",
+      "A cyber attack",
+      "A hardware flaw"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which language runs in web browsers?",
+    "options": [
+      "Java",
+      "Python",
+      "JavaScript"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What does \"RAM\" stand for?",
+    "options": [
+      "Random Access Memory",
+      "Read-Only Memory",
+      "Rapid Access Module"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who created Python?",
+    "options": [
+      "James Gosling",
+      "Guido van Rossum",
+      "Bjarne Stroustrup"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What measures internet speed?",
+    "options": [
+      "Megabits per sec",
+      "Megabytes per sec",
+      "Gigahertz"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "---",
+    "options": [
+      "---",
+      "---",
+      "---"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What does \"IoT\" stand for?",
+    "options": [
+      "Internet of Things",
+      "Integrated Online Tech",
+      "Input/Output Terminal"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who invented the first programmable computer?",
+    "options": [
+      "Alan Turing",
+      "Konrad Zuse",
+      "Charles Babbage"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which company developed the ARM processor architecture?",
+    "options": [
+      "Intel",
+      "Apple",
+      "Acorn Computers"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What is the standard port for HTTPS?",
+    "options": [
+      "80",
+      "443",
+      "8080"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which language is used for iOS development?",
+    "options": [
+      "Kotlin",
+      "Swift",
+      "Dart"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What does \"URL\" stand for?",
+    "options": [
+      "Universal Resource Locator",
+      "Uniform Resource Locator",
+      "Unified Reference Link"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which encryption protocol secures Wi-Fi?",
+    "options": [
+      "SSL",
+      "WPA2",
+      "FTP"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What year was Wi-Fi commercially introduced?",
+    "options": [
+      "1997",
+      "1999",
+      "2001"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which file format is lossless for images?",
+    "options": [
+      "JPEG",
+      "PNG",
+      "GIF"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who created the first computer virus?",
+    "options": [
+      "Richard Skrenta",
+      "John McAfee",
+      "Robert Morris"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What is \"firmware\"?",
+    "options": [
+      "Cloud software",
+      "Hardware driver",
+      "Permanent software in hardware"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "History"
+  },
+  {
+    "question": "Which protocol sends email?",
+    "options": [
+      "IMAP",
+      "SMTP",
+      "POP3"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What does \"BIOS\" stand for?",
+    "options": [
+      "Basic Input/Output System",
+      "Binary Integrated Operating Software",
+      "Boot Initialization Order System"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What measures screen resolution?",
+    "options": [
+      "Hz",
+      "Pixels",
+      "DPI"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which company first used the term \"cloud computing\"?",
+    "options": [
+      "Google",
+      "Amazon",
+      "Compaq"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What is the main function of DNS?",
+    "options": [
+      "Encrypt data",
+      "Translate domain to IP",
+      "Store passwords"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which language is used for data science?",
+    "options": [
+      "C++",
+      "Ruby",
+      "Python"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "Science"
+  },
+  {
+    "question": "What does \"API\" stand for?",
+    "options": [
+      "Automated Program Interface",
+      "Application Programming Interface",
+      "Active Protocol Integration"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which device connects networks?",
+    "options": [
+      "Hub",
+      "Switch",
+      "Router"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who coined the term \"Big Data\"?",
+    "options": [
+      "John Mashey",
+      "Bill Gates",
+      "Tim O'Reilly"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What is \"phreaking\"?",
+    "options": [
+      "Phone hacking",
+      "Data mining",
+      "Code injection"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "History"
+  },
+  {
+    "question": "Which company created JavaScript?",
+    "options": [
+      "Microsoft",
+      "Netscape",
+      "Sun Microsystems"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What does \"PDF\" stand for?",
+    "options": [
+      "Portable Document Format",
+      "Printable Data File",
+      "Personal Document File"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which storage technology uses lasers?",
+    "options": [
+      "SSD",
+      "HDD",
+      "Optical Disc"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What is the world's fastest supercomputer (2023)?",
+    "options": [
+      "Fugaku",
+      "Frontier",
+      "Sierra"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "---",
+    "options": [
+      "---",
+      "---",
+      "---"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What does \"CDN\" stand for?",
+    "options": [
+      "Content Delivery Network",
+      "Central Data Node",
+      "Cached Domain Network"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who designed the first integrated circuit?",
+    "options": [
+      "Robert Noyce",
+      "Jack Kilby",
+      "Gordon Moore"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which protocol dynamically assigns IP addresses?",
+    "options": [
+      "DNS",
+      "DHCP",
+      "FTP"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What is the binary system base?",
+    "options": [
+      "2",
+      "8",
+      "10"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which language is used for Android development?",
+    "options": [
+      "Swift",
+      "Kotlin",
+      "C#"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What does \"SaaS\" stand for?",
+    "options": [
+      "Storage as a Service",
+      "Software as a Service",
+      "Security as a Service"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which company developed the first commercial GUI OS?",
+    "options": [
+      "Microsoft",
+      "Apple",
+      "Xerox"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What is \"zero-day vulnerability\"?",
+    "options": [
+      "Outdated software",
+      "Unpatched unknown flaw",
+      "Weak password exploit"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which device converts digital to analog signals?",
+    "options": [
+      "Router",
+      "Modem",
+      "DAC"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who invented email?",
+    "options": [
+      "Tim Berners-Lee",
+      "Ray Tomlinson",
+      "Vint Cerf"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What does \"CAPTCHA\" stand for?",
+    "options": [
+      "Completely Automated Public Turing Test",
+      "Computer Automated Public Test",
+      "Certified Automated Public Test"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which encryption uses public/private keys?",
+    "options": [
+      "AES",
+      "RSA",
+      "SHA-256"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What is the world's first domain name?",
+    "options": [
+      "apple.com",
+      "symbolics.com",
+      "ibm.com"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which language powers most AI frameworks?",
+    "options": [
+      "Java",
+      "Python",
+      "C++"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What does \"NFT\" stand for?",
+    "options": [
+      "Network File Transfer",
+      "Non-Fungible Token",
+      "New Financial Technology"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which company created the first 1TB hard drive?",
+    "options": [
+      "Seagate",
+      "Hitachi",
+      "Western Digital"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What is \"quantum computing\"?",
+    "options": [
+      "Light-speed processing",
+      "DNA-based computing",
+      "Qubit-based computation"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who founded Amazon?",
+    "options": [
+      "Jeff Bezos",
+      "Elon Musk",
+      "Mark Cuban"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which protocol transfers files between computers?",
+    "options": [
+      "HTTP",
+      "FTP",
+      "SMTP"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What year did Bitcoin launch?",
+    "options": [
+      "2008",
+      "2009",
+      "2010"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which device manages network traffic?",
+    "options": [
+      "Switch",
+      "Hub",
+      "Repeater"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What is \"machine learning\"?",
+    "options": [
+      "Manual coding",
+      "AI learning from data",
+      "Hardware optimization"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which company acquired GitHub in 2018?",
+    "options": [
+      "Google",
+      "Microsoft",
+      "IBM"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What does \"VoIP\" stand for?",
+    "options": [
+      "Voice over Internet Protocol",
+      "Virtual Online IP",
+      "Video over IP"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who created Linux?",
+    "options": [
+      "Richard Stallman",
+      "Linus Torvalds",
+      "Dennis Ritchie"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "---",
+    "options": [
+      "---",
+      "---",
+      "---"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What does \"SEO\" stand for?",
+    "options": [
+      "System Error Optimization",
+      "Search Engine Operation",
+      "Search Engine Optimization"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which company developed the first digital camera?",
+    "options": [
+      "Kodak",
+      "Sony",
+      "Canon"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What is \"cryptocurrency mining\"?",
+    "options": [
+      "Hacking banks",
+      "Validating transactions",
+      "Creating new coins"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which protocol provides error-free file transfer?",
+    "options": [
+      "TCP",
+      "UDP",
+      "FTP"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What does \"GUI\" stand for?",
+    "options": [
+      "Graphical User Interface",
+      "General User Interaction",
+      "Global Utility Interface"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who invented the transistor?",
+    "options": [
+      "Bell Labs",
+      "IBM",
+      "Xerox PARC"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which language is used for statistical computing?",
+    "options": [
+      "R",
+      "PHP",
+      "Perl"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What does \"LED\" stand for?",
+    "options": [
+      "Light Emitting Diode",
+      "Low Energy Display",
+      "Luminescent Electronic Device"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which company created the first consumer GPS?",
+    "options": [
+      "Garmin",
+      "Magellan",
+      "TomTom"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who developed UNIX?",
+    "options": [
+      "Microsoft",
+      "AT&T Bell Labs",
+      "IBM"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What is \"metadata\"?",
+    "options": [
+      "Encrypted data",
+      "Data about data",
+      "Cloud storage"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which protocol synchronizes computer clocks?",
+    "options": [
+      "NTP",
+      "HTTP",
+      "SSL"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What does \"SQL\" stand for?",
+    "options": [
+      "Simple Query Language",
+      "Structured Question Logic",
+      "Structured Query Language"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which company made the first 64-bit processor?",
+    "options": [
+      "Intel",
+      "AMD",
+      "Motorola"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What is \"virtualization\"?",
+    "options": [
+      "Creating 3D graphics",
+      "Running multiple OS on one machine",
+      "Cloud storage"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who created the first web browser?",
+    "options": [
+      "Tim Berners-Lee",
+      "Marc Andreessen",
+      "Bill Gates"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which device filters network traffic?",
+    "options": [
+      "Hub",
+      "Firewall",
+      "Switch"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What does \"XML\" stand for?",
+    "options": [
+      "Extra Memory Language",
+      "Extensible Markup Language",
+      "Executive Modeling Logic"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which company invented DRAM?",
+    "options": [
+      "Intel",
+      "IBM",
+      "Toshiba"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What year was TikTok launched?",
+    "options": [
+      "2014",
+      "2016",
+      "2018"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which protocol finds MAC addresses?",
+    "options": [
+      "DNS",
+      "ARP",
+      "DHCP"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What is \"blockchain\"?",
+    "options": [
+      "Cloud database",
+      "Encrypted messaging",
+      "Decentralized ledger"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who founded SpaceX?",
+    "options": [
+      "Richard Branson",
+      "Elon Musk",
+      "Jeff Bezos"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What does \"HTML\" stand for?",
+    "options": [
+      "HyperText Markup Language",
+      "High-Level Machine Language",
+      "Hyper Transfer Media Link"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which tech giant started as a search engine called \"BackRub\"?",
+    "options": [
+      "Yahoo",
+      "Bing",
+      "Google"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "---",
+    "options": [
+      "---",
+      "---",
+      "---"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which country has won the most FIFA World Cups?",
+    "options": [
+      "Germany",
+      "Argentina",
+      "Brazil"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "Geography"
+  },
+  {
+    "question": "In tennis, what Grand Slam tournament is played on grass?",
+    "options": [
+      "US Open",
+      "Australian Open",
+      "Wimbledon"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who holds the NBA's all-time scoring record?",
+    "options": [
+      "Kobe Bryant",
+      "LeBron James",
+      "Michael Jordan"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which boxer was nicknamed \"The Greatest\"?",
+    "options": [
+      "Mike Tyson",
+      "Muhammad Ali",
+      "Floyd Mayweather"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "How many players are on a baseball team defensively?",
+    "options": [
+      "9",
+      "10",
+      "11"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which nation won the 2023 Cricket World Cup?",
+    "options": [
+      "India",
+      "England",
+      "Australia"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "In F1, who has the most World Drivers' Championships?",
+    "options": [
+      "Lewis Hamilton",
+      "Michael Schumacher",
+      "Ayrton Senna"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What color card indicates a permanent dismissal in soccer?",
+    "options": [
+      "Blue",
+      "Black",
+      "Red"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which country hosted the 2020 Summer Olympics?",
+    "options": [
+      "China",
+      "Japan",
+      "Brazil"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "Geography"
+  },
+  {
+    "question": "In American football, what is a touchdown worth?",
+    "options": [
+      "3 points",
+      "6 points",
+      "7 points"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "Sports"
+  },
+  {
+    "question": "---",
+    "options": [
+      "---",
+      "---",
+      "---"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which Premier League stadium is called \"The Theatre of Dreams\"?",
+    "options": [
+      "Anfield",
+      "Etihad Stadium",
+      "Old Trafford"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who has won the most Grand Slam singles tennis titles?",
+    "options": [
+      "Serena Williams",
+      "Steffi Graf",
+      "Margaret Court"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "In golf, what is a score of one under par called?",
+    "options": [
+      "Eagle",
+      "Birdie",
+      "Bogey"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which country won the 2023 Rugby World Cup?",
+    "options": [
+      "New Zealand",
+      "South Africa",
+      "Ireland"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "Geography"
+  },
+  {
+    "question": "How long is a marathon in kilometers?",
+    "options": [
+      "40.2 km",
+      "42.2 km",
+      "45.1 km"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who holds the Premier League goalscoring record?",
+    "options": [
+      "Wayne Rooney",
+      "Harry Kane",
+      "Alan Shearer"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "In basketball, how many points is a free throw worth?",
+    "options": [
+      "1",
+      "2",
+      "3"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which city hosts the Tour de France finish line?",
+    "options": [
+      "Berlin",
+      "London",
+      "Paris"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "Geography"
+  },
+  {
+    "question": "What sport uses terms \"love\" and \"deuce\"?",
+    "options": [
+      "Badminton",
+      "Tennis",
+      "Ping Pong"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "Sports"
+  },
+  {
+    "question": "Which Jamaican sprinter holds the 100m world record?",
+    "options": [
+      "Carl Lewis",
+      "Usain Bolt",
+      "Justin Gatlin"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "---",
+    "options": [
+      "---",
+      "---",
+      "---"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which country won the first FIFA World Cup in 1930?",
+    "options": [
+      "Brazil",
+      "Uruguay",
+      "Italy"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "Geography"
+  },
+  {
+    "question": "In basketball, what position is \"Point Guard\"?",
+    "options": [
+      "Defensive player",
+      "Primary ball-handler",
+      "Rebound specialist"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "How many rings are on the Olympic flag?",
+    "options": [
+      "4",
+      "5",
+      "6"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "Sports"
+  },
+  {
+    "question": "Which golfer has the most Masters Tournament wins?",
+    "options": [
+      "Tiger Woods",
+      "Jack Nicklaus",
+      "Arnold Palmer"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What sport uses a \"shuttlecock\"?",
+    "options": [
+      "Squash",
+      "Badminton",
+      "Tennis"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "Sports"
+  },
+  {
+    "question": "Which Premier League club is nicknamed \"The Red Devils\"?",
+    "options": [
+      "Liverpool",
+      "Chelsea",
+      "Manchester United"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What color jersey does the Tour de France leader wear?",
+    "options": [
+      "Green",
+      "Yellow",
+      "Polka Dot"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "In baseball, how many strikes make an out?",
+    "options": [
+      "2",
+      "3",
+      "4"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who broke the 100m swimming world record in 2008?",
+    "options": [
+      "Michael Phelps",
+      "Ian Thorpe",
+      "Mark Spitz"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which nation won the 2022 FIFA World Cup?",
+    "options": [
+      "France",
+      "Argentina",
+      "Croatia"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "---",
+    "options": [
+      "---",
+      "---",
+      "---"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which tennis player has the most Grand Slam titles?",
+    "options": [
+      "Roger Federer",
+      "Novak Djokovic",
+      "Rafael Nadal"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What's the diameter of a basketball hoop in inches?",
+    "options": [
+      "16 inches",
+      "18 inches",
+      "24 inches"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which boxer remains undefeated in 50+ fights?",
+    "options": [
+      "Muhammad Ali",
+      "Floyd Mayweather",
+      "Mike Tyson"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "In soccer, what does \"VAR\" stand for?",
+    "options": [
+      "Video Assistant Referee",
+      "Visual Action Review",
+      "Virtual Aid Referee"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which country invented cricket?",
+    "options": [
+      "Australia",
+      "India",
+      "England"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "Geography"
+  },
+  {
+    "question": "Who won the 2023 Ballon d'Or?",
+    "options": [
+      "Kylian Mbappé",
+      "Lionel Messi",
+      "Erling Haaland"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What color card is shown for a technical foul in basketball?",
+    "options": [
+      "Blue",
+      "Yellow",
+      "Red"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "How many players in a rugby league team?",
+    "options": [
+      "13",
+      "15",
+      "11"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which city hosted the 2016 Summer Olympics?",
+    "options": [
+      "Tokyo",
+      "Rio de Janeiro",
+      "London"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "Geography"
+  },
+  {
+    "question": "What sport awards the Stanley Cup?",
+    "options": [
+      "Basketball",
+      "Hockey",
+      "Baseball"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "History"
+  },
+  {
+    "question": "---",
+    "options": [
+      "---",
+      "---",
+      "---"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which country has won the most Cricket World Cups?",
+    "options": [
+      "India",
+      "Australia",
+      "West Indies"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "Geography"
+  },
+  {
+    "question": "In soccer, what number jersey is typically worn by a center forward?",
+    "options": [
+      "9",
+      "10",
+      "7"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "History"
+  },
+  {
+    "question": "Which NBA team has won the most championships?",
+    "options": [
+      "Chicago Bulls",
+      "Boston Celtics",
+      "Los Angeles Lakers"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What is the maximum break in snooker?",
+    "options": [
+      "147",
+      "155",
+      "180"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who holds the record for most goals in a single Premier League season?",
+    "options": [
+      "Mohamed Salah",
+      "Erling Haaland",
+      "Alan Shearer"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which tennis surface is the French Open played on?",
+    "options": [
+      "Hardcourt",
+      "Grass",
+      "Clay"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "In American football, what position throws the ball?",
+    "options": [
+      "Running Back",
+      "Quarterback",
+      "Wide Receiver"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "Sports"
+  },
+  {
+    "question": "Which country won the 2023 Women's World Cup?",
+    "options": [
+      "England",
+      "Spain",
+      "USA"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "Geography"
+  },
+  {
+    "question": "What color is the leader's jersey in the Giro d'Italia?",
+    "options": [
+      "Pink",
+      "Yellow",
+      "Green"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "How many holes are played in a standard round of golf?",
+    "options": [
+      "18",
+      "9",
+      "36"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "---",
+    "options": [
+      "---",
+      "---",
+      "---"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which soccer player has won the most Ballon d'Or awards?",
+    "options": [
+      "Cristiano Ronaldo",
+      "Lionel Messi",
+      "Michel Platini"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "History"
+  },
+  {
+    "question": "What is the Olympic motto?",
+    "options": [
+      "\"Higher, Stronger, Faster\"",
+      "\"Citius, Altius, Fortius\"",
+      "\"Faster, Higher, Stronger\""
+    ],
+    "correctAnswerIndex": 1,
+    "category": "Sports"
+  },
+  {
+    "question": "In baseball, how many bases must a player touch to score?",
+    "options": [
+      "3",
+      "4",
+      "2"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which country dominates Kabaddi at the Asian Games?",
+    "options": [
+      "Pakistan",
+      "India",
+      "South Korea"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "Geography"
+  },
+  {
+    "question": "What sport uses terms \"eagle\" and \"albatross\"?",
+    "options": [
+      "Tennis",
+      "Golf",
+      "Archery"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "Sports"
+  },
+  {
+    "question": "Which Premier League club plays at the Emirates Stadium?",
+    "options": [
+      "Tottenham",
+      "Chelsea",
+      "Arsenal"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who swam the 100m freestyle in under 47 seconds first?",
+    "options": [
+      "Michael Phelps",
+      "César Cielo",
+      "David Popovici"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What martial art means \"empty hand\"?",
+    "options": [
+      "Judo",
+      "Karate",
+      "Taekwondo"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which nation won the first Rugby World Cup?",
+    "options": [
+      "New Zealand",
+      "Australia",
+      "South Africa"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "How many players form an ice hockey team on the rink?",
+    "options": [
+      "5",
+      "6",
+      "7"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "---",
+    "options": [
+      "---",
+      "---",
+      "---"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which nation has the most Summer Olympic gold medals?",
+    "options": [
+      "China",
+      "USA",
+      "Russia"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "Sports"
+  },
+  {
+    "question": "In soccer, how many substitutions are allowed in a standard match?",
+    "options": [
+      "3",
+      "5",
+      "7"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who holds the record for most NBA championships as a player?",
+    "options": [
+      "Michael Jordan",
+      "LeBron James",
+      "Bill Russell"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What is the distance of a triathlon swim segment?",
+    "options": [
+      "1.5 km",
+      "3.8 km",
+      "750 m"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "In soccer, what rule prevents \"goal-hanging\"?",
+    "options": [
+      "Handball",
+      "Offside",
+      "Back-pass"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which country won the 2023 FIBA Basketball World Cup?",
+    "options": [
+      "USA",
+      "Spain",
+      "Germany"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "Geography"
+  },
+  {
+    "question": "Which rugby team performs the \"Haka\" before matches?",
+    "options": [
+      "South Africa",
+      "Australia",
+      "New Zealand"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What golf club is used for putting?",
+    "options": [
+      "Driver",
+      "Putter",
+      "Wedge"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who broke the 100m world record with 9.58 seconds?",
+    "options": [
+      "Tyson Gay",
+      "Usain Bolt",
+      "Yohan Blake"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "How many rounds in a professional boxing title fight?",
+    "options": [
+      "10",
+      "12",
+      "15"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "---",
+    "options": [
+      "---",
+      "---",
+      "---"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which sport awards the Claret Jug?",
+    "options": [
+      "Tennis",
+      "Golf",
+      "Cricket"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "History"
+  },
+  {
+    "question": "What is table tennis called in the Olympics?",
+    "options": [
+      "Ping Pong",
+      "Whiff-Whaff",
+      "Para Table Tennis"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "Sports"
+  },
+  {
+    "question": "Which baseball team has the most World Series wins?",
+    "options": [
+      "Boston Red Sox",
+      "New York Yankees",
+      "LA Dodgers"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "In soccer, what does \"ACL\" stand for?",
+    "options": [
+      "Anterior Cruciate Ligament",
+      "Advanced Corner Line",
+      "Athletic Center Line"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which sport debuted at the 2020 Paralympics?",
+    "options": [
+      "Taekwondo",
+      "Badminton",
+      "Surfing"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "Sports"
+  },
+  {
+    "question": "Which Italian soccer club is nicknamed \"The Old Lady\"?",
+    "options": [
+      "AC Milan",
+      "Inter Milan",
+      "Juventus"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What color is the center circle in field hockey?",
+    "options": [
+      "Blue",
+      "White",
+      "Yellow"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which country hosted the 2022 Commonwealth Games?",
+    "options": [
+      "Australia",
+      "England",
+      "India"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "Geography"
+  },
+  {
+    "question": "Who scored the \"Hand of God\" goal?",
+    "options": [
+      "Diego Maradona",
+      "Lionel Messi",
+      "Pele"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "In surfing, what does \"tube ride\" mean?",
+    "options": [
+      "Riding inside a wave",
+      "Standing on the board",
+      "A perfect score"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "---",
+    "options": [
+      "---",
+      "---",
+      "---"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What is Japan's national sport?",
+    "options": [
+      "Karate",
+      "Judo",
+      "Sumo"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "Sports"
+  },
+  {
+    "question": "Who has the most Formula 1 pole positions?",
+    "options": [
+      "Lewis Hamilton",
+      "Michael Schumacher",
+      "Ayrton Senna"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "How many dimples on a golf ball?",
+    "options": [
+      "336",
+      "422",
+      "512"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "In field hockey, how long is a quarter?",
+    "options": [
+      "15 min",
+      "20 min",
+      "25 min"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which soccer stadium has the largest capacity?",
+    "options": [
+      "Camp Nou",
+      "Wembley",
+      "Maracanã"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "Geography"
+  },
+  {
+    "question": "In soccer, when is a handball *not* a foul?",
+    "options": [
+      "If accidental",
+      "If outside the box",
+      "If by a goalkeeper"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who won the 2023 Tour de France?",
+    "options": [
+      "Jonas Vingegaard",
+      "Tadej Pogačar",
+      "Egan Bernal"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What is cricket's highest individual score?",
+    "options": [
+      "375",
+      "400*",
+      "501*"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which sport uses \"behinds\" as scores?",
+    "options": [
+      "Rugby",
+      "Aussie Rules",
+      "Gaelic Football"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "Sports"
+  },
+  {
+    "question": "Which nation won the 2023 Men's Hockey World Cup?",
+    "options": [
+      "Netherlands",
+      "Germany",
+      "Australia"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "---",
+    "options": [
+      "---",
+      "---",
+      "---"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What color is the center circle in basketball?",
+    "options": [
+      "Blue",
+      "Red",
+      "No color"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who scored Man City's 93:20 title-winning goal?",
+    "options": [
+      "Sergio Agüero",
+      "Vincent Kompany",
+      "Kevin De Bruyne"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "Geography"
+  },
+  {
+    "question": "How many players on a curling team?",
+    "options": [
+      "3",
+      "4",
+      "5"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which country won the first ICC T20 World Cup?",
+    "options": [
+      "India",
+      "Pakistan",
+      "Australia"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "Geography"
+  },
+  {
+    "question": "In volleyball, what's a \"kill\"?",
+    "options": [
+      "A missed serve",
+      "A point-winning spike",
+      "A double touch"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Which tennis player has a \"slam\" named after them?",
+    "options": [
+      "Rod Laver",
+      "Arthur Ashe",
+      "Andre Agassi"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who wore NBA jersey #23 for the Bulls?",
+    "options": [
+      "Scottie Pippen",
+      "Dennis Rodman",
+      "Michael Jordan"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What is the diameter of a soccer ball?",
+    "options": [
+      "20 cm",
+      "22 cm",
+      "24 cm"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "Who holds the 200m world record?",
+    "options": [
+      "Michael Johnson",
+      "Usain Bolt",
+      "Yohan Blake"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "What sport is known as \"the roaring game\"?",
+    "options": [
+      "Curling",
+      "Ice Hockey",
+      "Bobsled"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "Sports"
+  },
+  {
+    "question": "---",
+    "options": [
+      "---",
+      "---",
+      "---"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "---",
+    "options": [
+      "---",
+      "---",
+      "---"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "I’m full of holes but still hold water. What am I?",
+    "options": [
+      "A net",
+      "A sponge",
+      "**A cloud**"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "The more you take away, the larger I become. What am I?",
+    "options": [
+      "A hole",
+      "**Debt**",
+      "Time"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "I’m not alive, but I grow. I don’t have lungs, but I need air. What am I?",
+    "options": [
+      "Fire",
+      "**A balloon**",
+      "A plant"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "I’m always hungry. I must be fed. The finger I touch will soon turn red. What am I?",
+    "options": [
+      "Fire",
+      "**A baby bird**",
+      "A monster"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "---",
+    "options": [
+      "---",
+      "---",
+      "---"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "I’m a path that twists and turns but never moves. What am I?",
+    "options": [
+      "A snake",
+      "**A river**",
+      "A maze"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "---",
+    "options": [
+      "---",
+      "---",
+      "---"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "I’m a word of letters three, add two and fewer there will be. What am I?",
+    "options": [
+      "\"Few\"",
+      "**\"Little\"**",
+      "\"Less\""
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "---",
+    "options": [
+      "---",
+      "---",
+      "---"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "I have a heart that doesn’t beat. I sail oceans without getting wet. What am I?",
+    "options": [
+      "A submarine",
+      "An artichoke",
+      "A map"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "Geography"
+  },
+  {
+    "question": "I’m swallowed whole but never eaten. I’m kept safe until needed. What am I?",
+    "options": [
+      "A secret",
+      "A pill",
+      "A coin"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "I’m opened before I’m used and closed after I’m used. What am I?",
+    "options": [
+      "A door",
+      "An umbrella",
+      "An egg"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "I’m a weight you can’t lift. I’m a guest who never leaves. What am I?",
+    "options": [
+      "A mountain",
+      "Debt",
+      "A shadow"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "I’m a box that holds no food, yet feeds many minds. What am I?",
+    "options": [
+      "A pantry",
+      "A book",
+      "A TV"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "I’m a word that’s spelled wrong in every dictionary. What am I?",
+    "options": [
+      "\"Misspelled\"",
+      "\"Wrong\"",
+      "\"Error\""
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "I’m a child of water, but when water returns, I die. What am I?",
+    "options": [
+      "A fish",
+      "Salt",
+      "Ice"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "I’m a hole you can fill but never dig. What am I?",
+    "options": [
+      "A gap",
+      "A tooth",
+      "A promise"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "I’m a king’s accessory, a prisoner’s view. I frame the world for you. What am I?",
+    "options": [
+      "A crown",
+      "A window",
+      "A mirror"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "History"
+  },
+  {
+    "question": "I’m a beginning of eternity and the end of time. What am I?",
+    "options": [
+      "The letter \"E\"",
+      "Death",
+      "Infinity"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "I’m a cup that grows in earth and wears a leafy crown. What am I?",
+    "options": [
+      "A tulip",
+      "An acorn",
+      "A potato"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "I’m a barrier that unites. I’m torn down to cheers. What am I?",
+    "options": [
+      "A wall",
+      "A finish line",
+      "A piñata"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "I’m a weightless treasure chest. Open me with your mind. What am I?",
+    "options": [
+      "A dream",
+      "A book",
+      "A cloud"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "I’m a season with no sun, yet I bring light. What am I?",
+    "options": [
+      "Autumn",
+      "Winter",
+      "Spring"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "I’m a lock with no key. I’m a rhythm with no beat. What am I?",
+    "options": [
+      "A heart",
+      "A river",
+      "A secret"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "I’m a gift you can’t wrap. I’m kept by giving away. What am I?",
+    "options": [
+      "Love",
+      "A secret",
+      "A promise"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "I’m a bridge you burn after crossing. What am I?",
+    "options": [
+      "A relationship",
+      "A ship",
+      "A candle"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "I’m a servant who serves a thousand. Abandoned by one, I’m useless. What am I?",
+    "options": [
+      "A key",
+      "A crown",
+      "A candle"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "I’m a book with no pages. I’m a voice with no sound. What am I?",
+    "options": [
+      "A mind",
+      "A bird",
+      "The wind"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "Literature"
+  },
+  {
+    "question": "I’m a cage that frees you. I’m opened to capture. What am I?",
+    "options": [
+      "A door",
+      "A camera",
+      "A birdcage"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "---",
+    "options": [
+      "---",
+      "---",
+      "---"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "I have forests without trees, cities without people, and deserts without sand. What am I?",
+    "options": [
+      "A ghost town",
+      "A painting",
+      "A map"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "I’m a seed with cities in me, yet I fit in your palm. Plant me and nothing grows. What am I?",
+    "options": [
+      "A walnut",
+      "A pomegranate",
+      "A globe"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "I’m a cage without bars, a trap without bait. I catch thoughts but never wait. What am I?",
+    "options": [
+      "A net",
+      "A dream",
+      "A camera"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "I’m a tongue without a mouth, answered without a sound. I’m feared by every liar. What am I?",
+    "options": [
+      "A bell",
+      "A whistle",
+      "A conscience"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "I’m a giant who dwarfs mountains yet hides in acorns. What am I?",
+    "options": [
+      "Time",
+      "An earthquake",
+      "An oak tree"
+    ],
+    "correctAnswerIndex": 2,
+    "category": "History"
+  },
+  {
+    "question": "I’m a box of thunder with no lightning. Open me to find silence. What am I?",
+    "options": [
+      "A drum",
+      "A book",
+      "A storm cloud"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "I’m a thief who steals warmth but leaves no trace. What am I?",
+    "options": [
+      "Winter",
+      "A shadow",
+      "A freezer"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "History"
+  },
+  {
+    "question": "I’m a ladder you can’t climb, with rungs made of light. What am I?",
+    "options": [
+      "A rainbow",
+      "A sunbeam",
+      "A constellation"
+    ],
+    "correctAnswerIndex": 0,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "I’m a servant who obeys all, yet rules none. Point me, and I work. What am I?",
+    "options": [
+      "A king",
+      "A finger",
+      "A remote"
+    ],
+    "correctAnswerIndex": 1,
+    "category": "General Knowledge"
+  },
+  {
+    "question": "I’m the end of a rainbow, the start of a joke, and forever in debt. What am I?",
+    "options": [
+      "Gold",
+      "A leprechaun",
+      "The letter \"D\""
+    ],
+    "correctAnswerIndex": 2,
+    "category": "General Knowledge"
+  }
+]

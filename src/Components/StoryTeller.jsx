@@ -19,7 +19,11 @@ const storiesData = [
     content:
       "In a sleepy village tucked between the hills, lived a girl named Sela who believed stars were seeds dropped by the moon. Every night, she'd walk barefoot under the sky and whisper secrets to the wind. One night, she found a glowing pebble and planted it in the meadow. Days turned into weeks, and the villagers laughed at her—until one twilight, a tiny light bloomed from the soil. 🌟 That night, the meadow burst into constellations, each one whispering ancient lullabies. From then on, kids didn’t fear the dark, because Sela had lit it with her dreams.",
   },
-
+  {
+    title: "sela",
+    content:
+      "በተራራዎች መካከል በተደፈነች ጭር ያለች መንደር ውስጥ ከዋክብት ከጨረቃ የሚወርዱ ፍሬዎች እንደሆኑ የምታምን ሴላ የምትባል ልጅ ነበረች። ማታ ማታ ባዶ እግሯን በሰማይ ውስጥ እየተራመደች ለነፋስ ምስጢሯን ትነፋ ነበር። አንድ ቀን ማታ የሚንቦገቦግ ጠጠር አግኝታ በሜዳው ላይ ተከለች። ቀናቶች ወደ ሳምንቶች ተለውጠው ነበር፤ አንድ ምሽት ላይ ትንሽ ብርሃን ከመሬት ላይ እስኪወጣ ድረስ የመንደሯ ነዋሪዎች ይስቁባት ነበር። 🌟 በዚያው ምሽት ሜዳው በከዋክብት ተከፋፍሎ እያንዳንዳቸው የጥንት እሹሩሩታ ይዘፍኑ ነበር። ከዚያን ጊዜ ጀምሮ ልጆች ጨለማውን አልፈሩትም ምክንያቱም ሴላ በህልሟ አብርታዋለችና። ",
+  },
   {
     title: "አንድ ከተማ አይጥ እና ሀገር አይጥ",
     content:
@@ -154,7 +158,7 @@ export default function StoryTeller() {
 
   const handlePrevious = () => {
     setCurrentStoryIndex(
-      (prev) => (prev - 1 + storiesData.length) % storiesData.length
+      (prev) => (prev - 1 + storiesData.length) % storiesData.length,
     );
   };
 
