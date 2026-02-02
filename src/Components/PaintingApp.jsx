@@ -8,7 +8,10 @@ import "./PaintingApp.css";
 export default function PaintingApp() {
   const stageRef = useRef(null);
 
-  const [lines, setLines] = useState([]);
+  const [lines, setLines] = useState(() => {
+    const saved = sessionStorage.getItem("paintingLines");
+    return saved ? JSON.parse(saved) : [];
+  });
   const [currentLine, setCurrentLine] = useState(null);
 
   const [isErasing, setIsErasing] = useState(false);
@@ -16,8 +19,12 @@ export default function PaintingApp() {
   const [brushSize, setBrushSize] = useState(5);
 
   const [containerWidth, setContainerWidth] = useState(
-    Math.min(window.innerWidth, 600)
+    Math.min(window.innerWidth, 600),
   );
+
+  useEffect(() => {
+    sessionStorage.setItem("paintingLines", JSON.stringify(lines));
+  }, [lines]);
 
   useEffect(() => {
     const handleResize = () => {

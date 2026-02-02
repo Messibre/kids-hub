@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { setToken } from "../utils/jwt";
-import  "./AuthForm.css";
+import "./AuthForm.css";
 export default function Register() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -18,7 +18,8 @@ export default function Register() {
     const data = await response.json();
     if (response.ok) {
       setToken(data.token);
-      if (typeof onLogin === "function") onLogin();
+      localStorage.setItem("userEmail", email);
+      if (typeof onLogin === "function") onLogin(email);
       setSuccess("Registration successful! Redirecting...");
       setTimeout(() => (window.location.href = "/"), 1500);
     } else {
@@ -46,6 +47,13 @@ export default function Register() {
         required
       />
       <button type="submit">Register</button>
+      <button
+        type="button"
+        onClick={() => (window.location.href = "/")}
+        style={{ marginTop: "10px", backgroundColor: "#ccc" }}
+      >
+        Skip for now
+      </button>
     </form>
   );
 }

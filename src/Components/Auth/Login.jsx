@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { setToken } from "../utils/jwt";
-import  "./AuthForm.css";
+import "./AuthForm.css";
 
 export default function Login() {
   const [email, setEmail] = useState("");
@@ -18,7 +18,8 @@ export default function Login() {
     const data = await response.json();
     if (response.ok) {
       setToken(data.token);
-      if (typeof onLogin === "function") onLogin();
+      localStorage.setItem("userEmail", data.email);
+      if (typeof onLogin === "function") onLogin(data.email);
       window.location.href = "/"; // Redirect after login
     } else {
       setError(data.message || "Login failed");
@@ -44,6 +45,13 @@ export default function Login() {
         required
       />
       <button type="submit">Login</button>
+      <button
+        type="button"
+        onClick={() => (window.location.href = "/")}
+        style={{ marginTop: "10px", backgroundColor: "#ccc" }}
+      >
+        Skip for now
+      </button>
     </form>
   );
 }

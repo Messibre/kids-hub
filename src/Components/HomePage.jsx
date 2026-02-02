@@ -18,6 +18,16 @@ export default function HomePage() {
       <h1 style={{ fontSize: "3rem", color: "#ff6f61" }}>
         Welcome to Kids hub! 🎈
       </h1>
+      <p
+        style={{
+          fontSize: "1.2rem",
+          margin: "1rem 0",
+          color: "#333",
+          fontStyle: "italic",
+        }}
+      >
+        Playing as Guest – Sign up to save your progress and creations!
+      </p>
       <p style={{ fontSize: "1.5rem", margin: "1rem 0", color: "#0000ff" }}>
         Pick your magical adventure:
       </p>

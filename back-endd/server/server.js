@@ -11,12 +11,15 @@ const bcrypt = require("bcryptjs");
 app.use(cors());
 app.use(express.json());
 
-mongoose.connect(process.env.MONGODB_URI);
+mongoose.connect(
+  process.env.MONGODB_URI || "mongodb://localhost:27017/kids-hub",
+);
 
 mongoose.connection.on("connected", () => {
   console.log("MongoDB connected!");
 });
-mongoose.connection.once("open",() => {console.log("connected to mongodb:",mongoose.connection.name);
+mongoose.connection.once("open", () => {
+  console.log("connected to mongodb:", mongoose.connection.name);
 });
 mongoose.connection.on("error", (err) => {
   console.error("MongoDB connection error:", err);
@@ -25,9 +28,9 @@ const SECRET = "your_jwt_secret";
 
 const userSchema = new mongoose.Schema({
   email: { type: String, required: true, unique: true },
-  password: { type: String, required: true }
+  password: { type: String, required: true },
 });
-const User = mongoose.model("User" , userSchema);
+const User = mongoose.model("User", userSchema);
 
 app.post("/api/register", async (req, res) => {
   console.log("Register endpoint hit", req.body);
@@ -37,10 +40,10 @@ app.post("/api/register", async (req, res) => {
     if (existingUser) {
       return res.status(400).json({ message: "User already exists" });
     }
-     const hashedPassword = await bcrypt.hash(password, 10);
+    const hashedPassword = await bcrypt.hash(password, 10);
     const user = new User({ email, password: hashedPassword });
     await user.save();
-    console.log("user registered successfully",user);
+    console.log("user registered successfully", user);
     const token = jwt.sign({ email }, SECRET, { expiresIn: "1h" });
     res.json({ token });
   } catch (err) {
@@ -60,14 +63,10 @@ app.post("/api/login", async (req, res) => {
       return res.status(401).json({ message: "Invalid username or password" });
     }
     const token = jwt.sign({ email }, SECRET, { expiresIn: "1h" });
-    res.json({ token });
+    res.json({ token, email });
   } catch (err) {
     res.status(500).json({ message: "Server error" });
   }
-  
-  localStorage.setItem("userEmail", email);
-  window.dispatchEvent(new Event("userEmailChange"));
-  setIsLoggedIn(true);
 });
 app.get("/", (req, res) => {
   res.send("Backend is running!");

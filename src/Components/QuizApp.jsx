@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import quiz from "../assets/quiz.jpg";
 
@@ -163,11 +163,39 @@ const quizData = {
   ],
 };
 export default function QuizApp() {
-  const [currentQIndex, setCurrentQIndex] = useState(0);
-  const [userAnswers, setUserAnswers] = useState({});
-  const [showResults, setShowResults] = useState(false);
-  const [score, setScore] = useState(0);
+  const [currentQIndex, setCurrentQIndex] = useState(() => {
+    const saved = sessionStorage.getItem("quizCurrentQIndex");
+    return saved ? parseInt(saved) : 0;
+  });
+  const [userAnswers, setUserAnswers] = useState(() => {
+    const saved = sessionStorage.getItem("quizUserAnswers");
+    return saved ? JSON.parse(saved) : {};
+  });
+  const [showResults, setShowResults] = useState(() => {
+    const saved = sessionStorage.getItem("quizShowResults");
+    return saved ? JSON.parse(saved) : false;
+  });
+  const [score, setScore] = useState(() => {
+    const saved = sessionStorage.getItem("quizScore");
+    return saved ? parseInt(saved) : 0;
+  });
   const currentQuestion = quizData.questions[currentQIndex];
+
+  useEffect(() => {
+    sessionStorage.setItem("quizCurrentQIndex", currentQIndex);
+  }, [currentQIndex]);
+
+  useEffect(() => {
+    sessionStorage.setItem("quizUserAnswers", JSON.stringify(userAnswers));
+  }, [userAnswers]);
+
+  useEffect(() => {
+    sessionStorage.setItem("quizShowResults", JSON.stringify(showResults));
+  }, [showResults]);
+
+  useEffect(() => {
+    sessionStorage.setItem("quizScore", score);
+  }, [score]);
 
   const handleOptionClick = (optionIndex) => {
     setUserAnswers({
