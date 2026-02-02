@@ -15,7 +15,7 @@
 }
 
 body {
-  background-image: url("./assets/image.jpg");
+  background-image: url("./assets/homepage_bg.jpg");
   background-size: cover;
   background-position: center;
   color: var(--text-color);
@@ -129,7 +129,6 @@ button {
     flex-direction: column;
     align-items: center;
   }
-  
 
   select,
   label,
@@ -147,12 +146,10 @@ button {
     height: 150px !important;
   }
 
-
-
-@media (max-width: 1024px) {
-  .react-piano {
-    width: 80% !important;
-    height: 200px !important;
+  @media (max-width: 1024px) {
+    .react-piano {
+      width: 80% !important;
+      height: 200px !important;
+    }
   }
-}
 }

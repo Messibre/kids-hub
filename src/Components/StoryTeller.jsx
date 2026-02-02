@@ -1,10 +1,8 @@
-// src/components/StoryTeller.jsx
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import story from "../assets/story.jpg";
-
-const storiesData = [
-  {
+import storiesData from "./storiesData.js";
+import content from "../assets/quiz_background.jpg";
+/*
     title: "የተራበ ተኩላ",
     content:
       "በአንድ ወቅት ተኩላ በጣም ተርቦ ነበር ። እዚህም ሆነ በዚያ ምግብ ፍለጋ ነበር ። ግን ምንም ሊያገኝ አልቻለም። በመጨረሻም በዛፍ ጉድጓድ ውስጥ አንድ ዳቦና ስጋ አገኘ ።የተራበው ተኩላ ወደ ጉድጓዱ ገባ። ምግቡን ሁሉ በላ። እንጨት ቆራጭ ምሳ ነበር። ምሳ ለምሳ ወደ ዛፉ እየተመለሰ ነበር። ነገር ግን በጉድጓዱ ውስጥ ምንም ምግብ እንደሌለ አየ፤ ይልቁንም ተኩላ።ተኩላው እንጨት ቆራጩን ሲያይ ከጉድጓዱ ለመውጣት ሞከረ። ይሁን እንጂ አልተቻለም ። እብጠቱ ያብጥ ነበር።እንጨት ቆራጩ ተኩላውን ያዘውና ጥሩ ድብደባ አደረገበት።",
@@ -99,12 +97,118 @@ const storiesData = [
     content:
       "Nina found a crayon that could make anything she drew come to life. She drew a flying bicycle, a pet unicorn, and even a castle made of ice cream! But she learned to be careful — once, she drew a giant spaghetti monster... and it almost ate her homework!",
   },
-
+  {
+    title: "አስኳሉን የረሳው እንቁራሪት",
+    content:
+      "በርናቢ የተባለው እንቁራሪት በጫካው ውስጥ በጣም የማስታወስ ችሎታ ነበረው፤ የበረዶ ውሽንፍር ምስጢራዊ ቦታውን እስኪደፍነው ድረስ። በጓደኛዋ ሰማያዊ ዝንጀሮ እርዳታ ብቻውን ከማደን ይልቅ የጎረቤቱን ምግቦች መጋራት የተሻለ መሆኑን ተረዳ።",
+  },
   {
     title: "The Shoes That Remembered",
     content:
       "Emma bought secondhand sneakers. Every time she wore them, she had dreams — of another girl’s life. Same town. Same school. Different decade. She started retracing the girl’s steps and found a hidden diary buried under the football field. The girl had vanished in 1989... and wanted to be found.",
   },
+
+  {
+    title: "The Squirrel Who Forgot Where He Hid His Nuts",
+    content:
+      "Barnaby the squirrel had the best memory in the forest, until a big snowstorm covered all his secret spots. With the help of a friendly blue jay, he learned that sharing his neighbor's snacks was better than hunting alone.",
+  },
+  {
+    title: "The Dragon Who Breathed Bubbles",
+    content:
+      "Dexter was supposed to breathe fire, but only shiny soap bubbles came out. When the village chimney caught fire, Dexter’s bubbles saved the day by floating up and cooling the flames safely.",
+  },
+  {
+    title: "Luna’s Moonbeam Ladder",
+    content:
+      "Luna found a ladder made of light in her backyard. She climbed it to the moon and discovered it was actually a giant library where stars go to read stories before they shine at night.",
+  },
+  {
+    title: "The Turtle Who Wanted to Fly",
+    content:
+      "Toby tied giant maple leaves to his shell, hoping to soar. He didn't fly, but he realized that his slow pace allowed him to see the beautiful flowers that the birds flew over too fast to notice.",
+  },
+  {
+    title: "The Secret Life of Socks",
+    content:
+      "Every time a sock goes missing in the dryer, it’s actually going to a secret party. Barnaby the striped sock finally returned home, but only after winning the 'Softest Spinner' dance competition.",
+  },
+  {
+    title: "Oliver the Brave Little Ant",
+    content:
+      "Oliver was the smallest ant, but when a giant raindrop threatened the anthill, he used a popsicle stick to build a bridge, leading his entire family to the safety of the porch.",
+  },
+  {
+    title: "The Giraffe with the Short Neck",
+    content:
+      "Gerry couldn't reach the high leaves, but he was the only one who could see the tiny, beautiful berries growing near the ground. He became the forest’s best chef for the smaller animals.",
+  },
+  {
+    title: "The Robot Who Loved Flowers",
+    content:
+      "Unit 742 was built to stack metal, but he preferred watering daisies. His metal garden became so beautiful that the town turned his factory into a public park.",
+  },
+  {
+    title: "The Cat Who Spoke French",
+    content:
+      "Mimi the tabby only responded to 'Bonjour.' Her owners were confused until they realized she had spent her kittenhood in a bakery that played French music all day.",
+  },
+  {
+    title: "The Tree That Grew Toys",
+    content:
+      "In the middle of the town square grew a tree that sprouted yo-yos and dolls. The catch? It only grew a new toy when a child did something kind for someone else.",
+  },
+  {
+    title: "The Whale in the Bathtub",
+    content:
+      "Finn woke up to find a tiny blue whale in his bath. They spent the afternoon splashing until Finn realized the whale just needed a magic seashell to grow back to full size and return to the ocean.",
+  },
+  {
+    title: "The Brave Toaster",
+    content:
+      "When the kitchen lights went out, the toaster used its glowing coils to guide the other appliances. It proved that you don't have to be a flashlight to be a light in the dark.",
+  },
+  {
+    title: "Penny’s Polka-Dot Umbrella",
+    content:
+      "Penny's umbrella didn't just keep her dry; it floated! On rainy days, she would lift off the ground and drift over the puddles like a colorful Mary Poppins.",
+  },
+  {
+    title: "The Bear Who Couldn't Sleep",
+    content:
+      "While other bears hibernated, Benji stayed up to watch the Northern Lights. He painted what he saw on the cave walls, creating the world’s first underground art gallery.",
+  },
+  {
+    title: "The Cow Who Wanted to Be a Horse",
+    content:
+      "Clarabelle practiced galloping every day. She never won a race, but she became the only cow in hicontent invited to join the prestigious Pony Parade for her unique style.",
+  },
+  {
+    title: "The Magic Library Card",
+    content:
+      "Leo’s library card allowed him to step *into* the books. One Tuesday, he had tea with a giant and helped a pirate find his lost parrot before dinner time.",
+  },
+  {
+    title: "The Dog Who Painted Clouds",
+    content:
+      "Buster would bark at the sky, and the clouds would shift into shapes of bones and tennis balls. He was the secret artist of the afternoon sky.",
+  },
+  {
+    title: "The Little Star Who Fell",
+    content:
+      "Twinkle fell out of the sky and landed in a backyard. A young girl kept him warm in a jar until he regained his glow and shot back up to his spot in the Big Dipper.",
+  },
+  {
+    title: "The Elephant Who Was Afraid of Peanuts",
+    content:
+      "Ellie didn't like the crunch. Instead, she became the forest’s biggest fan of watermelons, leading to the invention of the world's largest fruit salad.",
+  },
+  {
+    title: "The Boy with the Backward Shoes",
+    content:
+      "Every time Tim wore his shoes backward, he could walk into yesterday. He used his power to find his lost homework and give himself one more cookie from the day before.",
+  },
+
   {
     title: "The Carnival That Only Came at Night",
     content:
@@ -140,10 +244,11 @@ const storiesData = [
     content:
       "No one knew the new kid was the principal’s child — until they stood up to a bully, shut down gossip, and rewrote the school rules from the inside. Turns out, being invisible gave them power. And they used it to flip the whole school vibe for the better.",
   },
-];
+*/
 
 export default function StoryTeller() {
   const [currentStoryIndex, setCurrentStoryIndex] = useState(0);
+  const [selectedCategory, setSelectedCategory] = useState("All");
   const [error, setError] = useState(null);
 
   useEffect(() => {
@@ -153,13 +258,25 @@ export default function StoryTeller() {
   }, []);
 
   const handleNext = () => {
-    setCurrentStoryIndex((prev) => (prev + 1) % storiesData.length);
+    setCurrentStoryIndex((prev) => (prev + 1) % filteredStories.length);
   };
 
   const handlePrevious = () => {
     setCurrentStoryIndex(
-      (prev) => (prev - 1 + storiesData.length) % storiesData.length,
+      (prev) => (prev - 1 + filteredStories.length) % filteredStories.length,
     );
+  };
+
+  const allStories = [...storiesData.english, ...storiesData.amharic];
+  const categories = ["All", ...new Set(allStories.map((s) => s.category))];
+  const filteredStories =
+    selectedCategory === "All"
+      ? allStories
+      : allStories.filter((s) => s.category === selectedCategory);
+
+  const handleCategoryChange = (e) => {
+    setSelectedCategory(e.target.value);
+    setCurrentStoryIndex(0); // Reset to first story when category changes
   };
 
   if (error) {
@@ -175,50 +292,70 @@ export default function StoryTeller() {
   const styles = {
     container: {
       minHeight: "100vh",
-      backgroundImage: `url(${story})`,
-      backgroundSize: "cover",
+      background:
+        "linear-gradient(135deg, #ff9a9e 0%, #fecfef 50%, #fecfef 100%)",
       display: "flex",
       flexDirection: "column",
       alignItems: "center",
       padding: "20px",
+      fontFamily: "'Comic Sans MS', cursive, sans-serif",
+    },
+    filterContainer: {
+      marginTop: "80px",
+      marginBottom: "20px",
+      display: "flex",
+      alignItems: "center",
+      gap: "10px",
+    },
+    select: {
+      padding: "10px",
+      fontSize: "1.2rem",
+      borderRadius: "20px",
+      border: "2px solid #ff6b9d",
+      backgroundColor: "#fff",
+      color: "#333",
+      cursor: "pointer",
+      fontWeight: "bold",
     },
     storyCard: {
-      maxWidth: "800px",
+      maxWidth: "900px",
       width: "95%",
-      backgroundColor: "#3399FF",
-      padding: "20px",
-      marginTop: "80px",
-      borderRadius: "15px",
-      boxShadow: "0px 4px 10px rgba(0,0,0,0.1)",
+      backgroundColor: "#87ceeb",
+      padding: "30px",
+      borderRadius: "25px",
+      boxShadow: "0px 8px 20px rgba(0,0,0,0.2)",
+      border: "5px solid #ffd700",
     },
     storyTitle: {
-      fontSize: "1.8rem",
-      color: "#333",
-      marginBottom: "10px",
+      fontSize: "2.5rem",
+      color: "#ff4500",
+      marginBottom: "20px",
       textAlign: "center",
+      textShadow: "2px 2px 4px rgba(0,0,0,0.3)",
     },
     storyContent: {
-      fontSize: "1.2rem",
-      color: "#555",
-      lineHeight: "1.7",
+      fontSize: "1.5rem",
+      color: "#333",
+      lineHeight: "2",
       textAlign: "center",
     },
     navigation: {
-      marginTop: "20px",
+      marginTop: "30px",
       display: "flex",
-      gap: "10px",
+      gap: "20px",
       alignItems: "center",
       justifyContent: "center",
       flexWrap: "wrap",
     },
     errorBox: {
       marginTop: "100px",
-      backgroundColor: "#CC0033",
-      color: "#d8000c",
-      padding: "15px 20px",
-      borderRadius: "10px",
+      backgroundColor: "#ff6347",
+      color: "#fff",
+      padding: "20px 30px",
+      borderRadius: "15px",
       fontWeight: "bold",
       textAlign: "center",
+      fontSize: "1.5rem",
     },
   };
   const backLinkStyle = {
@@ -230,64 +367,84 @@ export default function StoryTeller() {
   };
 
   const buttonStyle = {
-    padding: "8px 16px",
-    fontSize: "1rem",
-    backgroundColor: "#000066",
+    padding: "12px 24px",
+    fontSize: "1.2rem",
+    backgroundColor: "#32cd32", // Lime green
     border: "none",
-    borderRadius: "12px",
+    borderRadius: "20px",
     cursor: "pointer",
     color: "white",
     fontWeight: "bold",
-    boxShadow: "0px 2px 5px rgba(0,0,0,0.3)",
+    boxShadow: "0px 4px 10px rgba(0,0,0,0.3)",
     margin: "5px",
+    transition: "transform 0.2s",
   };
   const backButtonStyle = {
-    padding: "8px 16px",
-    fontSize: "1rem",
-    backgroundColor: "#00FFFF",
-    border: "none",
-    borderRadius: "10px",
-    cursor: "pointer",
-    color: "white",
-    fontWeight: "bold",
-    boxShadow: "0px 2px 5px rgba(0,0,0,0.3)",
+    ...buttonStyle,
+    backgroundColor: "#ff69b4", // Hot pink
   };
 
   return (
     <div style={styles.container}>
       <Link to="/" style={backLinkStyle}>
-        <button style={backButtonStyle}>⬅ Back Home</button>
+        <button style={backButtonStyle}>🏠 Back Home</button>
       </Link>
+
+      <div style={styles.filterContainer}>
+        <label
+          htmlFor="category-select"
+          style={{ fontSize: "1.5rem", fontWeight: "bold", color: "#333" }}
+        >
+          Choose a Story Type: 🎉
+        </label>
+        <select
+          id="category-select"
+          value={selectedCategory}
+          onChange={handleCategoryChange}
+          style={styles.select}
+        >
+          {categories.map((cat) => (
+            <option key={cat} value={cat}>
+              {cat}
+            </option>
+          ))}
+        </select>
+      </div>
 
       <div style={styles.storyCard}>
         <h2 style={styles.storyTitle}>
-          {storiesData[currentStoryIndex].title}
+          {filteredStories[currentStoryIndex]?.title || "No Story"}
         </h2>
         <p style={styles.storyContent}>
-          {storiesData[currentStoryIndex].content}
+          {filteredStories[currentStoryIndex]?.content || "No content"}
         </p>
       </div>
 
       <div style={styles.navigation}>
         <button
           onClick={handlePrevious}
-          disabled={currentStoryIndex === 0}
+          disabled={filteredStories.length <= 1 || currentStoryIndex === 0}
           style={buttonStyle}
         >
-          ⬅ Previous
+          ⬅️ Previous Story
         </button>
-        <span style={{ fontWeight: "bold", fontSize: "1rem" }}>
-          Story {currentStoryIndex + 1} of {storiesData.length}
+        <span style={{ fontWeight: "bold", fontSize: "1.5rem", color: "#333" }}>
+          Story {currentStoryIndex + 1} of {filteredStories.length} 📖
         </span>
         <button
           onClick={handleNext}
-          disabled={currentStoryIndex === storiesData.length - 1}
+          disabled={
+            filteredStories.length <= 1 ||
+            currentStoryIndex === filteredStories.length - 1
+          }
           style={buttonStyle}
         >
-          Next ➡
+          Next Story ➡️
         </button>
       </div>
-      <p>saving your own stories coming soon!</p>
+      <p style={{ fontSize: "1.2rem", color: "#333", marginTop: "20px" }}>
+        Saving your own stories coming soon! ✨
+      </p>
     </div>
   );
 }

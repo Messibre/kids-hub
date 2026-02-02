@@ -8,7 +8,6 @@ const data = XLSX.utils.sheet_to_json(worksheet);
 
 const quizData = [];
 
-// Parse the data
 data.forEach((row) => {
   const content = row["Literature Trivia "];
   if (content && content.includes("|")) {

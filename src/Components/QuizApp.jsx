@@ -68,7 +68,6 @@ export default function QuizApp() {
   const handleCategoryChange = (e) => {
     const newCategory = e.target.value;
     setSelectedCategory(newCategory);
-    // Reset quiz progress when category changes
     setCurrentQIndex(0);
     setUserAnswers({});
     setShowResults(false);
@@ -114,7 +113,6 @@ export default function QuizApp() {
     let correct = 0;
     let answeredQuestions = 0;
 
-    // Count how many questions have been answered
     filteredQuestions.forEach((q, i) => {
       if (userAnswers[i] !== undefined) {
         answeredQuestions++;

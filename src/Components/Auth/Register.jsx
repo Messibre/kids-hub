@@ -9,7 +9,6 @@ export default function Register() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    // Replace with your backend API endpoint
     const response = await fetch("http://localhost:5050/api/register", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
