@@ -22,7 +22,10 @@ export default function PaintingApp() {
   const [brushSize, setBrushSize] = useState(5);
 
   const [containerWidth, setContainerWidth] = useState(
-    Math.min(window.innerWidth, 600),
+    Math.max(280, Math.min(window.innerWidth - 24, 600)),
+  );
+  const [stageHeight, setStageHeight] = useState(() =>
+    window.innerWidth <= 700 ? 300 : 400,
   );
 
   useEffect(() => {
@@ -31,7 +34,8 @@ export default function PaintingApp() {
 
   useEffect(() => {
     const handleResize = () => {
-      setContainerWidth(Math.min(window.innerWidth, 600));
+      setContainerWidth(Math.max(280, Math.min(window.innerWidth - 24, 600)));
+      setStageHeight(window.innerWidth <= 700 ? 300 : 400);
     };
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
@@ -136,7 +140,7 @@ export default function PaintingApp() {
     flexDirection: "column",
     alignItems: "center",
     touchAction: "none",
-    paddingTop: "100px",
+    paddingTop: "86px",
     paddingBottom: "50px",
 
     minHeight: "100vh",
@@ -159,6 +163,23 @@ export default function PaintingApp() {
     cursor: "pointer",
     fontWeight: "bold",
   };
+  const controlsContainerStyle = {
+    width: "100%",
+    maxWidth: 640,
+    marginBottom: 10,
+  };
+  const colorRowStyle = {
+    display: "flex",
+    flexWrap: "wrap",
+    justifyContent: "center",
+  };
+  const toolRowStyle = {
+    marginTop: 10,
+    display: "flex",
+    flexWrap: "wrap",
+    justifyContent: "center",
+    gap: 8,
+  };
 
   return (
     <ErrorBoundary>
@@ -175,10 +196,12 @@ export default function PaintingApp() {
           </button>
         </Link>
 
-        <h2 style={{ fontSize: "2rem", marginBottom: 20 }}>{t("painting.title")}</h2>
+        <h2 style={{ fontSize: "clamp(1.5rem, 4.8vw, 2rem)", marginBottom: 20 }}>
+          {t("painting.title")}
+        </h2>
 
-        <div style={{ marginBottom: 10 }}>
-          <div>
+        <div style={controlsContainerStyle}>
+          <div style={colorRowStyle}>
             {colors.map((color) => (
               <button
                 key={color}
@@ -205,7 +228,7 @@ export default function PaintingApp() {
             ))}
           </div>
 
-          <div style={{ marginTop: 10 }}>
+          <div style={toolRowStyle}>
             {thickness.map((size) => (
               <button
                 key={size}
@@ -227,7 +250,7 @@ export default function PaintingApp() {
               ...buttonStyle,
               backgroundColor: isErasing ? "#2f8cff" : "#ff5fbf",
               color: "#fff",
-              marginTop: 10,
+              marginTop: 8,
             }}
           >
             {isErasing ? t("painting.brush") : t("painting.eraser")}
@@ -239,7 +262,8 @@ export default function PaintingApp() {
               ...buttonStyle,
               backgroundColor: "#ff3b4a",
               color: "#fff",
-              marginLeft: 10,
+              marginLeft: 6,
+              marginTop: 8,
             }}
           >
             {t("painting.clear")}
@@ -251,6 +275,7 @@ export default function PaintingApp() {
               backgroundColor: "#2f8cff",
               color: "#fff",
               marginLeft: 6,
+              marginTop: 8,
             }}
           >
             {t("painting.undo")}
@@ -262,6 +287,7 @@ export default function PaintingApp() {
               backgroundColor: "#ffd93d",
               color: "#6d2a00",
               marginLeft: 6,
+              marginTop: 8,
             }}
           >
             {t("painting.save")}
@@ -271,7 +297,7 @@ export default function PaintingApp() {
         <div style={paintingBoxStyle}>
           <Stage
             width={containerWidth}
-            height={400}
+            height={stageHeight}
             ref={stageRef}
             style={{ touchAction: "none" }}
             onMouseDown={handleStart}
