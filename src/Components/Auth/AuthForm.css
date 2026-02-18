@@ -3,8 +3,8 @@
   margin: 1.3rem auto;
   padding: 1.4rem 1.2rem;
   border-radius: 20px;
-  background: linear-gradient(160deg, rgba(255, 255, 255, 0.95), rgba(255, 241, 250, 0.93));
-  box-shadow: 0 14px 28px rgba(255, 59, 74, 0.2);
+  background: linear-gradient(160deg, rgba(246, 243, 255, 0.96), rgba(233, 222, 255, 0.9));
+  box-shadow: 0 14px 28px rgba(37, 42, 86, 0.24);
   border: 2px solid rgba(255, 255, 255, 0.8);
   display: flex;
   flex-direction: column;
@@ -13,7 +13,7 @@
 
 .auth-form h2 {
   text-align: center;
-  color: #ff2e58;
+  color: #252a56;
   font-family: "Baloo 2", cursive;
   font-size: clamp(1.6rem, 4vw, 2rem);
   line-height: 1.1;
@@ -22,17 +22,17 @@
 .auth-form input {
   width: 100%;
   padding: 0.78rem 0.85rem;
-  border: 2px solid #ff9fd7;
+  border: 2px solid #c7b8ef;
   border-radius: 12px;
   font-size: 1rem;
-  color: #531f70;
-  background: #fffdf8;
+  color: #2a305d;
+  background: #f6f3ff;
   outline: none;
 }
 
 .auth-form input:focus {
-  border-color: #2f8cff;
-  box-shadow: 0 0 0 3px rgba(47, 140, 255, 0.22);
+  border-color: #8ea2bd;
+  box-shadow: 0 0 0 3px rgba(142, 162, 189, 0.28);
 }
 
 .auth-form button {
@@ -41,15 +41,15 @@
 }
 
 .auth-form .ghost-btn {
-  background: #fff3b8;
-  color: #6a2d00;
+  background: #ffe2cf;
+  color: #4a3659;
   box-shadow: none;
 }
 
 .auth-form .ghost-btn:hover {
   filter: none;
   transform: translateY(-1px);
-  background: #ffe98c;
+  background: #ffd5be;
 }
 
 @media (max-width: 520px) {

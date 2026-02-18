@@ -189,7 +189,7 @@ export default function QuizApp() {
     button: {
       padding: "10px 18px",
       fontSize: "1rem",
-      backgroundColor: "#ff3b4a",
+      backgroundColor: "#5a6fb5",
       color: "white",
       border: "none",
       borderRadius: 12,
@@ -200,8 +200,9 @@ export default function QuizApp() {
       padding: "10px 14px",
       fontSize: "1rem",
       margin: "8px 0",
-      backgroundColor: "#2f8cff",
+      backgroundColor: "#8ea2bd",
       color: "#fff",
+      border: "2px solid #c7b8ef",
       borderRadius: 10,
       cursor: "pointer",
       width: "100%",
@@ -210,7 +211,7 @@ export default function QuizApp() {
     backButton: {
       padding: "8px 16px",
       fontSize: "1rem",
-      backgroundColor: "#ff5fbf",
+      backgroundColor: "#252a56",
       border: "none",
       borderRadius: "10px",
       cursor: "pointer",
@@ -220,25 +221,26 @@ export default function QuizApp() {
     },
 
     selected: {
-      backgroundColor: "#ff5fbf",
+      backgroundColor: "#5a6fb5",
       border: "2px solid #ffffff",
-      boxShadow: "0 0 0 3px rgba(255, 217, 61, 0.7)",
+      boxShadow: "0 0 0 3px rgba(255, 226, 207, 0.7)",
     },
     correct: {
-      backgroundColor: "#43c465",
+      backgroundColor: "#7ca98f",
     },
     incorrect: {
-      backgroundColor: "#ff5d6c",
+      backgroundColor: "#9d6f87",
     },
     questionCard: {
-      background: "linear-gradient(140deg, #fffdf8 0%, #ffe8f6 48%, #fff2b1 100%)",
+      background:
+        "linear-gradient(140deg, #f6f3ff 0%, #e9deff 50%, #ffe2cf 100%)",
       padding: 20,
       borderRadius: 16,
-      color: "#4a1b5f",
+      color: "#1b1f40",
       width: "90%",
       maxWidth: 600,
       marginBottom: 20,
-      border: "2px solid #ffd93d",
+      border: "2px solid #8ea2bd",
     },
   };
 
@@ -250,7 +252,7 @@ export default function QuizApp() {
       <div style={{ marginBottom: 20, marginTop: 60 }}>
         <label
           htmlFor="category-select"
-          style={{ color: "#fff8cf", fontSize: "1.2rem", fontWeight: "bold" }}
+          style={{ color: "#f6f3ff", fontSize: "1.2rem", fontWeight: "bold" }}
         >
           {t("quiz.selectCategory")}{" "}
         </label>

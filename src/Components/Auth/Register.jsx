@@ -22,15 +22,22 @@ export default function Register({ onLogin }) {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, password }),
       });
-      const data = await response.json();
+      const isJson = (response.headers.get("content-type") || "").includes(
+        "application/json",
+      );
+      const data = isJson ? await response.json() : {};
       if (response.ok) {
+        if (!data?.token) {
+          setError("Server response was invalid. Please check API deployment.");
+          return;
+        }
         setToken(data.token);
         localStorage.setItem("userEmail", email);
         if (typeof onLogin === "function") onLogin(email);
         setSuccess(t("auth.registerSuccess"));
         setTimeout(() => navigate("/"), 1000);
       } else {
-        setError(data.message || t("auth.registerFailed"));
+        setError(data?.message || t("auth.registerFailed"));
       }
     } catch (networkError) {
       setError(t("auth.network"));

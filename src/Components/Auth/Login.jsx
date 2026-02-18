@@ -21,14 +21,21 @@ export default function Login({ onLogin }) {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, password }),
       });
-      const data = await response.json();
+      const isJson = (response.headers.get("content-type") || "").includes(
+        "application/json",
+      );
+      const data = isJson ? await response.json() : {};
       if (response.ok) {
+        if (!data?.token) {
+          setError("Server response was invalid. Please check API deployment.");
+          return;
+        }
         setToken(data.token);
         localStorage.setItem("userEmail", data.email);
         if (typeof onLogin === "function") onLogin(data.email);
         navigate("/");
       } else {
-        setError(data.message || t("auth.loginFailed"));
+        setError(data?.message || t("auth.loginFailed"));
       }
     } catch (networkError) {
       setError(t("auth.network"));

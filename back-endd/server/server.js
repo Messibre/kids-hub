@@ -1,4 +1,5 @@
-require("dotenv").config();
+const path = require("path");
+require("dotenv").config({ path: path.join(__dirname, ".env") });
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
@@ -24,8 +25,9 @@ mongoose.connection.once("open", () => {
 mongoose.connection.on("error", (err) => {
   console.error("MongoDB connection error:", err);
 });
-const SECRET = process.env.JWT_SECRET;
-if (!SECRET) {
+const isProduction = process.env.NODE_ENV === "production";
+const SECRET = process.env.JWT_SECRET || "kids-hub-dev-only-secret";
+if (!process.env.JWT_SECRET && isProduction) {
   throw new Error("JWT_SECRET is required in environment variables");
 }
 

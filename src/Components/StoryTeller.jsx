@@ -303,7 +303,7 @@ export default function StoryTeller() {
     container: {
       minHeight: "100vh",
       background:
-        "linear-gradient(135deg, #ff7360 0%, #ff5fbf 46%, #2f8cff 100%)",
+        "linear-gradient(135deg, #252a56 0%, #465493 46%, #8ea2bd 100%)",
       display: "flex",
       flexDirection: "column",
       alignItems: "center",
@@ -321,31 +321,31 @@ export default function StoryTeller() {
       padding: "10px",
       fontSize: "1.2rem",
       borderRadius: "20px",
-      border: "2px solid #ffd93d",
-      backgroundColor: "#fff9d7",
-      color: "#702159",
+      border: "2px solid #8ea2bd",
+      backgroundColor: "#f6f3ff",
+      color: "#252a56",
       cursor: "pointer",
       fontWeight: "bold",
     },
     storyCard: {
       maxWidth: "900px",
       width: "95%",
-      background: "linear-gradient(140deg, #fffdf8 0%, #ffe6f6 50%, #fff3bc 100%)",
+      background: "linear-gradient(140deg, #f6f3ff 0%, #e9deff 52%, #ffe2cf 100%)",
       padding: "30px",
       borderRadius: "25px",
       boxShadow: "0px 8px 20px rgba(0,0,0,0.2)",
-      border: "5px solid #2f8cff",
+      border: "5px solid #8ea2bd",
     },
     storyTitle: {
       fontSize: "2.5rem",
-      color: "#ff2d55",
+      color: "#252a56",
       marginBottom: "20px",
       textAlign: "center",
       textShadow: "2px 2px 4px rgba(0,0,0,0.3)",
     },
     storyContent: {
       fontSize: "1.5rem",
-      color: "#4d1f68",
+      color: "#1b1f40",
       lineHeight: "2",
       textAlign: "center",
     },
@@ -359,7 +359,7 @@ export default function StoryTeller() {
     },
     errorBox: {
       marginTop: "100px",
-      backgroundColor: "#ff3b4a",
+      backgroundColor: "#5a6fb5",
       color: "#fff",
       padding: "20px 30px",
       borderRadius: "15px",
@@ -379,7 +379,7 @@ export default function StoryTeller() {
   const buttonStyle = {
     padding: "12px 24px",
     fontSize: "1.2rem",
-    backgroundColor: "#2f8cff",
+    backgroundColor: "#5a6fb5",
     border: "none",
     borderRadius: "20px",
     cursor: "pointer",
@@ -391,7 +391,7 @@ export default function StoryTeller() {
   };
   const backButtonStyle = {
     ...buttonStyle,
-    backgroundColor: "#ff5fbf",
+    backgroundColor: "#252a56",
   };
 
   return (
@@ -403,7 +403,7 @@ export default function StoryTeller() {
       <div style={styles.filterContainer}>
         <label
           htmlFor="category-select"
-          style={{ fontSize: "1.5rem", fontWeight: "bold", color: "#333" }}
+          style={{ fontSize: "1.5rem", fontWeight: "bold", color: "#f6f3ff" }}
         >
           {t("story.chooseType")} 🎉
         </label>
@@ -438,7 +438,7 @@ export default function StoryTeller() {
         >
           ⬅️ {t("story.previous")}
         </button>
-        <span style={{ fontWeight: "bold", fontSize: "1.5rem", color: "#333" }}>
+        <span style={{ fontWeight: "bold", fontSize: "1.5rem", color: "#f6f3ff" }}>
           {t("story.storyCount")} {currentStoryIndex + 1} {t("story.of")}{" "}
           {filteredStories.length} 📖
         </span>
@@ -453,7 +453,7 @@ export default function StoryTeller() {
           {t("story.next")} ➡️
         </button>
       </div>
-      <p style={{ fontSize: "1.2rem", color: "#333", marginTop: "20px" }}>
+      <p style={{ fontSize: "1.2rem", color: "#f6f3ff", marginTop: "20px" }}>
         {t("story.comingSoon")} ✨
       </p>
     </div>
