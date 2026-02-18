@@ -11,6 +11,7 @@ import "./PaintingApp.css";
 export default function PianoInstrument() {
   const [audioContext, setAudioContext] = useState(null);
   const [instrument, setInstrument] = useState(null);
+  const [audioReady, setAudioReady] = useState(false);
   const [sustain, setSustain] = useState(false);
   const [selectedInstrument, setSelectedInstrument] = useState(
     "acoustic_grand_piano"
@@ -30,12 +31,22 @@ export default function PianoInstrument() {
   ];
 
   const initAudio = async () => {
-    if (instrument) return;
+    if (audioContext && instrument) {
+      if (audioContext.state === "suspended") {
+        await audioContext.resume();
+      }
+      setAudioReady(true);
+      return;
+    }
     try {
       const context = new (window.AudioContext || window.webkitAudioContext)();
+      if (context.state === "suspended") {
+        await context.resume();
+      }
       const inst = await Soundfont.instrument(context, selectedInstrument);
       setAudioContext(context);
       setInstrument(inst);
+      setAudioReady(true);
     } catch (error) {
       console.error("Error loading the instrument:", error);
     }
@@ -46,7 +57,29 @@ export default function PianoInstrument() {
       setContainerWidth(Math.min(window.innerWidth * 0.9, 600));
     };
     window.addEventListener("resize", handleResize);
-  }, [selectedInstrument]);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  useEffect(() => {
+    let cancelled = false;
+
+    const loadSelectedInstrument = async () => {
+      if (!audioContext) return;
+      try {
+        const inst = await Soundfont.instrument(audioContext, selectedInstrument);
+        if (!cancelled) {
+          setInstrument(inst);
+        }
+      } catch (error) {
+        console.error("Error switching instrument:", error);
+      }
+    };
+
+    loadSelectedInstrument();
+    return () => {
+      cancelled = true;
+    };
+  }, [selectedInstrument, audioContext]);
 
   const playNote = async (midiNumber) => {
     try {
@@ -196,6 +229,14 @@ export default function PianoInstrument() {
           >
             {isRecording ? "⏹️ Stop Recording" : "⏺️ Start Recording"}
           </button>
+          {!audioReady && (
+            <button
+              onClick={initAudio}
+              style={{ marginTop: "5px", padding: "8px 16px" }}
+            >
+              🔊 Tap to Enable Sound
+            </button>
+          )}
         </div>
 
         <div style={{ width: containerWidth }}>

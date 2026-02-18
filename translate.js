@@ -12,7 +12,16 @@ dotenv.config({ path: path.join(__dirname, "back-endd", "server", ".env") });
 const ai = new GoogleGenAI({});
 
 async function translateStory(title, content) {
-  const prompt = `Translate the following English story title and content to Amharic. Keep the structure and emojis if any. Respond with only the translated title on the first line, followed by the translated content on the next lines. Do not include any other text, formatting, or code blocks.`;
+  const prompt = `Translate the following English story title and content to Amharic.
+Keep the structure and emojis if any.
+Respond with only the translated title on the first line, followed by the translated content on the next lines.
+Do not include any other text, formatting, or code blocks.
+
+Title:
+${title}
+
+Content:
+${content}`;
 
   try {
     const response = await ai.models.generateContent({

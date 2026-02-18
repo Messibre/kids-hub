@@ -1,104 +1,120 @@
 const storiesData = {
-  "english": [
+  english: [
     {
-      "title": "The Girl Who Planted Stars",
-      "content": "In a sleepy village tucked between the hills, lived a girl named Sela who believed stars were seeds dropped by the moon. Every night, she'd walk barefoot under the sky and whisper secrets to the wind. One night, she found a glowing pebble and planted it in the meadow. Days turned into weeks, and the villagers laughed at her—until one twilight, a tiny light bloomed from the soil. 🌟 That night, the meadow burst into constellations, each one whispering ancient lullabies. From then on, kids didn't fear the dark, because Sela had lit it with her dreams."
+      title: "The Girl Who Planted Stars",
+      category: "Inspirational",
+      content:
+        "In a sleepy village tucked between the hills, lived a girl named Sela who believed stars were seeds dropped by the moon. Every night, she'd walk barefoot under the sky and whisper secrets to the wind. One night, she found a glowing pebble and planted it in the meadow. Days turned into weeks, and the villagers laughed at her—until one twilight, a tiny light bloomed from the soil. 🌟 That night, the meadow burst into constellations, each one whispering ancient lullabies. From then on, kids didn't fear the dark, because Sela had lit it with her dreams.",
     },
     {
-      "title": "The Mirror in the Library",
-      "content": "In the oldest corner of the school library, behind the dusty encyclopedias, there was a mirror nobody dared to touch. Legend said it didn't show reflections, it showed *truths*. One day, curious and bored, 15-year-old Dani brushed away the cobwebs and looked in. Instead of her face, she saw a future where she was fearless, leading protests, helping others, changing lives. Scared but inspired, she started small—standing up to a bully. From that day on, Dani visited the mirror weekly, not to see the future, but to check how close she was getting to it. 🪞✨"
+      title: "The Mirror in the Library",
+      category: "Moral",
+      content:
+        "In the oldest corner of the school library, behind the dusty encyclopedias, there was a mirror nobody dared to touch. Legend said it didn't show reflections, it showed *truths*. One day, curious and bored, 15-year-old Dani brushed away the cobwebs and looked in. Instead of her face, she saw a future where she was fearless, leading protests, helping others, changing lives. Scared but inspired, she started small—standing up to a bully. From that day on, Dani visited the mirror weekly, not to see the future, but to check how close she was getting to it. 🪞✨",
     },
     {
-      "title": "The Skateboard That Could Talk",
-      "content": "Jayden found it at a thrift store — old, scratched, and taped up. But something about the skateboard *called* to him. First ride, he heard it: 'Let's fly!' he fell off in shock. But the board wasn't evil, just dramatic. Over time, they became friends — yeah, a boy and a talking skateboard. Turns out, it was once owned by a pro-skater who vanished in a storm. The board remembered tricks, stories, and rivalries. With its help, Jayden trained like a beast and made it to the championship. When he won, the board whispered, 'You set me free.' Then it cracked in two, as if its soul had finished its ride. 🛹⚡"
+      title: "The Skateboard That Could Talk",
+      category: "Fantasy",
+      content:
+        "Jayden found it at a thrift store — old, scratched, and taped up. But something about the skateboard *called* to him. First ride, he heard it: 'Let's fly!' he fell off in shock. But the board wasn't evil, just dramatic. Over time, they became friends — yeah, a boy and a talking skateboard. Turns out, it was once owned by a pro-skater who vanished in a storm. The board remembered tricks, stories, and rivalries. With its help, Jayden trained like a beast and made it to the championship. When he won, the board whispered, 'You set me free.' Then it cracked in two, as if its soul had finished its ride. 🛹⚡",
     },
     {
-      "title": "The Girl Who Spoke in Colors",
-      "content": "Every time Mia spoke, colors came out of her mouth. Not metaphors — real light! A joke? Yellow giggles. Sad thoughts? Deep blues. Love? Blazing crimson. At first, kids were obsessed with her — then annoyed, then scared. They didn't understand. So Mia stayed silent for weeks. One day, a new boy named Theo arrived. He was colorblind. 'I can't see what they see, but I love how your voice *feels*,' he said. With him, Mia finally felt free. Her colors became music, her silence turned into rainbows. She learned that even if some don't *get* you, someone eventually *will*. 🌈"
+      title: "The Girl Who Spoke in Colors",
+      category: "Fantasy",
+      content:
+        "Every time Mia spoke, colors came out of her mouth. Not metaphors — real light! A joke? Yellow giggles. Sad thoughts? Deep blues. Love? Blazing crimson. At first, kids were obsessed with her — then annoyed, then scared. They didn't understand. So Mia stayed silent for weeks. One day, a new boy named Theo arrived. He was colorblind. 'I can't see what they see, but I love how your voice *feels*,' he said. With him, Mia finally felt free. Her colors became music, her silence turned into rainbows. She learned that even if some don't *get* you, someone eventually *will*. 🌈",
     },
     {
-      "title": "The Invisible Hoodie",
-      "content": "At a garage sale, Ezra bought an old hoodie with a note: 'Only the lost may wear this.' He thought it was edgy. But when he put it on, people stopped seeing him. Like — *literally*. He was invisible. Scared at first, he used it to skip school, sneak into concerts, and hear what others said about him. That's when it hit him — everyone was fighting their own battles. The hoodie didn't make him invisible... it revealed how often people feel unseen. He gave it to another lonely soul, with a new note: 'You're not invisible to me.' 🖤"
+      title: "The Invisible Hoodie",
+      category: "Moral",
+      content:
+        "At a garage sale, Ezra bought an old hoodie with a note: 'Only the lost may wear this.' He thought it was edgy. But when he put it on, people stopped seeing him. Like — *literally*. He was invisible. Scared at first, he used it to skip school, sneak into concerts, and hear what others said about him. That's when it hit him — everyone was fighting their own battles. The hoodie didn't make him invisible... it revealed how often people feel unseen. He gave it to another lonely soul, with a new note: 'You're not invisible to me.' 🖤",
     },
     {
-      "title": "The Cloud Who Wanted to Paint",
-      "content": "There was a cloud who didn't want to rain. Instead, he wanted to paint the sky. So every sunset, he threw colors everywhere — pink, orange, purple! People called it sunset magic, but it was just the cloud living his artist dream."
+      title: "The Cloud Who Wanted to Paint",
+      category: "Fantasy",
+      content:
+        "There was a cloud who didn't want to rain. Instead, he wanted to paint the sky. So every sunset, he threw colors everywhere — pink, orange, purple! People called it sunset magic, but it was just the cloud living his artist dream.",
     },
     {
-      "title": "Luna and the Talking Tree",
-      "content": "Luna was a little girl who loved adventures. One day in the forest, she found a tree that whispered, 'If you sing to me, I'll show you a secret world.' She sang her heart out, and BAM! A portal opened to a candy land filled with chocolate rivers and marshmallow clouds."
+      title: "Luna and the Talking Tree",
+      category: "Adventure",
+      content:
+        "Luna was a little girl who loved adventures. One day in the forest, she found a tree that whispered, 'If you sing to me, I'll show you a secret world.' She sang her heart out, and BAM! A portal opened to a candy land filled with chocolate rivers and marshmallow clouds.",
     },
     {
-      "title": "Max the Explorer Puppy",
-      "content": "Max was a puppy who wore a red backpack. Every morning, he'd bark, 'Adventure time!!' One day, he found a lost kitten and helped her get home — earning a golden badge from the Animal Adventure Club. Max became the legend of the neighborhood."
+      title: "Max the Explorer Puppy",
+      category: "Adventure",
+      content:
+        "Max was a puppy who wore a red backpack. Every morning, he'd bark, 'Adventure time!!' One day, he found a lost kitten and helped her get home — earning a golden badge from the Animal Adventure Club. Max became the legend of the neighborhood.",
     },
     {
-      "title": "The Magic Crayon",
-      "content": "Nina found a crayon that could make anything she drew come to life. She drew a flying bicycle, a pet unicorn, and even a castle made of ice cream! But she learned to be careful — once, she drew a giant spaghetti monster... and it almost ate her homework!"
-    }
+      title: "The Magic Crayon",
+      category: "Fantasy",
+      content:
+        "Nina found a crayon that could make anything she drew come to life. She drew a flying bicycle, a pet unicorn, and even a castle made of ice cream! But she learned to be careful — once, she drew a giant spaghetti monster... and it almost ate her homework!",
+    },
   ],
-  "amharic": [
+  amharic: [
     {
-      "title": "የተራበ ተኩላ",
-      "content": "በአንድ ወቅት ተኩላ በጣም ተርቦ ነበር ። እዚህም ሆነ በዚያ ምግብ ፍለጋ ነበር ። ግን ምንም ሊያገኝ አልቻለም። በመጨረሻም በዛፍ ጉድጓድ ውስጥ አንድ ዳቦና ስጋ አገኘ ።የተራበው ተኩላ ወደ ጉድጓዱ ገባ። ምግቡን ሁሉ በላ። እንጨት ቆራጭ ምሳ ነበር። ምሳ ለምሳ ወደ ዛፉ እየተመለሰ ነበር። ነገር ግን በጉድጓዱ ውስጥ ምንም ምግብ እንደሌለ አየ፤ ይልቁንም ተኩላ።ተኩላው እንጨት ቆራጩን ሲያይ ከጉድጓዱ ለመውጣት ሞከረ። ይሁን እንጂ አልተቻለም ። እብጠቱ ያብጥ ነበር።እንጨት ቆራጩ ተኩላውን ያዘውና ጥሩ ድብደባ አደረገበት።"
+      title: "የተራበ ተኩላ",
+      category: "Fable",
+      content:
+        "በአንድ ወቅት ተኩላ በጣም ተርቦ ነበር ። እዚህም ሆነ በዚያ ምግብ ፍለጋ ነበር ። ግን ምንም ሊያገኝ አልቻለም። በመጨረሻም በዛፍ ጉድጓድ ውስጥ አንድ ዳቦና ስጋ አገኘ ።የተራበው ተኩላ ወደ ጉድጓዱ ገባ። ምግቡን ሁሉ በላ። እንጨት ቆራጭ ምሳ ነበር። ምሳ ለምሳ ወደ ዛፉ እየተመለሰ ነበር። ነገር ግን በጉድጓዱ ውስጥ ምንም ምግብ እንደሌለ አየ፤ ይልቁንም ተኩላ።ተኩላው እንጨት ቆራጩን ሲያይ ከጉድጓዱ ለመውጣት ሞከረ። ይሁን እንጂ አልተቻለም ። እብጠቱ ያብጥ ነበር።እንጨት ቆራጩ ተኩላውን ያዘውና ጥሩ ድብደባ አደረገበት።",
     },
     {
-      "title": "የችግረኛ ጓደኛ በእርግጥ ወዳጅ ነው",
-      "content": "በአንድ ወቅት በጫካ ውስጥ አንበሳ ይኖር ነበር ። አንድ ቀን ከባድ ምግብ ከተመገበ በኋላ። ከዛፍ በታች ተኝቶ ነበር ። ከጥቂት ጊዜ በኋላ አንድ አይጥ መጣና በአንበሳው ላይ መጫወት ጀመረ። በድንገት አንበሳው በቁጣ ተነሳና ጥሩ እንቅልፍ የረበሹትን ሰዎች አየ። ከዚያም አንዲት ትንሽ አይጥ በፍርሃት እየተንቀጠቀጠች ቆማ አየች። አንበሳው ላይ ዘልሎ መግደል ጀመረ። አይጡም አንበሳውን ይቅር እንዲለው ጠየቁት። አንበሳው አዘነና ትቶት ሄደ። አይጧ ሮጠች።በሌላ ቀን ደግሞ አንበሳው በአደን መረብ ተያዘ። አይጧም እዚያ መጥታ መረቡን ቆረጠች። በዚህ መንገድ አመለጠ ። ከዚያ በኋላ አይጧና አንበሳው ጓደኞች ሆኑ። ከዚያ በኋላ በጫካ ውስጥ በደስታ ኖረዋል ።"
+      title: "የችግረኛ ጓደኛ በእርግጥ ወዳጅ ነው",
+      category: "Moral",
+      content:
+        "በአንድ ወቅት በጫካ ውስጥ አንበሳ ይኖር ነበር ። አንድ ቀን ከባድ ምግብ ከተመገበ በኋላ። ከዛፍ በታች ተኝቶ ነበር ። ከጥቂት ጊዜ በኋላ አንድ አይጥ መጣና በአንበሳው ላይ መጫወት ጀመረ። በድንገት አንበሳው በቁጣ ተነሳና ጥሩ እንቅልፍ የረበሹትን ሰዎች አየ። ከዚያም አንዲት ትንሽ አይጥ በፍርሃት እየተንቀጠቀጠች ቆማ አየች። አንበሳው ላይ ዘልሎ መግደል ጀመረ። አይጡም አንበሳውን ይቅር እንዲለው ጠየቁት። አንበሳው አዘነና ትቶት ሄደ። አይጧ ሮጠች።በሌላ ቀን ደግሞ አንበሳው በአደን መረብ ተያዘ። አይጧም እዚያ መጥታ መረቡን ቆረጠች። በዚህ መንገድ አመለጠ ። ከዚያ በኋላ አይጧና አንበሳው ጓደኞች ሆኑ። ከዚያ በኋላ በጫካ ውስጥ በደስታ ኖረዋል ።",
     },
     {
-      "title": "sela",
-      "content": "በተራራዎች መካከል በተደፈነች ጭር ያለች መንደር ውስጥ ከዋክብት ከጨረቃ የሚወርዱ ፍሬዎች እንደሆኑ የምታምን ሴላ የምትባል ልጅ ነበረች። ማታ ማታ ባዶ እግሯን በሰማይ ውስጥ እየተራመደች ለነፋስ ምስጢሯን ትነፋ ነበር። አንድ ቀን ማታ የሚንቦገቦግ ጠጠር አግኝታ በሜዳው ላይ ተከለች። ቀናቶች ወደ ሳምንቶች ተለውጠው ነበር፤ አንድ ምሽት ላይ ትንሽ ብርሃን ከመሬት ላይ እስኪወጣ ድረስ የመንደሯ ነዋሪዎች ይስቁባት ነበር። 🌟 በዚያው ምሽት ሜዳው በከዋክብት ተከፋፍሎ እያንዳንዳቸው የጥንት እሹሩሩታ ይዘፍኑ ነበር። ከዚያን ጊዜ ጀምሮ ልጆች ጨለማውን አልፈሩትም ምክንያቱም ሴላ በህልሟ አብርታዋለችና። "
+      title: "sela",
+      category: "Inspirational",
+      content:
+        "በተራራዎች መካከል በተደፈነች ጭር ያለች መንደር ውስጥ ከዋክብት ከጨረቃ የሚወርዱ ፍሬዎች እንደሆኑ የምታምን ሴላ የምትባል ልጅ ነበረች። ማታ ማታ ባዶ እግሯን በሰማይ ውስጥ እየተራመደች ለነፋስ ምስጢሯን ትነፋ ነበር። አንድ ቀን ማታ የሚንቦገቦግ ጠጠር አግኝታ በሜዳው ላይ ተከለች። ቀናቶች ወደ ሳምንቶች ተለውጠው ነበር፤ አንድ ምሽት ላይ ትንሽ ብርሃን ከመሬት ላይ እስኪወጣ ድረስ የመንደሯ ነዋሪዎች ይስቁባት ነበር። 🌟 በዚያው ምሽት ሜዳው በከዋክብት ተከፋፍሎ እያንዳንዳቸው የጥንት እሹሩሩታ ይዘፍኑ ነበር። ከዚያን ጊዜ ጀምሮ ልጆች ጨለማውን አልፈሩትም ምክንያቱም ሴላ በህልሟ አብርታዋለችና። ",
     },
     {
-      "title": "አንድ ከተማ አይጥ እና ሀገር አይጥ",
-      "content": "አንድ ከተማ አይጥና የአገር አይጥ ጓደኞች ነበሩ ። ሀገር አይጥ አንድ ቀን ጓደኛውን በሜዳ ቤቱ መጥቶ እንዲያየው ጋበዘው። የከተማዋ አይጥ መጥቶ የገብስ እርባታ እራት ላይ ተቀምጠው የኋለኞቹ ንጣፍ ጣዕሞች ነበሯቸው ።ጣዕሙ ለእንግዳው ጣዕም ብዙም አልነበረም። አሁን ምስኪኑ ወዳጄ፣ እዚህ የምትኖረው ከቅንጦች የተሻለ አይደለም። አሁን ደግሞ ምን እንደምኖር ማየት ይኖርብሃል! እጭዬ ዘወትር የብዙ ቀንድ ነው። መጥተህ ከእኔ ጋር ቆይ፤ በምድሪቱ ስብ ላይ እንደምትኖር ቃል እገባልሃለሁ።በመሆኑም ወደ ከተማ በተመለሰ ጊዜ የካንትሪ አይጡን ይዞ ዱቄት፣ የዕፀዋት፣ የበለስ፣ የበለስ፣ የማርና የተቀጣጠለ እጭ ውስጥ አሳየው።ካንትሪ አይጥ እንዲህ ያለ ነገር አይቶ አያውቅም እናም ጓደኛው በሰጣቸው የቅንጦት ዕቃዎች ለመደሰት ተቀምጦ ነበር። ይሁን እንጂ ገና ከመጀመራቸው በፊት የእጮቹ በር ተከፍቶ አንዱ ገባ ። ሁለቱ አይነቶች በጠባብና እጅግ ምቹ ባልሆነ ጉድጓድ ውስጥ ተደበቁ። በአሁኑ ጊዜ ሁሉም ነገር ጸጥ ሲል እንደገና ወደ ውጭ ወጡ ። ይሁን እንጂ አንድ ሌላ ሰው ገባና እንደገና ተሽከረከሩ። ይህ ለጎብኚው በጣም ከባድ ነበር ። ደህና ሁን አረፈኝ። አንተ የምትኖረው የቅንጦት ኑሮ ባለበት አካባቢ ነው፤ አንተ ግን በአደገኛ ሁኔታ ተከበሃል፤ ቤት ውስጥ ግን ሥሬንና በቆሎዬን በሰላም እበላለሁ።"
+      title: "አንድ ከተማ አይጥ እና ሀገር አይጥ",
+      category: "Fable",
+      content:
+        "አንድ ከተማ አይጥና የአገር አይጥ ጓደኞች ነበሩ ። ሀገር አይጥ አንድ ቀን ጓደኛውን በሜዳ ቤቱ መጥቶ እንዲያየው ጋበዘው። የከተማዋ አይጥ መጥቶ የገብስ እርባታ እራት ላይ ተቀምጠው የኋለኞቹ ንጣፍ ጣዕሞች ነበሯቸው ።ጣዕሙ ለእንግዳው ጣዕም ብዙም አልነበረም። አሁን ምስኪኑ ወዳጄ፣ እዚህ የምትኖረው ከቅንጦች የተሻለ አይደለም። አሁን ደግሞ ምን እንደምኖር ማየት ይኖርብሃል! እጭዬ ዘወትር የብዙ ቀንድ ነው። መጥተህ ከእኔ ጋር ቆይ፤ በምድሪቱ ስብ ላይ እንደምትኖር ቃል እገባልሃለሁ።በመሆኑም ወደ ከተማ በተመለሰ ጊዜ የካንትሪ አይጡን ይዞ ዱቄት፣ የዕፀዋት፣ የበለስ፣ የበለስ፣ የማርና የተቀጣጠለ እጭ ውስጥ አሳየው።ካንትሪ አይጥ እንዲህ ያለ ነገር አይቶ አያውቅም እናም ጓደኛው በሰጣቸው የቅንጦት ዕቃዎች ለመደሰት ተቀምጦ ነበር። ይሁን እንጂ ገና ከመጀመራቸው በፊት የእጮቹ በር ተከፍቶ አንዱ ገባ ። ሁለቱ አይነቶች በጠባብና እጅግ ምቹ ባልሆነ ጉድጓድ ውስጥ ተደበቁ። በአሁኑ ጊዜ ሁሉም ነገር ጸጥ ሲል እንደገና ወደ ውጭ ወጡ ። ይሁን እንጂ አንድ ሌላ ሰው ገባና እንደገና ተሽከረከሩ። ይህ ለጎብኚው በጣም ከባድ ነበር ። ደህና ሁን አረፈኝ። አንተ የምትኖረው የቅንጦት ኑሮ ባለበት አካባቢ ነው፤ አንተ ግን በአደገኛ ሁኔታ ተከበሃል፤ ቤት ውስጥ ግን ሥሬንና በቆሎዬን በሰላም እበላለሁ።",
     },
     {
-      "title": "ዝሆን እና ጓደኞች",
-      "content": "ከዕለታት አንድ ቀን አንድ ዝሆን ወዳጆቹን ፍለጋ ጫካ ውስጥ ተቅበዘበዘ።አንድ ዝንጀሮ ዛፍ ላይ አየየአማርኛ የአማርኛ ምሳሌ ነው.-ጓደኛዬ ትሆናለህ?-ሲል ዝሆኑን ጠየቀው።ጦጣውንም መለሰለት። በጣም ትልቅ ነህ። እንደ እኔ ካሉ ዛፎች ልትወዛወዝ አትችልም።-ከዚያም ዝሆኑ እንቁራሪት አገኘ ። ጓደኛው እንዲሆን ጠየቀው ።ጥንቸል ግን -በኔ ጉድጓድ ውስጥ ለመጫወት በጣም ትልቅ ነሽ!- አለችው።ከዚያም ዝሆኑ እንቁራሪት አገኘ።-ወዳጄ ትሆናለህ? ብሎ ጠየቀ ።-እንዴት እችላለሁ?- ብሎ ጠየቀ እንቁራሪት።-አንተ በጣም ትልቅ ነህ እንደኔ ለመዝለል-።ዝሆኑ በጣም ተበሳጭቶ ነበር ። ቀጥሎም ቀበሮ አገኘ።-ወዳጄ ትሆናለህ?- ሲል ቀበሮውን ጠየቀው።ቀበሮውም ይቅርታ ጌታዬ፣ በጣም ትልቅ ነህ።-አለችው።በሚቀጥለው ቀን ዝሆኑ በጫካው ውስጥ ያሉ እንስሳት በሙሉ ሕይወታቸውን ለማትረፍ ሲሯሯጡ ተመለከተ።ዝሆኑ ምን እንደሆነ ጠየቃቸው ።ድቡም መልሶ በጫካ ውስጥ ደረጃ አለ። ሁላችንንም ሊደበዝዝብን እየሞከረ ነው!እንስሶቹ በሙሉ ለመደበቅ ሮጠዋል።ዝሆኑ በጫካ ውስጥ ያሉትን ሁሉ ለመፍታት ምን ማድረግ እንደሚችል አሰበ ።ይህ በእንዲህ እንዳለ ነብር ማግኘት የሚችለውን ሁሉ መብላቱን ቀጠለ።ዝሆኑም ወደ ነብር ሄደና -እባክህ አቶ ነብር እባክህ እነዚህን ምስኪን እንስሳት አትበላቸው-አለው።-የራስህን ጉዳይ አስብ! እያለ ነብሩን አጉረመርመርመር።ዝሆኑ ነብርን ከመምታት ሌላ አማራጭ የለውም።በፍርሃት የፈራው ነብር ሕይወቱን ለማትረፍ ሮጠ።ዝሆኑ ምስራቹን ለሁሉም ለማሳወቅ ወደ ጫካው ተመለሰ።ሁሉም እንስሳት ዝሆኑን አመሰገኑ።ወዳጃችን ለመሆን ትክክለኛ መጠን አለህ አሉ።"
+      title: "ዝሆን እና ጓደኞች",
+      category: "Moral",
+      content:
+        "ከዕለታት አንድ ቀን አንድ ዝሆን ወዳጆቹን ፍለጋ ጫካ ውስጥ ተቅበዘበዘ።አንድ ዝንጀሮ ዛፍ ላይ አየየአማርኛ የአማርኛ ምሳሌ ነው.-ጓደኛዬ ትሆናለህ?-ሲል ዝሆኑን ጠየቀው።ጦጣውንም መለሰለት። በጣም ትልቅ ነህ። እንደ እኔ ካሉ ዛፎች ልትወዛወዝ አትችልም።-ከዚያም ዝሆኑ እንቁራሪት አገኘ ። ጓደኛው እንዲሆን ጠየቀው ።ጥንቸል ግን -በኔ ጉድጓድ ውስጥ ለመጫወት በጣም ትልቅ ነሽ!- አለችው።ከዚያም ዝሆኑ እንቁራሪት አገኘ።-ወዳጄ ትሆናለህ? ብሎ ጠየቀ ።-እንዴት እችላለሁ?- ብሎ ጠየቀ እንቁራሪት።-አንተ በጣም ትልቅ ነህ እንደኔ ለመዝለል-።ዝሆኑ በጣም ተበሳጭቶ ነበር ። ቀጥሎም ቀበሮ አገኘ።-ወዳጄ ትሆናለህ?- ሲል ቀበሮውን ጠየቀው።ቀበሮውም ይቅርታ ጌታዬ፣ በጣም ትልቅ ነህ።-አለችው።በሚቀጥለው ቀን ዝሆኑ በጫካው ውስጥ ያሉ እንስሳት በሙሉ ሕይወታቸውን ለማትረፍ ሲሯሯጡ ተመለከተ።ዝሆኑ ምን እንደሆነ ጠየቃቸው ።ድቡም መልሶ በጫካ ውስጥ ደረጃ አለ። ሁላችንንም ሊደበዝዝብን እየሞከረ ነው!እንስሶቹ በሙሉ ለመደበቅ ሮጠዋል።ዝሆኑ በጫካ ውስጥ ያሉትን ሁሉ ለመፍታት ምን ማድረግ እንደሚችል አሰበ ።ይህ በእንዲህ እንዳለ ነብር ማግኘት የሚችለውን ሁሉ መብላቱን ቀጠለ።ዝሆኑም ወደ ነብር ሄደና -እባክህ አቶ ነብር እባክህ እነዚህን ምስኪን እንስሳት አትበላቸው-አለው።-የራስህን ጉዳይ አስብ! እያለ ነብሩን አጉረመርመርመር።ዝሆኑ ነብርን ከመምታት ሌላ አማራጭ የለውም።በፍርሃት የፈራው ነብር ሕይወቱን ለማትረፍ ሮጠ።ዝሆኑ ምስራቹን ለሁሉም ለማሳወቅ ወደ ጫካው ተመለሰ።ሁሉም እንስሳት ዝሆኑን አመሰገኑ።ወዳጃችን ለመሆን ትክክለኛ መጠን አለህ አሉ።",
     },
     {
-      "title": "ዝሆን ገመዳ (እምነት)",
-      "content": "አንዳንድ ጊዜ የሚያነሳሳ ታሪክ በውስጣችን ያለውን ጥንካሬ ለማወቅ ይረዳናል። የሚያነሳሳ ታሪክ እራሳችሁን ለማነሳሳት እና እራሳችሁን ለማነሳሳት ይረዳችኋል። በተጨማሪም ምን ማድረግ እንደምትችልና ምን ማድረግ እንደማትችል ለማወቅ ይረዳሃል ። በሕይወትህ ውስጥ ያነበብከው በመቶዎች የሚቆጠሩ ሰዎች ሊኖሩ ይችላሉ ። ይሁን እንጂ በአእምሮህ ውስጥ ለውጥ ያደረጉት ምን ያህል ሰዎች ናቸው የሚለው ጥያቄ ነው ።ሀይለኛ ትምህርት ብቻ ሳይሆን ስለ ሕይወት አንዳንድ የማይታወቁ እውነቶችን ለመማር የሚረዱ አንዳንድ የሚያነሳሱ አጫጭር ታሪኮች ከዚህ በታች ቀርበዋል።አንድ ሰው በዝሆን ካምፕ ውስጥ እየተራመደ ሳለ ዝሆኖቹ በቆርቆሮ ውስጥ እንደማይቆዩ ወይም በሰንሰለት እንዳያዙ ተመለከተ።ከካምፑ እንዳያመልጡ ያግዳቸው የነበረው ነገር ቢኖር ከአንዱ እግራቸው ጋር የታሰረ ትንሽ ገመድ ነበር ።ሰውየው ዝሆኖቹ ላይ ትኩር ብሎ ሲመለከት ዝሆኖቹ ገመዱን ለመስበርና ከካምፑ ለማምለጥ ብቻ ጉልበታቸውን ያልተጠቀሙበት ለምን እንደሆነ ግራ ገባው። በቀላሉ እንዲህ ማድረግ ይችሉ ነበር፤ ከዚህ ይልቅ በጭራሽ ይህን ለማድረግ አልሞከሩም።የማወቅ ጉጉት ስላደረበትና መልሱን ለማወቅ ስለፈለገ ዝሆኖቹ እዚያው ቆመው ለማምለጥ ያልሞከሩት ለምን እንደሆነ በአቅራቢያው የሚገኝን አንድ አሠልጣኝ ጠየቀ ።አሰልጣኙ መለሰ፤በጣም ወጣት እና በጣም ትንሽ ሲሆኑ እነርሱን ለማሰር ተመሳሳይ መጠን ያለው ገመድ እንጠቀማለን እናም በዚያ እድሜ እነሱን ለመያዝ በቂ ነው. እያደጉ ሲሄዱ መለያየት እንደማይችሉ ለማመን ይቸኩላሉ ። ገመዱ አሁንም ሊይዛቸው እንደሚችል ያምናሉ፤ በመሆኑም ለመስበር ፈጽሞ አይሞክሩም።ዝሆኖቹ ነፃ ያልወጡበትና ከካምፑ ያልመለጡበት ብቸኛው ምክንያት ከጊዜ በኋላ ይህ ሊሆን አይችልም የሚለውን እምነት በመቀበላቸው ነው።ሥነ ምግባር፦ ዓለም ምንም ያህል ወደኋላ እንድትል ቢጥርህ ምናምን ምንጊዜም ልታከናውን የምትፈልገው ነገር ሊገኝ ይችላል የሚል እምነት ይኑርህ። ስኬታማ መሆን እንደምትችል ማመን ይህን ለማሳካት የሚረዳህ ከሁሉ የላቀው እርምጃ ነው ።"
+      title: "ዝሆን ገመዳ (እምነት)",
+      category: "Belief",
+      content:
+        "አንዳንድ ጊዜ የሚያነሳሳ ታሪክ በውስጣችን ያለውን ጥንካሬ ለማወቅ ይረዳናል። የሚያነሳሳ ታሪክ እራሳችሁን ለማነሳሳት እና እራሳችሁን ለማነሳሳት ይረዳችኋል። በተጨማሪም ምን ማድረግ እንደምትችልና ምን ማድረግ እንደማትችል ለማወቅ ይረዳሃል ። በሕይወትህ ውስጥ ያነበብከው በመቶዎች የሚቆጠሩ ሰዎች ሊኖሩ ይችላሉ ። ይሁን እንጂ በአእምሮህ ውስጥ ለውጥ ያደረጉት ምን ያህል ሰዎች ናቸው የሚለው ጥያቄ ነው ።ሀይለኛ ትምህርት ብቻ ሳይሆን ስለ ሕይወት አንዳንድ የማይታወቁ እውነቶችን ለመማር የሚረዱ አንዳንድ የሚያነሳሱ አጫጭር ታሪኮች ከዚህ በታች ቀርበዋል።አንድ ሰው በዝሆን ካምፕ ውስጥ እየተራመደ ሳለ ዝሆኖቹ በቆርቆሮ ውስጥ እንደማይቆዩ ወይም በሰንሰለት እንዳያዙ ተመለከተ።ከካምፑ እንዳያመልጡ ያግዳቸው የነበረው ነገር ቢኖር ከአንዱ እግራቸው ጋር የታሰረ ትንሽ ገመድ ነበር ።ሰውየው ዝሆኖቹ ላይ ትኩር ብሎ ሲመለከት ዝሆኖቹ ገመዱን ለመስበርና ከካምፑ ለማምለጥ ብቻ ጉልበታቸውን ያልተጠቀሙበት ለምን እንደሆነ ግራ ገባው። በቀላሉ እንዲህ ማድረግ ይችሉ ነበር፤ ከዚህ ይልቅ በጭራሽ ይህን ለማድረግ አልሞከሩም።የማወቅ ጉጉት ስላደረበትና መልሱን ለማወቅ ስለፈለገ ዝሆኖቹ እዚያው ቆመው ለማምለጥ ያልሞከሩት ለምን እንደሆነ በአቅራቢያው የሚገኝን አንድ አሠልጣኝ ጠየቀ ።አሰልጣኙ መለሰ፤በጣም ወጣት እና በጣም ትንሽ ሲሆኑ እነርሱን ለማሰር ተመሳሳይ መጠን ያለው ገመድ እንጠቀማለን እናም በዚያ እድሜ እነሱን ለመያዝ በቂ ነው. እያደጉ ሲሄዱ መለያየት እንደማይችሉ ለማመን ይቸኩላሉ ። ገመዱ አሁንም ሊይዛቸው እንደሚችል ያምናሉ፤ በመሆኑም ለመስበር ፈጽሞ አይሞክሩም።ዝሆኖቹ ነፃ ያልወጡበትና ከካምፑ ያልመለጡበት ብቸኛው ምክንያት ከጊዜ በኋላ ይህ ሊሆን አይችልም የሚለውን እምነት በመቀበላቸው ነው።ሥነ ምግባር፦ ዓለም ምንም ያህል ወደኋላ እንድትል ቢጥርህ ምናምን ምንጊዜም ልታከናውን የምትፈልገው ነገር ሊገኝ ይችላል የሚል እምነት ይኑርህ። ስኬታማ መሆን እንደምትችል ማመን ይህን ለማሳካት የሚረዳህ ከሁሉ የላቀው እርምጃ ነው ።",
     },
     {
-      "title": "አንድ ኪሎ ቅቤ (ቅንነት)",
-      "content": "አንድ ገበሬ አንድ ኪሎ ቅቤ ለዳቦ ጋጋሪ ይሸጥ ነበር ። ከዕለታት አንድ ቀን ዳቦ ጋጋሪው ትክክለኛውን መጠን እያገኘ እንደሆነ ለማየት ቅቤውን ለመመዘን ወሰነ። በዚህም ተቆጥቶ ገበሬውን ወደ ፍርድ ቤት ወሰደው ።ዳኛው ቅቤውን ለመመዘን አንድ ዓይነት እርምጃ እየተጠቀሙ እንደሆነ ገበሬውን ጠየቁት ። ገበሬውም -ክብር፣ እኔ ጥንት ነኝ። ትክክለኛ መለኪያ የለኝም፤ ነገር ግን መጠነ ሰፊ ነው።ዳኛውም -ታዲያ ቅቤውን እንዴት ትመዝነዋለህ?- ብለው ጠየቁ።ገበሬው መለሰ፤-ክብርህ፣ ዳቦ ጋጋሪው ቅቤ ከመግዛቱ ከረጅም ጊዜ በፊት፣ አንድ ኪሎ ዳቦ ገዛሁለት። በየቀኑ ዳቦጋጋሪው ዳቦውን ሲያመጣ በመጠን አስቀምጠውና ያንኑ ክብደት በቅቤ እሰጠዋለሁ። ማንም ቢወቀስ ዳቦ ጋጋሪው ነው።ሞራል፦ በሕይወት ውስጥ የምትሰጠውን ታገኛለህ። ሌሎችን ለማጭበርበር አትሞክር። "
+      title: "አንድ ኪሎ ቅቤ (ቅንነት)",
+      category: "Honesty",
+      content:
+        "አንድ ገበሬ አንድ ኪሎ ቅቤ ለዳቦ ጋጋሪ ይሸጥ ነበር ። ከዕለታት አንድ ቀን ዳቦ ጋጋሪው ትክክለኛውን መጠን እያገኘ እንደሆነ ለማየት ቅቤውን ለመመዘን ወሰነ። በዚህም ተቆጥቶ ገበሬውን ወደ ፍርድ ቤት ወሰደው ።ዳኛው ቅቤውን ለመመዘን አንድ ዓይነት እርምጃ እየተጠቀሙ እንደሆነ ገበሬውን ጠየቁት ። ገበሬውም -ክብር፣ እኔ ጥንት ነኝ። ትክክለኛ መለኪያ የለኝም፤ ነገር ግን መጠነ ሰፊ ነው።ዳኛውም -ታዲያ ቅቤውን እንዴት ትመዝነዋለህ?- ብለው ጠየቁ።ገበሬው መለሰ፤-ክብርህ፣ ዳቦ ጋጋሪው ቅቤ ከመግዛቱ ከረጅም ጊዜ በፊት፣ አንድ ኪሎ ዳቦ ገዛሁለት። በየቀኑ ዳቦጋጋሪው ዳቦውን ሲያመጣ በመጠን አስቀምጠውና ያንኑ ክብደት በቅቤ እሰጠዋለሁ። ማንም ቢወቀስ ዳቦ ጋጋሪው ነው።ሞራል፦ በሕይወት ውስጥ የምትሰጠውን ታገኛለህ። ሌሎችን ለማጭበርበር አትሞክር። ",
     },
     {
-      "title": "ቢራቢሮ (ትግሉ)",
-      "content": "አንድ ሰው ቢራቢሮ አገኘ።አንድ ቀን ትንሽ ክፍተት ብቅ አለ ። ቢራቢሮዋ ሰውነቷን በዚያች ትንሽ ጉድጓድ ውስጥ አስገድዳ ለማለፍ በሚታገልበት ጊዜ ለበርካታ ሰዓታት ተቀምጦ ይመለከት ነበር ።በድንገት ምንም ዓይነት እድገት ማድረጉን አቁሞ የተጣበቀ መስሎ እስኪታያት ድረስ።ስለዚህ ሰውየው ቢራቢሮውን ለመርዳት ወሰነ ። አንድ ጥንድ መቀስ ወስዶ የቀረውን የኮሶውን ጥቂት ቆራረጠ። በዚህ ጊዜ ቢራቢሮው የሚያብጥ አካልና ክንፎቹ ቢበጠሱም በቀላሉ ብቅ አለ።ሰውየው ምንም አላሰበም ነበር። እዚያም ተቀምጦ ቢራቢሮውን ለመደገፍ ክንፎቹ እስኪስፋፉ ድረስ ይጠባበቅ ነበር። ይሁን እንጂ ይህ አልሆነም ። ቢራቢሮዋ በእኩል ጊዜ መብረር አቅቷት በትንንሽ ክንፎችና በሰውነት ውስጥ እያብጠበጠ ችግሯን አሳለፈች።የሰውዬው ደግ ልብ ቢኖርም፣ የቁንጅናው መገደብ እና በትንንሹ ክፍተት ውስጥ ራሱን ለማለፍ ቢራቢሮ የሚረዳህ ትግል እንዳለ አልገባውም ነበር፤ አምላክ ከቢራቢሮ አካል ውስጥ ፈሳሽ ወደ ክንፎቹ እንዲገባ ያስገደደበት መንገድ ነው ። ከኮኮን ከወጣ በኋላ ለመብረር ራሱን ለማዘጋጀት ነው።ሞራል፦ በሕይወታችን ውስጥ የምናደርገው ትግል ጠንካራ ጎናችንን ያዳብራል። ያለ ትግል፣ ፈጽሞ አናድግም እናም አንጠነክርም፣ ስለዚህ ፈተናዎችን በራሳችን መወጣት፣ እና በሌሎች እርዳታ አለመታመን አስፈላጊ ነው።"
+      title: "ቢራቢሮ (ትግሉ)",
+      category: "Struggle",
+      content:
+        "አንድ ሰው ቢራቢሮ አገኘ።አንድ ቀን ትንሽ ክፍተት ብቅ አለ ። ቢራቢሮዋ ሰውነቷን በዚያች ትንሽ ጉድጓድ ውስጥ አስገድዳ ለማለፍ በሚታገልበት ጊዜ ለበርካታ ሰዓታት ተቀምጦ ይመለከት ነበር ።በድንገት ምንም ዓይነት እድገት ማድረጉን አቁሞ የተጣበቀ መስሎ እስኪታያት ድረስ።ስለዚህ ሰውየው ቢራቢሮውን ለመርዳት ወሰነ ። አንድ ጥንድ መቀስ ወስዶ የቀረውን የኮሶውን ጥቂት ቆራረጠ። በዚህ ጊዜ ቢራቢሮው የሚያብጥ አካልና ክንፎቹ ቢበጠሱም በቀላሉ ብቅ አለ።ሰውየው ምንም አላሰበም ነበር። እዚያም ተቀምጦ ቢራቢሮውን ለመደገፍ ክንፎቹ እስኪስፋፉ ድረስ ይጠባበቅ ነበር። ይሁን እንጂ ይህ አልሆነም ። ቢራቢሮዋ በእኩል ጊዜ መብረር አቅቷት በትንንሽ ክንፎችና በሰውነት ውስጥ እያብጠበጠ ችግሯን አሳለፈች።የሰውዬው ደግ ልብ ቢኖርም፣ የቁንጅናው መገደብ እና በትንንሹ ክፍተት ውስጥ ራሱን ለማለፍ ቢራቢሮ የሚረዳህ ትግል እንዳለ አልገባውም ነበር፤ አምላክ ከቢራቢሮ አካል ውስጥ ፈሳሽ ወደ ክንፎቹ እንዲገባ ያስገደደበት መንገድ ነው ። ከኮኮን ከወጣ በኋላ ለመብረር ራሱን ለማዘጋጀት ነው።ሞራል፦ በሕይወታችን ውስጥ የምናደርገው ትግል ጠንካራ ጎናችንን ያዳብራል። ያለ ትግል፣ ፈጽሞ አናድግም እናም አንጠነክርም፣ ስለዚህ ፈተናዎችን በራሳችን መወጣት፣ እና በሌሎች እርዳታ አለመታመን አስፈላጊ ነው።",
     },
     {
-      "title": "ሳሙል ሙላት (ፍቅር)",
-      "content": "ከተወሰነ ጊዜ በፊት አንድ ሰው የ3 ዓመት ሴት ልጁን የወርቅ መጠቅለያ ወረቀት በማባከኑ ቀጣት። ገንዘቡ በጣም ጥብቅ ስለነበር ልጁ በገና ዛፍ ሥር ለማስቀመጥ ሣጥን ለማስዋብ ሲሞክር በጣም ተቆጣ።ያም ሆኖ ትንሿ ልጅ በማግስቱ ጠዋት ስጦታውን ለአባቷ አመጣችና -አባዬ ይህ ለአንተ ነው አለችው።ሰውዬው ከመጠን በላይ መቆጣቱ አሳፈረው፤ ሆኖም ሣጥኑ ባዶ መሆኑን ሲመለከት ቁጣው አልቀጠለም። ጮኸባት፤ -እንዴት እንደምትወደው አላወቅም? ለአንድ ሰው ስታደርግ፣ በውስጡ አንድ ነገር መኖር አለበት ተብሎ ይታሰባል?-ትንሿ ልጅ ዓይኖቿ እያለቀሱ ወደ እሱ ቀና ብላ አየችውና አለቀሰች፤ኧረ አባዬ! በጭራሽ ባዶ አይደለም። በጭራሽ ባዶ አይደለም። በሣጥኑ ውስጥ መሳም ጀመርኩ። ሁሉም ለአንተ ናቸው አባዬ።አባትየው ተጨፈጨፈ። ትንሿን ልጁን እቅፍ አድርጎ ይቅርታ እንዲሰጣት ለመነ።ከጥቂት ጊዜ በኋላ በአደጋ ምክንያት የልጁን ሕይወት አቃጠለ ።አባቷ የወርቁን ሳጥን ለበርካታ ዓመታት በአልጋው አጠገብ አስቀምጦት ነበር። ተስፋ በቆረጠም ጊዜ ሁሉ ምናባዊ መሳም አውጥቶ በዚያ ያስቀመጠውን ልጅ ፍቅር ያስታውሰው ነበር።ሞራል፦ ፍቅር በዓለም ላይ እጅግ የከበረ ስጦታ ነው።"
+      title: "ሳሙል ሙላት (ፍቅር)",
+      content:
+        "ከተወሰነ ጊዜ በፊት አንድ ሰው የ3 ዓመት ሴት ልጁን የወርቅ መጠቅለያ ወረቀት በማባከኑ ቀጣት። ገንዘቡ በጣም ጥብቅ ስለነበር ልጁ በገና ዛፍ ሥር ለማስቀመጥ ሣጥን ለማስዋብ ሲሞክር በጣም ተቆጣ።ያም ሆኖ ትንሿ ልጅ በማግስቱ ጠዋት ስጦታውን ለአባቷ አመጣችና -አባዬ ይህ ለአንተ ነው አለችው።ሰውዬው ከመጠን በላይ መቆጣቱ አሳፈረው፤ ሆኖም ሣጥኑ ባዶ መሆኑን ሲመለከት ቁጣው አልቀጠለም። ጮኸባት፤ -እንዴት እንደምትወደው አላወቅም? ለአንድ ሰው ስታደርግ፣ በውስጡ አንድ ነገር መኖር አለበት ተብሎ ይታሰባል?-ትንሿ ልጅ ዓይኖቿ እያለቀሱ ወደ እሱ ቀና ብላ አየችውና አለቀሰች፤ኧረ አባዬ! በጭራሽ ባዶ አይደለም። በጭራሽ ባዶ አይደለም። በሣጥኑ ውስጥ መሳም ጀመርኩ። ሁሉም ለአንተ ናቸው አባዬ።አባትየው ተጨፈጨፈ። ትንሿን ልጁን እቅፍ አድርጎ ይቅርታ እንዲሰጣት ለመነ።ከጥቂት ጊዜ በኋላ በአደጋ ምክንያት የልጁን ሕይወት አቃጠለ ።አባቷ የወርቁን ሳጥን ለበርካታ ዓመታት በአልጋው አጠገብ አስቀምጦት ነበር። ተስፋ በቆረጠም ጊዜ ሁሉ ምናባዊ መሳም አውጥቶ በዚያ ያስቀመጠውን ልጅ ፍቅር ያስታውሰው ነበር።ሞራል፦ ፍቅር በዓለም ላይ እጅግ የከበረ ስጦታ ነው።",
     },
     {
-      "title": "አድናቆትን ማዳበርን ተማር",
-      "content": "በአንድ ወቅት በጣም የሚረዳ፣ ደግና ለጋስ የሆነ ሰው ነበር። አንድን ሰው ምንም ነገር ሳይመልስለት የሚረዳ ሰው ነበር ። የሚፈልገውና የሚወደውን ሰው ይረዳዋል ። ከዕለታት አንድ ቀን አቧራማ በሆነ መንገድ ላይ እየተራመደ ሳለ ይህ ሰው ቦርሳ አየና ቦርሳውን አንስቶ ቦርሳው ባዶ መሆኑን አስተዋለ። ድንገት ፖሊስ የያዘች አንዲት ሴት ብቅ አለችና አሰረችው።ሴትየዋም ገንዘቧን የት እንደደበቃት ደጋግማ ትጠይቅ ነበር። ሰውየው ግን እኔ ስላገኘሁት ባዶ ነበር። ማም- ብሎ መለሰለት። ሴትየዋም እባክህ መልሰህ ስጠው፣ ለተመቸኝ አዝኑ አለ። ሴትየዋ በጣም እንዳዘነች ስላስተዋለ ገንዘቡን በሙሉ ሰጠው ። ሴትየዋ ነጠላ እናት እንደሆነች ሊናገር ይችላል ። ሰውየውም -እነዚህን ይውሰዱ፣ ለተመቸኝ አዝኑ አለ። ሴትየዋ ሄደችና ፖሊሱ ተጨማሪ ምርመራ ለማድረግ ሰውየውን ይዞት ሄደ ።ሴትየዋ በጣም ደካማ ይመስል ነበር እናም ሴት ግራ ተጋባች። ፖሊሱ ሴትየዋን -ገንዘብሽን አልመለሰልህም፤ ያን ቀን ገንዘቡን ሰጠሽ። እሱ ሌባ አልነበረም ነገር ግን ስለ ልጅህ የትምህርት ቤት ክፍያ ሲሰማ አዝኖ ገንዘቡን ሰጠህ። በኋላ ምነው ወንድ እንዲቆም ረዱት። ሰውየውም ለሴቲቱ እባክህ ሂድና የልጅሽን የትምህርት ቤት ክፍያ ክፈል። አይቼሽ የልጅሽን የትምህርት ቤት ክፍያ ማንም እንዳይሰርቅብኝ ተከትዬተሽ ነበር። አላት። ሴትየዋ ምስጥ ነበረች ሥነ ምግባር፦ ሕይወት እንግዳ የሆኑ ተሞክሮዎችን ይሰጥሃል፤ አንዳንድ ጊዜ ደግሞ ያስደነግጥሃል፤ አንዳንድ ጊዜ ደግሞ ሊያስገርምህ ይችላል። በመጨረሻም በንዴታችን ፣ በተስፋ መቁረጥና በተስፋ መቁረጥ ስሜት የተሰጠ ፍርድ ወይም ስህተት እንሠራለን ። ይሁን እንጂ ሌላ አጋጣሚ ስታገኝ ስህተታችሁን በማስተካከል ሞገሱን መልሱለት ። ደግና ለጋስ ሁን ። የተሰጠህን ነገር ማድነቅን ተማር ።"
+      title: "አድናቆትን ማዳበርን ተማር",
+      content:
+        "በአንድ ወቅት በጣም የሚረዳ፣ ደግና ለጋስ የሆነ ሰው ነበር። አንድን ሰው ምንም ነገር ሳይመልስለት የሚረዳ ሰው ነበር ። የሚፈልገውና የሚወደውን ሰው ይረዳዋል ። ከዕለታት አንድ ቀን አቧራማ በሆነ መንገድ ላይ እየተራመደ ሳለ ይህ ሰው ቦርሳ አየና ቦርሳውን አንስቶ ቦርሳው ባዶ መሆኑን አስተዋለ። ድንገት ፖሊስ የያዘች አንዲት ሴት ብቅ አለችና አሰረችው።ሴትየዋም ገንዘቧን የት እንደደበቃት ደጋግማ ትጠይቅ ነበር። ሰውየው ግን እኔ ስላገኘሁት ባዶ ነበር። ማም- ብሎ መለሰለት። ሴትየዋም እባክህ መልሰህ ስጠው፣ ለተመቸኝ አዝኑ አለ። ሴትየዋ በጣም እንዳዘነች ስላስተዋለ ገንዘቡን በሙሉ ሰጠው ። ሴትየዋ ነጠላ እናት እንደሆነች ሊናገር ይችላል ። ሰውየውም -እነዚህን ይውሰዱ፣ ለተመቸኝ አዝኑ አለ። ሴትየዋ ሄደችና ፖሊሱ ተጨማሪ ምርመራ ለማድረግ ሰውየውን ይዞት ሄደ ።ሴትየዋ በጣም ደካማ ይመስል ነበር እናም ሴት ግራ ተጋባች። ፖሊሱ ሴትየዋን -ገንዘብሽን አልመለሰልህም፤ ያን ቀን ገንዘቡን ሰጠሽ። እሱ ሌባ አልነበረም ነገር ግን ስለ ልጅህ የትምህርት ቤት ክፍያ ሲሰማ አዝኖ ገንዘቡን ሰጠህ። በኋላ ምነው ወንድ እንዲቆም ረዱት። ሰውየውም ለሴቲቱ እባክህ ሂድና የልጅሽን የትምህርት ቤት ክፍያ ክፈል። አይቼሽ የልጅሽን የትምህርት ቤት ክፍያ ማንም እንዳይሰርቅብኝ ተከትዬተሽ ነበር። አላት። ሴትየዋ ምስጥ ነበረች ሥነ ምግባር፦ ሕይወት እንግዳ የሆኑ ተሞክሮዎችን ይሰጥሃል፤ አንዳንድ ጊዜ ደግሞ ያስደነግጥሃል፤ አንዳንድ ጊዜ ደግሞ ሊያስገርምህ ይችላል። በመጨረሻም በንዴታችን ፣ በተስፋ መቁረጥና በተስፋ መቁረጥ ስሜት የተሰጠ ፍርድ ወይም ስህተት እንሠራለን ። ይሁን እንጂ ሌላ አጋጣሚ ስታገኝ ስህተታችሁን በማስተካከል ሞገሱን መልሱለት ። ደግና ለጋስ ሁን ። የተሰጠህን ነገር ማድነቅን ተማር ።",
     },
-    {
-      "title": "በቤተ መጻሕፍቱ ውስጥ ያለው መስታወት",
-      "content": "በትምህርት ቤቱ ቤተ መጻሕፍት እጅግ ጥንታዊ በሆነው ጥግ፣ በአቧራ በተሸፈኑ ኢንሳይክሎፔዲያዎች በስተጀርባ፣ ማንም ሊነካው የማይደፍር መስታወት ነበረ። አፈ ታሪኮች እንደሚሉት መስታወቱ ነጸብራቅን ሳይሆን *እውነቶችን* ያሳያል ይባላል። አንድ ቀን፣ ጉጉትና መሰልቸት የተሰማት የ15 ዓመቷ ዳኒ የሸረሪት ድሩን ጠርጋ ወደ ውስጥ ተመለከተች። የገዛ ፊቷን ከማየት ይልቅ፣ ደፋር ሆና፣ ተቃውሞዎችን እየመራች፣ ሌሎችን እየረዳች እና የሰዎችን ሕይወት እየለወጠች ያለችበትን የወደፊት ጊዜ አየች። ብትፈራም ነገር ግን ተነሳሽነት አግኝታ፣ በትንሹ ጀመረች—አንድን ጉልበተኛ በመቃወም። ከዚያ ቀን ጀምሮ ዳኒ ወደ መስታወቱ በየሳምንቱ ትመጣ ነበር፤ ይህንንም የምታደርገው የወደፊት ሕይወቷን ለማየት ሳይሆን፣ ምን ያህል ወደዚያ እየተጠጋች እንደሆነ ለማረጋገጥ ነበር። 🪞✨"
-    },
-    {
-      "title": "የሚናገረው ስኬትቦርድ",
-      "content": "ጄይደን ያገኘው የድሮ ዕቃዎች መሸጫ ሱቅ ውስጥ ነው — ያረጀ፣ የተፋቀ እና በፕላስተር የተጠቀለለ ነበር። ነገር ግን ስለ ስኬትቦርዱ የሆነ ነገር ሳበው። በመጀመሪያው ግልቢያ፣ 'እንብረር!' ሲል ሰማው፤ በድንጋጤም ከላዩ ላይ ወደቀ። ነገር ግን ቦርዱ ክፉ አልነበረም፣ ዝም ብሎ ድራማ የሚወድ ነበር። በጊዜ ሂደት ጓደኛሞች ሆኑ — አዎ፣ አንድ ልጅ እና የሚናገር ስኬትቦርድ። ቦርዱ በአንድ ወቅት በማዕበል ውስጥ በጠፋ የታወቀ ስኬተርስ እጅ የነበረ መሆኑ ታወቀ። ቦርዱ ብልሃቶችን፣ ታሪኮችን እና ፉክክሮችን ያስታውስ ነበር። በእሱ እርዳታ ጄይደን በከፍተኛ ሁኔታ ሰለጠነ እና ለሻምፒዮናው በቃ። ሲያሸንፍም፣ ቦርዱ 'ነፃ አወጣኸኝ' ሲል በሹክሹክታ ተናገረ። ከዚያም ልክ ነፍሱ ግልቢያዋን እንደጨረሰች ሁሉ ለሁለት ተሰነጠቀ። 🛹⚡"
-    },
-    {
-      "title": "ሉና እና ተናጋሪው ዛፍ",
-      "content": "ሉና ጀብዱ የምትወድ አንዲት ትንሽ ልጅ ነበረች። አንድ ቀን በጫካ ውስጥ፣ እንዲህ ብሎ የሚያንሾካሹክ ዛፍ አገኘች፣ 'ከዘፈንሽልኝ፣ ምስጢራዊ ዓለም አሳይሻለሁ።' በሙሉ ልቧ ዘፈነች፣ እና ባም! በቸኮሌት ወንዞች እና በማርሽሜሎ ደመናዎች የተሞላ ወደ ጣፋጭ ምድር የሚወስድ በር ተከፈተ።"
-    },
-    {
-      "title": "ማክስ አሳሹ ቡችላ",
-      "content": "ማክስ ቀይ ቦርሳ የሚያገለድም ቡችላ ነበር። በየቀኑ ጠዋት፣ \"የጀብዱ ጊዜ ነው!!\" እያለ ይጮህ ነበር። አንድ ቀን፣ የጠፋች የድመት ጠቦት አገኘና ወደ ቤቷ እንድትመለስ ረዳት፤ በዚህም ከእንስሳት የጀብዱ ክለብ የወርቅ ባጅ አገኘ። ማክስ የአካባቢው ዝነኛ ሆነ።"
-    },
-    {
-      "title": "ኮከቦችን የተከለችው ልጃገረድ",
-      "content": "በኮረብታዎች መካከል ተሸሽጋ በምትገኝ አንዲት ጸጥተኛ መንደር ውስጥ፣ ኮከቦች ጨረቃ የጣለቻቸው ዘሮች ናቸው ብላ የምታምን ሰላ የምትባል አንዲት ልጃገረድ ትኖር ነበር። በየምሽቱ ከሰማዩ በታች በባዶ እግሯ እየተጓዘች ለነፋሱ ምስጢሯን ትነግረው ነበር። በአንድ ምሽት፣ አንዲት የምታበራ ጠጠር አገኘችና በሜዳው ላይ ተከለቻት። ቀናት ወደ ሳምንታት ተቀየሩ፣ የመንደሩ ሰዎችም ይስቁባት ነበር—ነገር ግን በአንድ አመሻሽ ላይ፣ ከአፈሩ ውስጥ አንዲት ትንሽ ብርሃን ፈነጠቀች። 🌟 በዚያች ሌሊት፣ ሜዳው በከዋክብት ስብስቦች ተሞላ፤ እያንዳንዱም ጥንታዊ የመኝታ ዜማዎችን ያንጎራጉሩ ነበር። ከዚያን ጊዜ ጀምሮ፣ ሰላ በህልሟ አብርታው ስለነበር ልጆች ጨለማን መፍራት አቆሙ።"
-    }
-  ]
+  ],
 };
 
 export default storiesData;

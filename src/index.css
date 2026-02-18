@@ -46,30 +46,32 @@ button {
 button:hover {
   background-color: var(--secondary-color);
 }
-*/ .home {
-  text-align: "center";
-  padding: "2rem";
+.home {
+  text-align: center;
+  padding: 2rem;
   background-image: url("./assets/image.jpg");
   background-size: cover;
-  min-height: "80vh";
-  border-radius: auto;
-  margin: "1rem";
-  box-shadow: "0 10px 20px rgba(0,0,0,0.2)";
+  min-height: 80vh;
+  margin: 1rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
+
 button {
   background-color: #003399;
   border: none;
+}
 
-  .nav-button {
-    padding: 0.6rem 1.2rem;
-    font-size: 0.9rem;
-    width: 100%;
-    justify-content: center;
-  }
-  .navigation-controls {
-    flex-direction: column;
-    gap: 0.7rem;
-  }
+.nav-button {
+  padding: 0.6rem 1.2rem;
+  font-size: 0.9rem;
+  width: 100%;
+  justify-content: center;
+}
+
+.navigation-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
 }
 
 .instrument-container {

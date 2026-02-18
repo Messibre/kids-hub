@@ -24,7 +24,10 @@ mongoose.connection.once("open", () => {
 mongoose.connection.on("error", (err) => {
   console.error("MongoDB connection error:", err);
 });
-const SECRET = "your_jwt_secret";
+const SECRET = process.env.JWT_SECRET;
+if (!SECRET) {
+  throw new Error("JWT_SECRET is required in environment variables");
+}
 
 const userSchema = new mongoose.Schema({
   email: { type: String, required: true, unique: true },
@@ -44,7 +47,7 @@ app.post("/api/register", async (req, res) => {
     const user = new User({ email, password: hashedPassword });
     await user.save();
     console.log("user registered successfully", user);
-    const token = jwt.sign({ email }, SECRET, { expiresIn: "1h" });
+    const token = jwt.sign({ email }, SECRET, { expiresIn: "30d" });
     res.json({ token });
   } catch (err) {
     res.status(500).json({ message: "Server error" });
@@ -62,7 +65,7 @@ app.post("/api/login", async (req, res) => {
     if (!isMatch) {
       return res.status(401).json({ message: "Invalid username or password" });
     }
-    const token = jwt.sign({ email }, SECRET, { expiresIn: "1h" });
+    const token = jwt.sign({ email }, SECRET, { expiresIn: "30d" });
     res.json({ token, email });
   } catch (err) {
     res.status(500).json({ message: "Server error" });
@@ -74,6 +77,10 @@ app.get("/", (req, res) => {
 app.use("/api/stories", storyRoutes);
 
 const PORT = process.env.PORT || 5050;
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
-});
+if (require.main === module) {
+  app.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`);
+  });
+}
+
+module.exports = app;

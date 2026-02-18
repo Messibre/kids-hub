@@ -7,6 +7,7 @@ import "./PaintingApp.css";
 
 export default function PaintingApp() {
   const stageRef = useRef(null);
+  const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
 
   const [lines, setLines] = useState(() => {
     const saved = sessionStorage.getItem("paintingLines");
@@ -75,9 +76,40 @@ export default function PaintingApp() {
 
   const undo = () => setLines((prev) => prev.slice(0, -1));
 
-  const downloadImage = () => {
+  const downloadImage = async () => {
     const uri = stageRef.current?.toDataURL();
     if (!uri) return;
+
+    // Mobile browsers often ignore <a download>. Prefer share or open-image fallback.
+    if (isMobile) {
+      try {
+        if (navigator.share && navigator.canShare) {
+          const response = await fetch(uri);
+          const blob = await response.blob();
+          const file = new File([blob], "masterpiece.png", {
+            type: "image/png",
+          });
+          if (navigator.canShare({ files: [file] })) {
+            await navigator.share({
+              title: "My Painting",
+              files: [file],
+            });
+            return;
+          }
+        }
+      } catch (error) {
+        console.error("Mobile share failed, falling back to image preview:", error);
+      }
+
+      const preview = window.open("");
+      if (preview) {
+        preview.document.write(
+          `<img src="${uri}" style="max-width:100%;height:auto;display:block;margin:auto;" alt="Painting preview" />`,
+        );
+      }
+      return;
+    }
+
     const link = document.createElement("a");
     link.download = "masterpiece.png";
     link.href = uri;
@@ -106,7 +138,9 @@ export default function PaintingApp() {
     paddingBottom: "50px",
 
     minHeight: "100vh",
-    backgroundimage: `(url${pic3})`,
+    backgroundImage: `url(${pic3})`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
   };
   const paintingBoxStyle = {
     border: "2px solid #00bfff",
@@ -235,8 +269,8 @@ export default function PaintingApp() {
             ref={stageRef}
             style={{ touchAction: "none" }}
             onMouseDown={handleStart}
-            onMousemove={handleMove}
-            onMouseup={handleEnd}
+            onMouseMove={handleMove}
+            onMouseUp={handleEnd}
             onTouchStart={handleStart}
             onTouchMove={handleMove}
             onTouchEnd={handleEnd}

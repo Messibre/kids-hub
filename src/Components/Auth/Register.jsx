@@ -1,28 +1,37 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { setToken } from "../utils/jwt";
+import { apiUrl } from "../api";
 import "./AuthForm.css";
-export default function Register() {
+export default function Register({ onLogin }) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const [success, setSuccess] = useState("");
+  const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const response = await fetch("http://localhost:5050/api/register", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ email, password }),
-    });
-    const data = await response.json();
-    if (response.ok) {
-      setToken(data.token);
-      localStorage.setItem("userEmail", email);
-      if (typeof onLogin === "function") onLogin(email);
-      setSuccess("Registration successful! Redirecting...");
-      setTimeout(() => (window.location.href = "/"), 1500);
-    } else {
-      setError(data.message || "Registration failed");
+    setError("");
+    setSuccess("");
+    try {
+      const response = await fetch(apiUrl("/api/register"), {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email, password }),
+      });
+      const data = await response.json();
+      if (response.ok) {
+        setToken(data.token);
+        localStorage.setItem("userEmail", email);
+        if (typeof onLogin === "function") onLogin(email);
+        setSuccess("Registration successful! Redirecting...");
+        setTimeout(() => navigate("/"), 1000);
+      } else {
+        setError(data.message || "Registration failed");
+      }
+    } catch (networkError) {
+      setError("Unable to reach server. Please try again.");
     }
   };
 
@@ -48,7 +57,7 @@ export default function Register() {
       <button type="submit">Register</button>
       <button
         type="button"
-        onClick={() => (window.location.href = "/")}
+        onClick={() => navigate("/")}
         style={{ marginTop: "10px", backgroundColor: "#ccc" }}
       >
         Skip for now

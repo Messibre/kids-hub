@@ -28,7 +28,7 @@ export default function QuizApp() {
 
   const [currentQIndex, setCurrentQIndex] = useState(() => {
     const saved = sessionStorage.getItem("quizCurrentQIndex");
-    return saved ? parseInt(saved) : 0;
+    return saved ? parseInt(saved, 10) : 0;
   });
   const [userAnswers, setUserAnswers] = useState(() => {
     const saved = sessionStorage.getItem("quizUserAnswers");
@@ -43,7 +43,11 @@ export default function QuizApp() {
     return saved ? parseInt(saved) : 0;
   });
 
-  const currentQuestion = filteredQuestions[currentQIndex];
+  const safeCurrentQIndex =
+    filteredQuestions.length === 0
+      ? 0
+      : Math.min(currentQIndex, filteredQuestions.length - 1);
+  const currentQuestion = filteredQuestions[safeCurrentQIndex];
 
   useEffect(() => {
     sessionStorage.setItem("quizSelectedCategory", selectedCategory);
@@ -75,6 +79,17 @@ export default function QuizApp() {
   };
 
   useEffect(() => {
+    if (filteredQuestions.length === 0) {
+      if (currentQIndex !== 0) setCurrentQIndex(0);
+      return;
+    }
+    const lastIndex = filteredQuestions.length - 1;
+    if (currentQIndex > lastIndex) {
+      setCurrentQIndex(lastIndex);
+    }
+  }, [filteredQuestions.length, currentQIndex]);
+
+  useEffect(() => {
     sessionStorage.setItem("quizCurrentQIndex", currentQIndex);
   }, [currentQIndex]);
 
@@ -93,19 +108,19 @@ export default function QuizApp() {
   const handleOptionClick = (optionIndex) => {
     setUserAnswers({
       ...userAnswers,
-      [currentQIndex]: optionIndex,
+      [safeCurrentQIndex]: optionIndex,
     });
   };
 
   const nextQuestion = () => {
-    if (currentQIndex < filteredQuestions.length - 1) {
-      setCurrentQIndex(currentQIndex + 1);
+    if (safeCurrentQIndex < filteredQuestions.length - 1) {
+      setCurrentQIndex(safeCurrentQIndex + 1);
     }
   };
 
   const prevQuestion = () => {
-    if (currentQIndex > 0) {
-      setCurrentQIndex(currentQIndex - 1);
+    if (safeCurrentQIndex > 0) {
+      setCurrentQIndex(safeCurrentQIndex - 1);
     }
   };
 
@@ -134,13 +149,17 @@ export default function QuizApp() {
   };
 
   const isAnswerCorrect = (optionIndex) => {
-    return optionIndex === currentQuestion.correctAnswerIndex;
+    return currentQuestion
+      ? optionIndex === currentQuestion.correctAnswerIndex
+      : false;
   };
 
   const styles = {
     container: {
       minHeight: "100vh",
-      backgroundimage: `(url${quiz}`,
+      backgroundImage: `url(${quiz})`,
+      backgroundSize: "cover",
+      backgroundPosition: "center",
       display: "flex",
       flexDirection: "column",
       alignItems: "center",
@@ -244,7 +263,7 @@ export default function QuizApp() {
           <div style={styles.questionCard}>
             <h2>{quizData.quizTitle}</h2>
             <h3>
-              {currentQIndex + 1}. {currentQuestion.question}
+              {safeCurrentQIndex + 1}. {currentQuestion.question}
             </h3>
             {currentQuestion.options.map((opt, i) => (
               <button
@@ -252,8 +271,10 @@ export default function QuizApp() {
                 onClick={() => handleOptionClick(i)}
                 style={{
                   ...styles.optionBtn,
-                  ...(userAnswers[currentQIndex] === i ? styles.selected : {}),
-                  ...(userAnswers[currentQIndex] !== undefined
+                  ...(userAnswers[safeCurrentQIndex] === i
+                    ? styles.selected
+                    : {}),
+                  ...(userAnswers[safeCurrentQIndex] !== undefined
                     ? isAnswerCorrect(i)
                       ? styles.correct
                       : styles.incorrect
@@ -265,12 +286,12 @@ export default function QuizApp() {
             ))}
           </div>
           <div>
-            {currentQIndex > 0 && (
+            {safeCurrentQIndex > 0 && (
               <button onClick={prevQuestion} style={styles.button}>
                 ⬅️ Previous
               </button>
             )}
-            {currentQIndex < quizData.questions.length - 1 && (
+            {safeCurrentQIndex < filteredQuestions.length - 1 && (
               <button onClick={nextQuestion} style={styles.button}>
                 ➡️ Next
               </button>

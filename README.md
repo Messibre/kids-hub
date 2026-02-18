@@ -59,3 +59,22 @@ This project is licensed under the MIT License. See the LICENSE file for details
 Contact
 
 For any inquiries or feedback, please contact me at messibre21@gmail.com.
+
+## Vercel Deploy Notes
+
+1. Frontend (this root app):
+- Set `VITE_API_BASE_URL` in Vercel Project Environment Variables.
+- Example:
+  - If backend is deployed separately: `https://your-backend-domain.vercel.app`
+  - If same-origin proxy exists: leave it empty.
+
+2. Backend:
+- Must be deployed and reachable from the frontend URL.
+- Set backend env vars:
+  - `MONGODB_URI`
+  - `JWT_SECRET`
+- If deploying backend on Vercel, create a separate Vercel project with Root Directory set to `back-endd/server`.
+
+3. Login persistence:
+- Auth token is stored in `localStorage` (`jwtToken`).
+- Logged-in state remains after refresh/reopen until user logs out or storage is cleared.

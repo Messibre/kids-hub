@@ -23,7 +23,7 @@ Thumbs.db
 # VS Code settings
 .vscode/
 
-# Capacitor/Native build output (if you add Capacitor later)
+# Capacitor/Native build output
 android/
 ios/
 *.apk

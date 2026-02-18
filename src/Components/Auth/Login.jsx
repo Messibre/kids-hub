@@ -1,28 +1,35 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { setToken } from "../utils/jwt";
+import { apiUrl } from "../api";
 import "./AuthForm.css";
 
-export default function Login() {
+export default function Login({ onLogin }) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
+  const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    // Replace with your backend API endpoint
-    const response = await fetch("http://localhost:5050/api/login", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ email, password }),
-    });
-    const data = await response.json();
-    if (response.ok) {
-      setToken(data.token);
-      localStorage.setItem("userEmail", data.email);
-      if (typeof onLogin === "function") onLogin(data.email);
-      window.location.href = "/"; // Redirect after login
-    } else {
-      setError(data.message || "Login failed");
+    setError("");
+    try {
+      const response = await fetch(apiUrl("/api/login"), {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email, password }),
+      });
+      const data = await response.json();
+      if (response.ok) {
+        setToken(data.token);
+        localStorage.setItem("userEmail", data.email);
+        if (typeof onLogin === "function") onLogin(data.email);
+        navigate("/");
+      } else {
+        setError(data.message || "Login failed");
+      }
+    } catch (networkError) {
+      setError("Unable to reach server. Please try again.");
     }
   };
 
@@ -47,7 +54,7 @@ export default function Login() {
       <button type="submit">Login</button>
       <button
         type="button"
-        onClick={() => (window.location.href = "/")}
+        onClick={() => navigate("/")}
         style={{ marginTop: "10px", backgroundColor: "#ccc" }}
       >
         Skip for now

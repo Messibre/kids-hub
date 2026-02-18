@@ -250,12 +250,21 @@ export default function StoryTeller() {
   const [currentStoryIndex, setCurrentStoryIndex] = useState(0);
   const [selectedCategory, setSelectedCategory] = useState("All");
   const [error, setError] = useState(null);
+  const englishStories = Array.isArray(storiesData?.english)
+    ? storiesData.english
+    : [];
+  const amharicStories = Array.isArray(storiesData?.amharic)
+    ? storiesData.amharic
+    : [];
+  const allStories = [...englishStories, ...amharicStories];
 
   useEffect(() => {
-    if (!storiesData || storiesData.length === 0) {
+    if (allStories.length === 0) {
       setError("No stories found. Please try again later.");
+    } else {
+      setError(null);
     }
-  }, []);
+  }, [allStories.length]);
 
   const handleNext = () => {
     setCurrentStoryIndex((prev) => (prev + 1) % filteredStories.length);
@@ -267,7 +276,6 @@ export default function StoryTeller() {
     );
   };
 
-  const allStories = [...storiesData.english, ...storiesData.amharic];
   const categories = ["All", ...new Set(allStories.map((s) => s.category))];
   const filteredStories =
     selectedCategory === "All"
