@@ -7,8 +7,10 @@ import { GiGrandPiano } from "react-icons/gi";
 import { Link } from "react-router-dom";
 import ErrorBoundary from "./ErrorBoundary";
 import "./PaintingApp.css";
+import { useLanguage } from "./i18n/LanguageContext";
 
 export default function PianoInstrument() {
+  const { t } = useLanguage();
   const [audioContext, setAudioContext] = useState(null);
   const [instrument, setInstrument] = useState(null);
   const [audioReady, setAudioReady] = useState(false);
@@ -24,10 +26,10 @@ export default function PianoInstrument() {
   const pianoRef = useRef(null);
 
   const instrumentOptions = [
-    { value: "acoustic_grand_piano", label: "Grand Piano" },
-    { value: "electric_piano_1", label: "Electric Piano" },
-    { value: "harpsichord", label: "Harpsich]ord" },
-    { value: "celesta", label: "Celesta" },
+    { value: "acoustic_grand_piano", label: t("piano.grandPiano") },
+    { value: "electric_piano_1", label: t("piano.electricPiano") },
+    { value: "harpsichord", label: t("piano.harpsichord") },
+    { value: "celesta", label: t("piano.celesta") },
   ];
 
   const initAudio = async () => {
@@ -196,10 +198,10 @@ export default function PianoInstrument() {
     <ErrorBoundary>
       <div style={containerStyle}>
         <Link to="/" style={backLinkStyle}>
-          <button style={backButtonStyle}>⬅️ Back Home</button>
+          <button style={backButtonStyle}>⬅️ {t("piano.backHome")}</button>
         </Link>
         <h2>
-          <GiGrandPiano /> Interactive Piano
+          <GiGrandPiano /> {t("piano.title")}
         </h2>
         <div style={controlsStyle}>
           <select
@@ -220,21 +222,23 @@ export default function PianoInstrument() {
               checked={sustain}
               onChange={(e) => setSustain(e.target.checked)}
             />
-            Sustain Pedal
+            {t("piano.sustain")}
           </label>
 
           <button
             onClick={() => setIsRecording(!isRecording)}
             style={{ marginTop: "5px", padding: "8px 16px" }}
           >
-            {isRecording ? "⏹️ Stop Recording" : "⏺️ Start Recording"}
+            {isRecording
+              ? `⏹️ ${t("piano.stopRecording")}`
+              : `⏺️ ${t("piano.startRecording")}`}
           </button>
           {!audioReady && (
             <button
               onClick={initAudio}
               style={{ marginTop: "5px", padding: "8px 16px" }}
             >
-              🔊 Tap to Enable Sound
+              🔊 {t("piano.enableSound")}
             </button>
           )}
         </div>
@@ -259,7 +263,7 @@ export default function PianoInstrument() {
           />
         </div>
         <div className="keys" style={keysBoxStyle}>
-          <p>try out these</p>
+          <p>{t("piano.tryOutThese")}</p>
           <ol style={keysListStyle}>
             <li style={keysItemStyle}>
               C C D C F E C C D C G C F C C C A F E D B B A F G F{" "}

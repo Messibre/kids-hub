@@ -1,33 +1,36 @@
 import { Link } from "react-router-dom";
+import { useLanguage } from "./i18n/LanguageContext";
 
 export default function HomePage() {
+  const { t } = useLanguage();
+
   return (
     <section className="home">
       <div className="home-card">
-        <h1 className="home-title">Welcome to Kids Hub</h1>
+        <h1 className="home-title">{t("home.title")}</h1>
         <p className="home-subtitle">
-          Playing as guest - sign up to save your progress and creations.
+          {t("home.subtitle")}
         </p>
-        <p className="home-prompt">Pick your magical adventure:</p>
+        <p className="home-prompt">{t("home.prompt")}</p>
 
         <div className="home-grid">
           <Link to="/painting">
-            <button className="home-action-btn">Paint like Picasso</button>
+            <button className="home-action-btn">{t("home.paint")}</button>
           </Link>
           <Link to="/quiz">
-            <button className="home-action-btn">Brainy Quiz Time</button>
+            <button className="home-action-btn">{t("home.quiz")}</button>
           </Link>
           <Link to="/story">
-            <button className="home-action-btn">Story Magic</button>
+            <button className="home-action-btn">{t("home.story")}</button>
           </Link>
           <Link to="/piano">
-            <button className="home-action-btn">Play Piano</button>
+            <button className="home-action-btn">{t("home.piano")}</button>
           </Link>
         </div>
 
         <footer className="home-footer">
           <p>
-            Brought to life by Meseret Birhanu
+            {t("home.credit")}
             <br />
             messibre21@gmail.com
           </p>

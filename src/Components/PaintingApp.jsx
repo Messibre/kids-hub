@@ -4,8 +4,10 @@ import { Link } from "react-router-dom";
 import ErrorBoundary from "./ErrorBoundary";
 import pic3 from "../assets/pic3.jpg";
 import "./PaintingApp.css";
+import { useLanguage } from "./i18n/LanguageContext";
 
 export default function PaintingApp() {
+  const { t } = useLanguage();
   const stageRef = useRef(null);
   const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
 
@@ -91,7 +93,7 @@ export default function PaintingApp() {
           });
           if (navigator.canShare({ files: [file] })) {
             await navigator.share({
-              title: "My Painting",
+              title: t("painting.shareTitle"),
               files: [file],
             });
             return;
@@ -169,11 +171,11 @@ export default function PaintingApp() {
               color: "#fff",
             }}
           >
-            ⬅ Back Home
+            ⬅️ {t("painting.backHome")}
           </button>
         </Link>
 
-        <h2 style={{ fontSize: "2rem", marginBottom: 20 }}>Painting App</h2>
+        <h2 style={{ fontSize: "2rem", marginBottom: 20 }}>{t("painting.title")}</h2>
 
         <div style={{ marginBottom: 10 }}>
           <div>
@@ -185,15 +187,19 @@ export default function PaintingApp() {
                   setIsErasing(false);
                 }}
                 style={{
-                  backgroundColor: color,
+                  appearance: "none",
+                  background: color,
                   border:
                     brushColor === color && !isErasing
-                      ? "3px solid #444"
-                      : "2px solid #444",
+                      ? "4px solid #ffffff"
+                      : "2px solid #ffffff",
                   borderRadius: "50%",
                   width: 24,
                   height: 24,
                   margin: 4,
+                  padding: 0,
+                  minWidth: 24,
+                  boxShadow: "0 0 0 2px rgba(0,0,0,0.35)",
                 }}
               />
             ))}
@@ -224,7 +230,7 @@ export default function PaintingApp() {
               marginTop: 10,
             }}
           >
-            {isErasing ? "Brush" : "Eraser"}
+            {isErasing ? t("painting.brush") : t("painting.eraser")}
           </button>
 
           <button
@@ -236,7 +242,7 @@ export default function PaintingApp() {
               marginLeft: 10,
             }}
           >
-            Clear
+            {t("painting.clear")}
           </button>
           <button
             onClick={undo}
@@ -247,7 +253,7 @@ export default function PaintingApp() {
               marginLeft: 6,
             }}
           >
-            Undo
+            {t("painting.undo")}
           </button>
           <button
             onClick={downloadImage}
@@ -258,7 +264,7 @@ export default function PaintingApp() {
               marginLeft: 6,
             }}
           >
-            Save
+            {t("painting.save")}
           </button>
         </div>
 

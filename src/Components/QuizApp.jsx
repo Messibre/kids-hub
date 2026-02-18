@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import quiz from "../assets/quiz.jpg";
 import quizDataJson from "../../quizData.json";
+import { useLanguage } from "./i18n/LanguageContext";
 
 const quizData = {
   quizTitle: "Trivia Quiz",
@@ -9,6 +10,7 @@ const quizData = {
 };
 
 export default function QuizApp() {
+  const { t } = useLanguage();
   const categories = [
     "All",
     ...new Set(quizData.questions.map((q) => q.category || "General")),
@@ -154,6 +156,25 @@ export default function QuizApp() {
       : false;
   };
 
+  const getOptionStyle = (optionIndex) => {
+    const selectedIndex = userAnswers[safeCurrentQIndex];
+    const isSelected = selectedIndex === optionIndex;
+
+    if (!showResults) {
+      return isSelected ? styles.selected : {};
+    }
+
+    if (isAnswerCorrect(optionIndex)) {
+      return styles.correct;
+    }
+
+    if (isSelected && !isAnswerCorrect(optionIndex)) {
+      return styles.incorrect;
+    }
+
+    return {};
+  };
+
   const styles = {
     container: {
       minHeight: "100vh",
@@ -200,6 +221,8 @@ export default function QuizApp() {
 
     selected: {
       backgroundColor: "#ff5fbf",
+      border: "2px solid #ffffff",
+      boxShadow: "0 0 0 3px rgba(255, 217, 61, 0.7)",
     },
     correct: {
       backgroundColor: "#43c465",
@@ -222,14 +245,14 @@ export default function QuizApp() {
   return (
     <div style={styles.container}>
       <Link to="/" style={{ position: "absolute", top: 20, left: 10 }}>
-        <button style={styles.backButton}>⬅️ Back Home</button>
+        <button style={styles.backButton}>⬅️ {t("quiz.backHome")}</button>
       </Link>
       <div style={{ marginBottom: 20, marginTop: 60 }}>
         <label
           htmlFor="category-select"
           style={{ color: "#fff8cf", fontSize: "1.2rem", fontWeight: "bold" }}
         >
-          Select Category:{" "}
+          {t("quiz.selectCategory")}{" "}
         </label>
         <select
           id="category-select"
@@ -246,23 +269,23 @@ export default function QuizApp() {
       </div>
       {filteredQuestions.length === 0 ? (
         <div style={{ ...styles.questionCard, fontSize: "1.5rem" }}>
-          No questions available in this category. Please select another
-          category.
+          {t("quiz.noQuestions")}
         </div>
       ) : showResults ? (
         <div style={{ ...styles.questionCard, fontSize: "1.5rem" }}>
-          📝 You scored {score} out of {Object.keys(userAnswers).length}
+          📝 {t("quiz.scored")} {score} {t("quiz.outOf")}{" "}
+          {Object.keys(userAnswers).length}
           {/* Display answers count instead of total questions */}
           <div>
             <button onClick={restartQuiz} style={styles.button}>
-              🔁 Restart
+              🔁 {t("quiz.restart")}
             </button>
           </div>
         </div>
       ) : (
         <>
           <div style={styles.questionCard}>
-            <h2>{quizData.quizTitle}</h2>
+            <h2>{t("quiz.title")}</h2>
             <h3>
               {safeCurrentQIndex + 1}. {currentQuestion.question}
             </h3>
@@ -272,14 +295,7 @@ export default function QuizApp() {
                 onClick={() => handleOptionClick(i)}
                 style={{
                   ...styles.optionBtn,
-                  ...(userAnswers[safeCurrentQIndex] === i
-                    ? styles.selected
-                    : {}),
-                  ...(userAnswers[safeCurrentQIndex] !== undefined
-                    ? isAnswerCorrect(i)
-                      ? styles.correct
-                      : styles.incorrect
-                    : {}),
+                  ...getOptionStyle(i),
                 }}
               >
                 {opt}
@@ -289,16 +305,16 @@ export default function QuizApp() {
           <div>
             {safeCurrentQIndex > 0 && (
               <button onClick={prevQuestion} style={styles.button}>
-                ⬅️ Previous
+                ⬅️ {t("quiz.previous")}
               </button>
             )}
             {safeCurrentQIndex < filteredQuestions.length - 1 && (
               <button onClick={nextQuestion} style={styles.button}>
-                ➡️ Next
+                ➡️ {t("quiz.next")}
               </button>
             )}
             <button onClick={finishQuiz} style={styles.button}>
-              ✅ Finish & Show Results
+              ✅ {t("quiz.finish")}
             </button>
           </div>
         </>

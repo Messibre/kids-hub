@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { setToken } from "../utils/jwt";
 import { apiUrl } from "../api";
+import { useLanguage } from "../i18n/LanguageContext";
 import "./AuthForm.css";
 export default function Register({ onLogin }) {
   const [email, setEmail] = useState("");
@@ -9,6 +10,7 @@ export default function Register({ onLogin }) {
   const [error, setError] = useState("");
   const [success, setSuccess] = useState("");
   const navigate = useNavigate();
+  const { t } = useLanguage();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -25,42 +27,42 @@ export default function Register({ onLogin }) {
         setToken(data.token);
         localStorage.setItem("userEmail", email);
         if (typeof onLogin === "function") onLogin(email);
-        setSuccess("Registration successful! Redirecting...");
+        setSuccess(t("auth.registerSuccess"));
         setTimeout(() => navigate("/"), 1000);
       } else {
-        setError(data.message || "Registration failed");
+        setError(data.message || t("auth.registerFailed"));
       }
     } catch (networkError) {
-      setError("Unable to reach server. Please try again.");
+      setError(t("auth.network"));
     }
   };
 
   return (
     <form className="auth-form" onSubmit={handleSubmit}>
-      <h2>Register</h2>
+      <h2>{t("auth.registerTitle")}</h2>
       {error && <p style={{ color: "red" }}>{error}</p>}
       {success && <p style={{ color: "green" }}>{success}</p>}
       <input
         type="email"
-        placeholder="Email"
+        placeholder={t("auth.email")}
         value={email}
         onChange={(e) => setEmail(e.target.value)}
         required
       />
       <input
         type="password"
-        placeholder="Password"
+        placeholder={t("auth.password")}
         value={password}
         onChange={(e) => setPassword(e.target.value)}
         required
       />
-      <button type="submit">Register</button>
+      <button type="submit">{t("auth.registerTitle")}</button>
       <button
         type="button"
         className="ghost-btn"
         onClick={() => navigate("/")}
       >
-        Skip for now
+        {t("auth.skip")}
       </button>
     </form>
   );

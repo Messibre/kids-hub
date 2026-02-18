@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import storiesData from "./storiesData.js";
 import content from "../assets/quiz_background.jpg";
+import { useLanguage } from "./i18n/LanguageContext";
 /*
     title: "የተራበ ተኩላ",
     content:
@@ -247,6 +248,7 @@ import content from "../assets/quiz_background.jpg";
 */
 
 export default function StoryTeller() {
+  const { t } = useLanguage();
   const [currentStoryIndex, setCurrentStoryIndex] = useState(0);
   const [selectedCategory, setSelectedCategory] = useState("All");
   const [error, setError] = useState(null);
@@ -260,11 +262,11 @@ export default function StoryTeller() {
 
   useEffect(() => {
     if (allStories.length === 0) {
-      setError("No stories found. Please try again later.");
+      setError(t("story.noStories"));
     } else {
       setError(null);
     }
-  }, [allStories.length]);
+  }, [allStories.length, t]);
 
   const handleNext = () => {
     setCurrentStoryIndex((prev) => (prev + 1) % filteredStories.length);
@@ -292,7 +294,7 @@ export default function StoryTeller() {
       <div style={styles.container}>
         <p style={styles.errorBox}>⚠️ {error}</p>
         <Link to="/" style={backLinkStyle}>
-          <button style={buttonStyle}>⬅ Back Home</button>
+          <button style={buttonStyle}>⬅️ {t("story.backHome")}</button>
         </Link>
       </div>
     );
@@ -395,7 +397,7 @@ export default function StoryTeller() {
   return (
     <div style={styles.container}>
       <Link to="/" style={backLinkStyle}>
-        <button style={backButtonStyle}>🏠 Back Home</button>
+        <button style={backButtonStyle}>🏠 {t("story.backHome")}</button>
       </Link>
 
       <div style={styles.filterContainer}>
@@ -403,7 +405,7 @@ export default function StoryTeller() {
           htmlFor="category-select"
           style={{ fontSize: "1.5rem", fontWeight: "bold", color: "#333" }}
         >
-          Choose a Story Type: 🎉
+          {t("story.chooseType")} 🎉
         </label>
         <select
           id="category-select"
@@ -421,10 +423,10 @@ export default function StoryTeller() {
 
       <div style={styles.storyCard}>
         <h2 style={styles.storyTitle}>
-          {filteredStories[currentStoryIndex]?.title || "No Story"}
+          {filteredStories[currentStoryIndex]?.title || t("story.noStory")}
         </h2>
         <p style={styles.storyContent}>
-          {filteredStories[currentStoryIndex]?.content || "No content"}
+          {filteredStories[currentStoryIndex]?.content || t("story.noContent")}
         </p>
       </div>
 
@@ -434,10 +436,11 @@ export default function StoryTeller() {
           disabled={filteredStories.length <= 1 || currentStoryIndex === 0}
           style={buttonStyle}
         >
-          ⬅️ Previous Story
+          ⬅️ {t("story.previous")}
         </button>
         <span style={{ fontWeight: "bold", fontSize: "1.5rem", color: "#333" }}>
-          Story {currentStoryIndex + 1} of {filteredStories.length} 📖
+          {t("story.storyCount")} {currentStoryIndex + 1} {t("story.of")}{" "}
+          {filteredStories.length} 📖
         </span>
         <button
           onClick={handleNext}
@@ -447,11 +450,11 @@ export default function StoryTeller() {
           }
           style={buttonStyle}
         >
-          Next Story ➡️
+          {t("story.next")} ➡️
         </button>
       </div>
       <p style={{ fontSize: "1.2rem", color: "#333", marginTop: "20px" }}>
-        Saving your own stories coming soon! ✨
+        {t("story.comingSoon")} ✨
       </p>
     </div>
   );
