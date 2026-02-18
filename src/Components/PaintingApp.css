@@ -1,116 +1,33 @@
-.container {
-  max-width: 800px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 2rem;
-}
-
 .painting-app-container {
-  padding-top: 100px;
-  padding-bottom: 50px;
+  width: 100%;
   min-height: 100vh;
-}
-
-@media (max-width: 480px) {
-  .painting-app-container {
-    padding-top: 30px;
-    padding-bottom: 20px;
-    min-height: 80vh;
-  }
+  padding: 88px 0.7rem 2rem;
 }
 
 .painting-app {
-  background-size: cover;
-  background-position: center;
-  border: 3px dotted #00acc1;
-  border-radius: 1rem;
-  padding: 1rem;
-  box-shadow: 0 4px 10px rgba(0, 172, 193, 0.2);
-  max-width: 100vw;
-  margin: 1rem auto;
-}
-
-.painting-app canvas {
-  width: 700px;
-  max-width: 95vw;
-  min-width: 0;
-  box-sizing: border-box;
-  display: block;
-  margin: 1rem auto;
-  border: 3px solid #26c6da;
-  border-radius: 1rem;
-  background-color: white;
-  padding: 1rem;
+  width: min(980px, 96vw);
+  margin: 0 auto;
+  padding: 0.9rem;
+  border-radius: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.75);
+  background: linear-gradient(170deg, rgba(255, 255, 255, 0.9), rgba(219, 243, 255, 0.85));
+  box-shadow: 0 12px 24px rgba(6, 75, 191, 0.25);
 }
 
 .painting-app h2 {
+  font-family: "Baloo 2", cursive;
+  color: #0458d9;
   text-align: center;
 }
 
-.painting-tools {
-  text-align: center;
-  margin-top: 1rem;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  justify-content: center;
-}
+@media (max-width: 700px) {
+  .painting-app-container {
+    padding-top: 70px;
+  }
 
-.painting-tools button {
-  background-color: #00ccff;
-  color: #004d40;
-  border: none;
-  margin: 0.3rem;
-  padding: 0.5rem 1rem;
-  border-radius: 1rem;
-  cursor: pointer;
-  font-weight: bold;
-  font-size: 1rem;
-}
-
-.painting-tools button:hover {
-  background-color: #3333ff;
-}
-
-@media (max-width: 600px) {
   .painting-app {
-    padding: 0.5rem;
-    border-radius: 0.5rem;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
     width: 98vw;
-    max-width: 100vw;
-    min-width: 0;
-    overflow-x: hidden;
-  }
-
-  .painting-app canvas {
-    width: 95vw !important;
-    max-width: 95vw;
-    min-width: 0;
-    box-sizing: border-box;
-    display: block;
-    margin: 0.5rem auto;
-    border: 3px solid #26c6da;
-    border-radius: 1rem;
-    background-color: white;
     padding: 0.5rem;
-  }
-
-  .painting-tools {
-    margin-top: 0.5rem;
-    flex-wrap: wrap;
-    gap: 0.3rem;
-  }
-
-  .painting-tools button {
-    padding: 0.4rem 0.7rem;
-    font-size: 0.95rem;
-    margin: 0.2rem;
-  }
-
-  .painting-app h2,
-  h2 {
-    font-size: 1.1rem;
-    margin-bottom: 0.7rem;
+    border-radius: 16px;
   }
 }

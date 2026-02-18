@@ -143,7 +143,7 @@ export default function PaintingApp() {
     backgroundPosition: "center",
   };
   const paintingBoxStyle = {
-    border: "2px solid #00bfff",
+    border: "3px solid #ffd93d",
     borderRadius: "10px",
     overflow: "hidden",
     backgroundColor: "white",
@@ -165,7 +165,7 @@ export default function PaintingApp() {
           <button
             style={{
               ...buttonStyle,
-              backgroundColor: "#00FFFF",
+              backgroundColor: "#ff5fbf",
               color: "#fff",
             }}
           >
@@ -206,8 +206,8 @@ export default function PaintingApp() {
                 onClick={() => setBrushSize(size)}
                 style={{
                   ...buttonStyle,
-                  backgroundColor: brushSize === size ? "#888" : "#ccc",
-                  color: "#000",
+                  backgroundColor: brushSize === size ? "#ff3b4a" : "#ffeaa0",
+                  color: brushSize === size ? "#fff" : "#5f2a00",
                 }}
               >
                 {size}px
@@ -219,7 +219,7 @@ export default function PaintingApp() {
             onClick={() => setIsErasing((e) => !e)}
             style={{
               ...buttonStyle,
-              backgroundColor: isErasing ? "#f44336" : "#8bc34a",
+              backgroundColor: isErasing ? "#2f8cff" : "#ff5fbf",
               color: "#fff",
               marginTop: 10,
             }}
@@ -231,7 +231,7 @@ export default function PaintingApp() {
             onClick={clearCanvas}
             style={{
               ...buttonStyle,
-              backgroundColor: "#ff5722",
+              backgroundColor: "#ff3b4a",
               color: "#fff",
               marginLeft: 10,
             }}
@@ -242,7 +242,7 @@ export default function PaintingApp() {
             onClick={undo}
             style={{
               ...buttonStyle,
-              backgroundColor: "#03a9f4",
+              backgroundColor: "#2f8cff",
               color: "#fff",
               marginLeft: 6,
             }}
@@ -253,8 +253,8 @@ export default function PaintingApp() {
             onClick={downloadImage}
             style={{
               ...buttonStyle,
-              backgroundColor: "#9c27b0",
-              color: "#fff",
+              backgroundColor: "#ffd93d",
+              color: "#6d2a00",
               marginLeft: 6,
             }}
           >

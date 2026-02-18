@@ -149,7 +149,7 @@ export default function PianoInstrument() {
     textDecoration: "none",
   };
   const keysBoxStyle = {
-    background: "linear-gradient(135deg, #e0f7fa 0%, #fffde4 100%)",
+    background: "linear-gradient(135deg, #fffdf8 0%, #ffe5f5 45%, #fff3be 100%)",
     borderRadius: "18px",
     boxShadow: "0 4px 16px rgba(0,0,0,0.08)",
     padding: "24px 32px",
@@ -158,13 +158,13 @@ export default function PianoInstrument() {
     marginLeft: "auto",
     marginRight: "auto",
     fontFamily: "'Comic Sans MS', 'Comic Sans', cursive",
-    color: "#222",
+    color: "#4b1f66",
   };
   const keysTitleStyle = {
     fontSize: "1.3rem",
     fontWeight: "bold",
     marginBottom: "12px",
-    color: "#00796b",
+    color: "#ff2d55",
     letterSpacing: "1px",
   };
   const keysListStyle = {
@@ -173,7 +173,7 @@ export default function PianoInstrument() {
   const keysItemStyle = {
     fontSize: "1.1rem",
     marginBottom: "8px",
-    background: "#fff",
+    background: "#ffffff",
     borderRadius: "8px",
     padding: "8px 12px",
     boxShadow: "0 2px 6px rgba(0,0,0,0.04)",
@@ -183,11 +183,11 @@ export default function PianoInstrument() {
   const backButtonStyle = {
     padding: "8px 16px",
     fontSize: "1rem",
-    backgroundColor: "#00FFFF",
+    backgroundColor: "#ff5fbf",
     border: "none",
     borderRadius: "10px",
     cursor: "pointer",
-    color: "white",
+    color: "#fff",
     fontWeight: "bold",
     boxShadow: "0px 2px 5px rgba(0,0,0,0.3)",
   };

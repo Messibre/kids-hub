@@ -27,44 +27,48 @@ function NavBar({ isLoggedIn, onLogout, userEmail }) {
     navigate("/login");
   };
   return (
-    <nav style={{ display: "flex", gap: 10, alignItems: "center" }}>
-      <Link to="/">
-        <button>Home</button>
+    <nav className="app-nav">
+      <Link to="/" className="app-nav-link">
+        <button className="app-nav-btn">Home</button>
       </Link>
       {/* {isLoggedIn && ( */}
-      <Link to="/painting">
-        <button>Painting</button>
-      </Link>
-      {/* )} */}
-      {/* {isLoggedIn && ( */}
-      <Link to="/quiz">
-        <button>Quiz</button>
+      <Link to="/painting" className="app-nav-link">
+        <button className="app-nav-btn">Painting</button>
       </Link>
       {/* )} */}
       {/* {isLoggedIn && ( */}
-      <Link to="/story">
-        <button>Story</button>
+      <Link to="/quiz" className="app-nav-link">
+        <button className="app-nav-btn">Quiz</button>
       </Link>
       {/* )} */}
       {/* {isLoggedIn && ( */}
-      <Link to="/piano">
-        <button>
+      <Link to="/story" className="app-nav-link">
+        <button className="app-nav-btn">Story</button>
+      </Link>
+      {/* )} */}
+      {/* {isLoggedIn && ( */}
+      <Link to="/piano" className="app-nav-link">
+        <button className="app-nav-btn">
           <GiGrandPiano /> Piano
         </button>
       </Link>
       {/* )} */}
       {!isLoggedIn && (
-        <Link to="/login">
-          <button>Login</button>
+        <Link to="/login" className="app-nav-link">
+          <button className="app-nav-btn">Login</button>
         </Link>
       )}
       {!isLoggedIn && (
-        <Link to="/register">
-          <button>Register</button>
+        <Link to="/register" className="app-nav-link">
+          <button className="app-nav-btn">Register</button>
         </Link>
       )}
-      {isLoggedIn && <span>Welcome, {userEmail}</span>}
-      {isLoggedIn && <button onClick={handleLogout}>Logout</button>}
+      {isLoggedIn && <span className="app-nav-user">Welcome, {userEmail}</span>}
+      {isLoggedIn && (
+        <button className="app-nav-btn app-nav-btn-danger" onClick={handleLogout}>
+          Logout
+        </button>
+      )}
     </nav>
   );
 }
@@ -95,10 +99,11 @@ export default function App() {
         onLogout={handleLogout}
         userEmail={userEmail}
       />
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="login" element={<Login onLogin={handleLogin} />} />
-        <Route path="register" element={<Register onLogin={handleLogin} />} />
+      <main className="app-main">
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="login" element={<Login onLogin={handleLogin} />} />
+          <Route path="register" element={<Register onLogin={handleLogin} />} />
 
         {/* <Route
           path="/painting"
@@ -108,7 +113,7 @@ export default function App() {
             </ProtectedRoute>
           }
         /> */}
-        <Route path="/painting" element={<PaintingApp />} />
+          <Route path="/painting" element={<PaintingApp />} />
         {/* <Route
           path="/quiz"
           element={
@@ -117,7 +122,7 @@ export default function App() {
             </ProtectedRoute>
           }
         /> */}
-        <Route path="/quiz" element={<QuizApp />} />
+          <Route path="/quiz" element={<QuizApp />} />
         {/* <Route
           path="/story"
           element={
@@ -126,7 +131,7 @@ export default function App() {
             </ProtectedRoute>
           }
         /> */}
-        <Route path="/story" element={<StoryTeller />} />
+          <Route path="/story" element={<StoryTeller />} />
         {/* <Route
           path="/piano"
           element={
@@ -135,8 +140,9 @@ export default function App() {
             </ProtectedRoute>
           }
         /> */}
-        <Route path="/piano" element={<PianoInstrument />} />
-      </Routes>
+          <Route path="/piano" element={<PianoInstrument />} />
+        </Routes>
+      </main>
     </BrowserRouter>
   );
 }

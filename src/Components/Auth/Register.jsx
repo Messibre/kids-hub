@@ -57,8 +57,8 @@ export default function Register({ onLogin }) {
       <button type="submit">Register</button>
       <button
         type="button"
+        className="ghost-btn"
         onClick={() => navigate("/")}
-        style={{ marginTop: "10px", backgroundColor: "#ccc" }}
       >
         Skip for now
       </button>

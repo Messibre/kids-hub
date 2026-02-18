@@ -168,7 +168,7 @@ export default function QuizApp() {
     button: {
       padding: "10px 18px",
       fontSize: "1rem",
-      backgroundColor: "#000066",
+      backgroundColor: "#ff3b4a",
       color: "white",
       border: "none",
       borderRadius: 12,
@@ -179,8 +179,8 @@ export default function QuizApp() {
       padding: "10px 14px",
       fontSize: "1rem",
       margin: "8px 0",
-      backgroundColor: "#003366",
-      color: "white",
+      backgroundColor: "#2f8cff",
+      color: "#fff",
       borderRadius: 10,
       cursor: "pointer",
       width: "100%",
@@ -189,7 +189,7 @@ export default function QuizApp() {
     backButton: {
       padding: "8px 16px",
       fontSize: "1rem",
-      backgroundColor: "#00FFFF",
+      backgroundColor: "#ff5fbf",
       border: "none",
       borderRadius: "10px",
       cursor: "pointer",
@@ -199,22 +199,23 @@ export default function QuizApp() {
     },
 
     selected: {
-      backgroundColor: "#0055AA",
+      backgroundColor: "#ff5fbf",
     },
     correct: {
-      backgroundColor: "green",
+      backgroundColor: "#43c465",
     },
     incorrect: {
-      backgroundColor: "red",
+      backgroundColor: "#ff5d6c",
     },
     questionCard: {
-      backgroundColor: "#004080",
+      background: "linear-gradient(140deg, #fffdf8 0%, #ffe8f6 48%, #fff2b1 100%)",
       padding: 20,
       borderRadius: 16,
-      color: "white",
+      color: "#4a1b5f",
       width: "90%",
       maxWidth: 600,
       marginBottom: 20,
+      border: "2px solid #ffd93d",
     },
   };
 
@@ -226,7 +227,7 @@ export default function QuizApp() {
       <div style={{ marginBottom: 20, marginTop: 60 }}>
         <label
           htmlFor="category-select"
-          style={{ color: "white", fontSize: "1.2rem" }}
+          style={{ color: "#fff8cf", fontSize: "1.2rem", fontWeight: "bold" }}
         >
           Select Category:{" "}
         </label>

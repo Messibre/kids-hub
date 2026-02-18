@@ -301,7 +301,7 @@ export default function StoryTeller() {
     container: {
       minHeight: "100vh",
       background:
-        "linear-gradient(135deg, #ff9a9e 0%, #fecfef 50%, #fecfef 100%)",
+        "linear-gradient(135deg, #ff7360 0%, #ff5fbf 46%, #2f8cff 100%)",
       display: "flex",
       flexDirection: "column",
       alignItems: "center",
@@ -319,31 +319,31 @@ export default function StoryTeller() {
       padding: "10px",
       fontSize: "1.2rem",
       borderRadius: "20px",
-      border: "2px solid #ff6b9d",
-      backgroundColor: "#fff",
-      color: "#333",
+      border: "2px solid #ffd93d",
+      backgroundColor: "#fff9d7",
+      color: "#702159",
       cursor: "pointer",
       fontWeight: "bold",
     },
     storyCard: {
       maxWidth: "900px",
       width: "95%",
-      backgroundColor: "#87ceeb",
+      background: "linear-gradient(140deg, #fffdf8 0%, #ffe6f6 50%, #fff3bc 100%)",
       padding: "30px",
       borderRadius: "25px",
       boxShadow: "0px 8px 20px rgba(0,0,0,0.2)",
-      border: "5px solid #ffd700",
+      border: "5px solid #2f8cff",
     },
     storyTitle: {
       fontSize: "2.5rem",
-      color: "#ff4500",
+      color: "#ff2d55",
       marginBottom: "20px",
       textAlign: "center",
       textShadow: "2px 2px 4px rgba(0,0,0,0.3)",
     },
     storyContent: {
       fontSize: "1.5rem",
-      color: "#333",
+      color: "#4d1f68",
       lineHeight: "2",
       textAlign: "center",
     },
@@ -357,7 +357,7 @@ export default function StoryTeller() {
     },
     errorBox: {
       marginTop: "100px",
-      backgroundColor: "#ff6347",
+      backgroundColor: "#ff3b4a",
       color: "#fff",
       padding: "20px 30px",
       borderRadius: "15px",
@@ -377,7 +377,7 @@ export default function StoryTeller() {
   const buttonStyle = {
     padding: "12px 24px",
     fontSize: "1.2rem",
-    backgroundColor: "#32cd32", // Lime green
+    backgroundColor: "#2f8cff",
     border: "none",
     borderRadius: "20px",
     cursor: "pointer",
@@ -389,7 +389,7 @@ export default function StoryTeller() {
   };
   const backButtonStyle = {
     ...buttonStyle,
-    backgroundColor: "#ff69b4", // Hot pink
+    backgroundColor: "#ff5fbf",
   };
 
   return (
