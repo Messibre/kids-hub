@@ -9,7 +9,27 @@ const jwt = require("jsonwebtoken");
 const app = express();
 const bcrypt = require("bcryptjs");
 
-app.use(cors());
+const allowedOrigins = (
+  process.env.CORS_ORIGINS ||
+  "http://localhost:5173,https://kids-hub-snowy.vercel.app"
+)
+  .split(",")
+  .map((origin) => origin.trim())
+  .filter(Boolean);
+
+const corsOptions = {
+  origin(origin, callback) {
+    // Allow non-browser tools and same-origin server calls.
+    if (!origin) return callback(null, true);
+    if (allowedOrigins.includes(origin)) return callback(null, true);
+    return callback(new Error("Not allowed by CORS"));
+  },
+  methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
+  allowedHeaders: ["Content-Type", "Authorization"],
+};
+
+app.use(cors(corsOptions));
+app.options(/.*/, cors(corsOptions));
 app.use(express.json());
 
 mongoose.connect(
