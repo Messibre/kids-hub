@@ -9,7 +9,6 @@ import { useState } from "react";
 import HomePage from "./Components/HomePage";
 import Login from "./Components/Auth/Login";
 import Register from "./Components/Auth/Register";
-// import ProtectedRoute from "./Components/Auth/ProtectedRoute";
 import PaintingApp from "./Components/PaintingApp";
 import QuizApp from "./Components/QuizApp";
 import StoryTeller from "./Components/StoryTeller";
@@ -17,8 +16,10 @@ import PianoInstrument from "./Components/PianoInstrument";
 import { GiGrandPiano } from "react-icons/gi";
 import { getToken, removeToken } from "./Components/utils/jwt";
 import React from "react";
-import { LanguageProvider, useLanguage } from "./Components/i18n/LanguageContext";
-// import UserInfo from "./Components/UserInfo";
+import {
+  LanguageProvider,
+  useLanguage,
+} from "./Components/i18n/LanguageContext";
 
 function NavBar({ isLoggedIn, onLogout, userEmail }) {
   const navigate = useNavigate();
@@ -74,7 +75,10 @@ function NavBar({ isLoggedIn, onLogout, userEmail }) {
         </span>
       )}
       {isLoggedIn && (
-        <button className="app-nav-btn app-nav-btn-danger" onClick={handleLogout}>
+        <button
+          className="app-nav-btn app-nav-btn-danger"
+          onClick={handleLogout}
+        >
           {t("nav.logout")}
         </button>
       )}
@@ -113,43 +117,17 @@ export default function App() {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="login" element={<Login onLogin={handleLogin} />} />
-            <Route path="register" element={<Register onLogin={handleLogin} />} />
+            <Route
+              path="register"
+              element={<Register onLogin={handleLogin} />}
+            />
 
-        {/* <Route
-          path="/painting"
-          element={
-            <ProtectedRoute>
-              <PaintingApp />
-            </ProtectedRoute>
-          }
-        /> */}
             <Route path="/painting" element={<PaintingApp />} />
-        {/* <Route
-          path="/quiz"
-          element={
-            <ProtectedRoute>
-              <QuizApp />
-            </ProtectedRoute>
-          }
-        /> */}
+
             <Route path="/quiz" element={<QuizApp />} />
-        {/* <Route
-          path="/story"
-          element={
-            <ProtectedRoute>
-              <StoryTeller />
-            </ProtectedRoute>
-          }
-        /> */}
+
             <Route path="/story" element={<StoryTeller />} />
-        {/* <Route
-          path="/piano"
-          element={
-            <ProtectedRoute>
-              <PianoInstrument />
-            </ProtectedRoute>
-          }
-        /> */}
+
             <Route path="/piano" element={<PianoInstrument />} />
           </Routes>
         </main>
