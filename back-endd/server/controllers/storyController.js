@@ -118,20 +118,8 @@ const createStory = async (req, res) => {
     return res.status(400).json({ error: payload.error });
   }
 
-  try {
-    const newStory = new Story(payload);
-    await newStory.save();
-    return res.status(201).json(newStory);
-  } catch (error) {
-    return res.status(400).json({ error: "Failed to add story" });
-  }
-};
-
-const createMyStory = async (req, res) => {
-  const payload = validateStoryPayload(req.body);
-
-  if (payload.error) {
-    return res.status(400).json({ error: payload.error });
+  if (!req.user?.id) {
+    return res.status(401).json({ error: "Authentication is required" });
   }
 
   try {
@@ -144,8 +132,12 @@ const createMyStory = async (req, res) => {
     await newStory.save();
     return res.status(201).json(newStory);
   } catch (error) {
-    return res.status(400).json({ error: "Failed to add personal story" });
+    return res.status(500).json({ error: "Failed to add story" });
   }
+};
+
+const createMyStory = async (req, res) => {
+  return createStory(req, res);
 };
 
 const getMyStories = async (req, res) => {

@@ -15,7 +15,7 @@ const {
 
 router.get("/", getStories);
 router.get("/search", searchStories);
-router.post("/", createStory);
+router.post("/", authMiddleware, createStory);
 
 router.get("/me/list", authMiddleware, getMyStories);
 router.get("/me/stats", authMiddleware, getMyStoriesStats);

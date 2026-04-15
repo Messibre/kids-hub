@@ -6,6 +6,7 @@ const cors = require("cors");
 const storyRoutes = require("./routes/StoryRoutes");
 const authRoutes = require("./routes/authRoutes");
 const quizHistoryRoutes = require("./routes/quizHistoryRoutes");
+const paintingRoutes = require("./routes/paintingRoutes");
 
 const app = express();
 
@@ -31,6 +32,7 @@ const corsOptions = {
 app.use(cors(corsOptions));
 app.options(/.*/, cors(corsOptions));
 app.use(express.json());
+app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 
 mongoose.connect(
   process.env.MONGODB_URI || "mongodb://localhost:27017/kids-hub",
@@ -51,6 +53,7 @@ app.get("/", (req, res) => {
 app.use("/api", authRoutes);
 app.use("/api/stories", storyRoutes);
 app.use("/api/quiz-history", quizHistoryRoutes);
+app.use("/api/paintings", paintingRoutes);
 
 const PORT = process.env.PORT || 5050;
 if (require.main === module) {

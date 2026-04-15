@@ -245,7 +245,16 @@ const getMyOverallRank = async (req, res) => {
         $project: {
           _id: 0,
           userId: "$_id",
-          email: { $ifNull: [{ $arrayElemAt: ["$user.email", 0] }, "Unknown"] },
+          username: {
+            $let: {
+              vars: {
+                safeEmail: {
+                  $ifNull: [{ $arrayElemAt: ["$user.email", 0] }, "unknown"],
+                },
+              },
+              in: { $arrayElemAt: [{ $split: ["$$safeEmail", "@"] }, 0] },
+            },
+          },
           totalAttempts: 1,
           totalQuestionsGot: 1,
           bestScore: { $round: ["$bestScore", 2] },
