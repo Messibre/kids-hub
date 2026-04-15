@@ -61,11 +61,7 @@ export default function Login({ onLogin }) {
         required
       />
       <button type="submit">{t("auth.loginTitle")}</button>
-      <button
-        type="button"
-        className="ghost-btn"
-        onClick={() => navigate("/")}
-      >
+      <button type="button" className="ghost-btn" onClick={() => navigate("/")}>
         {t("auth.skip")}
       </button>
     </form>
