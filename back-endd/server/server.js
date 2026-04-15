@@ -5,6 +5,7 @@ const mongoose = require("mongoose");
 const cors = require("cors");
 const storyRoutes = require("./routes/StoryRoutes");
 const authRoutes = require("./routes/authRoutes");
+const quizHistoryRoutes = require("./routes/quizHistoryRoutes");
 
 const app = express();
 
@@ -49,6 +50,7 @@ app.get("/", (req, res) => {
 });
 app.use("/api", authRoutes);
 app.use("/api/stories", storyRoutes);
+app.use("/api/quiz-history", quizHistoryRoutes);
 
 const PORT = process.env.PORT || 5050;
 if (require.main === module) {
