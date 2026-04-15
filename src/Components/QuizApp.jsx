@@ -303,10 +303,16 @@ export default function QuizApp() {
       boxShadow: "0 0 0 3px rgba(255, 226, 207, 0.7)",
     },
     correct: {
-      backgroundColor: "#7ca98f",
+      backgroundColor: "#2f8f5b",
+      border: "2px solid #e8fff1",
+      boxShadow: "0 0 0 3px rgba(47, 143, 91, 0.25)",
+      color: "#ffffff",
     },
     incorrect: {
-      backgroundColor: "#9d6f87",
+      backgroundColor: "#d1495b",
+      border: "2px solid #ffe8ec",
+      boxShadow: "0 0 0 3px rgba(209, 73, 91, 0.22)",
+      color: "#ffffff",
     },
     questionCard: {
       background:
@@ -445,6 +451,25 @@ export default function QuizApp() {
               {opt}
             </button>
           ))}
+          {userAnswers[safeCurrentQIndex] !== undefined && !showResults && (
+            <div
+              style={{
+                marginTop: 10,
+                fontWeight: "bold",
+                color:
+                  userAnswers[safeCurrentQIndex] ===
+                  currentQuestion.correctAnswerIndex
+                    ? "#2f8f5b"
+                    : "#d1495b",
+                fontSize: "0.92rem",
+              }}
+            >
+              {userAnswers[safeCurrentQIndex] ===
+              currentQuestion.correctAnswerIndex
+                ? t("quiz.correctNow")
+                : t("quiz.incorrectNow")}
+            </div>
+          )}
         </div>
         <div>
           {safeCurrentQIndex > 0 && (
