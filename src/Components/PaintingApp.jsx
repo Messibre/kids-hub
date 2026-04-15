@@ -272,7 +272,9 @@ export default function PaintingApp() {
 
   useEffect(() => {
     if (activeImageIndex >= galleryItems.length) {
-      setActiveImageIndex(galleryItems.length > 0 ? galleryItems.length - 1 : -1);
+      setActiveImageIndex(
+        galleryItems.length > 0 ? galleryItems.length - 1 : -1,
+      );
     }
   }, [activeImageIndex, galleryItems.length]);
 

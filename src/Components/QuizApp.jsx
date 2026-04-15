@@ -3,6 +3,13 @@ import { Link } from "react-router-dom";
 import quiz from "../assets/quiz.jpg";
 import quizDataJson from "../../quizData.json";
 import { useLanguage } from "./i18n/LanguageContext";
+import { getToken } from "./utils/jwt";
+import {
+  createQuizHistory,
+  fetchMyBestQuizStats,
+  fetchMyOverallRank,
+  fetchMyQuizHistory,
+} from "./api/quizHistory";
 
 const quizData = {
   quizTitle: "Trivia Quiz",
@@ -11,6 +18,9 @@ const quizData = {
 
 export default function QuizApp() {
   const { t } = useLanguage();
+  const token = getToken();
+  const isLoggedIn = Boolean(token);
+
   const categories = [
     "All",
     ...new Set(quizData.questions.map((q) => q.category || "General")),
@@ -44,6 +54,20 @@ export default function QuizApp() {
     const saved = sessionStorage.getItem("quizScore");
     return saved ? parseInt(saved) : 0;
   });
+  const [answeredCount, setAnsweredCount] = useState(() => {
+    const saved = sessionStorage.getItem("quizAnsweredCount");
+    return saved ? parseInt(saved, 10) : 0;
+  });
+  const [statsLoading, setStatsLoading] = useState(false);
+  const [statsError, setStatsError] = useState("");
+  const [saveMessage, setSaveMessage] = useState("");
+  const [bestStats, setBestStats] = useState(null);
+  const [rankStats, setRankStats] = useState(null);
+  const [historyItems, setHistoryItems] = useState([]);
+  const [showLeaderboard, setShowLeaderboard] = useState(false);
+  const [isDesktopLayout, setIsDesktopLayout] = useState(
+    typeof window !== "undefined" ? window.innerWidth >= 1024 : false,
+  );
 
   const safeCurrentQIndex =
     filteredQuestions.length === 0
@@ -70,6 +94,9 @@ export default function QuizApp() {
   useEffect(() => {
     sessionStorage.setItem("quizScore", score);
   }, [score]);
+  useEffect(() => {
+    sessionStorage.setItem("quizAnsweredCount", answeredCount);
+  }, [answeredCount]);
 
   const handleCategoryChange = (e) => {
     const newCategory = e.target.value;
@@ -92,20 +119,50 @@ export default function QuizApp() {
   }, [filteredQuestions.length, currentQIndex]);
 
   useEffect(() => {
-    sessionStorage.setItem("quizCurrentQIndex", currentQIndex);
-  }, [currentQIndex]);
+    const handleResize = () => {
+      setIsDesktopLayout(window.innerWidth >= 1024);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  const loadStats = async () => {
+    if (!token) {
+      setBestStats(null);
+      setRankStats(null);
+      setStatsError("");
+      return;
+    }
+
+    setStatsLoading(true);
+    setStatsError("");
+
+    try {
+      const [best, rank] = await Promise.all([
+        fetchMyBestQuizStats(token),
+        fetchMyOverallRank(token),
+      ]);
+
+      const history = await fetchMyQuizHistory(
+        token,
+        selectedCategory === "All" ? "" : selectedCategory,
+      );
+
+      setBestStats(best);
+      setRankStats(rank);
+      setHistoryItems(history);
+    } catch (error) {
+      setStatsError(error?.message || t("quiz.statsError"));
+    } finally {
+      setStatsLoading(false);
+    }
+  };
 
   useEffect(() => {
-    sessionStorage.setItem("quizUserAnswers", JSON.stringify(userAnswers));
-  }, [userAnswers]);
-
-  useEffect(() => {
-    sessionStorage.setItem("quizShowResults", JSON.stringify(showResults));
-  }, [showResults]);
-
-  useEffect(() => {
-    sessionStorage.setItem("quizScore", score);
-  }, [score]);
+    loadStats();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [token, selectedCategory]);
 
   const handleOptionClick = (optionIndex) => {
     setUserAnswers({
@@ -140,7 +197,26 @@ export default function QuizApp() {
     });
 
     setScore(correct);
+    setAnsweredCount(answeredQuestions);
     setShowResults(true);
+
+    if (token && answeredQuestions > 0) {
+      createQuizHistory({
+        token,
+        category: selectedCategory === "All" ? "Mixed" : selectedCategory,
+        numberQuestionsDid: answeredQuestions,
+        numberQuestionsGot: correct,
+      })
+        .then(() => {
+          setSaveMessage(t("quiz.savedHistory"));
+          loadStats();
+        })
+        .catch((error) => {
+          setSaveMessage(error?.message || t("quiz.saveError"));
+        });
+    } else if (!token) {
+      setSaveMessage(t("quiz.loginToSave"));
+    }
   };
 
   const restartQuiz = () => {
@@ -148,6 +224,9 @@ export default function QuizApp() {
     setUserAnswers({});
     setShowResults(false);
     setScore(0);
+    setAnsweredCount(0);
+    setSaveMessage("");
+    setShowLeaderboard(false);
   };
 
   const isAnswerCorrect = (optionIndex) => {
@@ -160,25 +239,23 @@ export default function QuizApp() {
     const selectedIndex = userAnswers[safeCurrentQIndex];
     const isSelected = selectedIndex === optionIndex;
 
-    if (!showResults) {
-      return isSelected ? styles.selected : {};
-    }
+    if (!isSelected) return {};
 
-    if (isAnswerCorrect(optionIndex)) {
-      return styles.correct;
-    }
-
-    if (isSelected && !isAnswerCorrect(optionIndex)) {
-      return styles.incorrect;
-    }
-
-    return {};
+    return isAnswerCorrect(optionIndex) ? styles.correct : styles.incorrect;
   };
+
+  const topThree = Array.isArray(rankStats?.leaderboard)
+    ? rankStats.leaderboard.slice(0, 3)
+    : [];
+
+  const bestByCategory = Array.isArray(bestStats?.bestByCategory)
+    ? bestStats.bestByCategory
+    : [];
 
   const styles = {
     container: {
       minHeight: "100vh",
-      backgroundImage: `url(${quiz})`,
+      backgroundImage: `linear-gradient(rgba(246, 243, 255, 0.68), rgba(246, 243, 255, 0.62)), url(${quiz})`,
       backgroundSize: "cover",
       backgroundPosition: "center",
       display: "flex",
@@ -237,12 +314,155 @@ export default function QuizApp() {
       padding: 20,
       borderRadius: 16,
       color: "#1b1f40",
-      width: "90%",
-      maxWidth: 600,
+      width: "100%",
+      maxWidth: "100%",
       marginBottom: 20,
       border: "2px solid #8ea2bd",
     },
+    statsCard: {
+      background: "rgba(248, 243, 255, 0.95)",
+      border: "2px solid #8ea2bd",
+      borderRadius: 12,
+      width: "100%",
+      maxWidth: "100%",
+      padding: 14,
+      marginBottom: 14,
+      color: "#1b1f40",
+      fontSize: "0.94rem",
+    },
+    leaderboardItem: {
+      display: "flex",
+      justifyContent: "space-between",
+      gap: 10,
+      padding: "6px 0",
+      borderBottom: "1px solid rgba(92, 110, 160, 0.25)",
+      fontSize: "0.88rem",
+    },
+    subtleText: {
+      fontSize: "0.82rem",
+      opacity: 0.92,
+      marginTop: 4,
+    },
+    categoryChip: {
+      display: "inline-block",
+      marginRight: 6,
+      marginTop: 6,
+      padding: "4px 8px",
+      borderRadius: 999,
+      background: "rgba(90, 111, 181, 0.14)",
+      border: "1px solid rgba(90, 111, 181, 0.3)",
+      fontSize: "0.8rem",
+      fontWeight: 600,
+    },
+    panelsWrap: {
+      width: "92%",
+      maxWidth: 1180,
+      display: "grid",
+      gap: 14,
+      gridTemplateColumns: isDesktopLayout
+        ? "minmax(300px, 0.95fr) minmax(460px, 1.45fr)"
+        : "1fr",
+      alignItems: "start",
+    },
+    panelSticky: {
+      position: isDesktopLayout ? "sticky" : "static",
+      top: isDesktopLayout ? 82 : "auto",
+    },
   };
+
+  const quizMainCard =
+    filteredQuestions.length === 0 ? (
+      <div style={{ ...styles.questionCard, fontSize: "1.1rem" }}>
+        {t("quiz.noQuestions")}
+      </div>
+    ) : showResults ? (
+      <div style={{ ...styles.questionCard, fontSize: "1.2rem" }}>
+        📝 {t("quiz.scored")} {score} {t("quiz.outOf")} {answeredCount}
+        <div style={{ fontSize: "0.95rem", marginTop: 10 }}>{saveMessage}</div>
+        {statsLoading && (
+          <div style={{ fontSize: "0.92rem", marginTop: 8 }}>
+            {t("quiz.loadingStats")}
+          </div>
+        )}
+        {statsError && (
+          <div style={{ fontSize: "0.92rem", marginTop: 8, color: "#8b1c1c" }}>
+            {statsError}
+          </div>
+        )}
+        {rankStats?.leaderboard?.length > 0 && (
+          <div style={{ marginTop: 10 }}>
+            <button
+              onClick={() => setShowLeaderboard((prev) => !prev)}
+              style={{
+                ...styles.button,
+                fontSize: "0.9rem",
+                padding: "8px 14px",
+              }}
+            >
+              {showLeaderboard
+                ? t("quiz.hideLeaderboard")
+                : t("quiz.showLeaderboard")}
+            </button>
+            {showLeaderboard && (
+              <div style={{ marginTop: 6, fontSize: "0.88rem" }}>
+                {rankStats.leaderboard.map((entry, index) => (
+                  <div
+                    key={entry.userId || index}
+                    style={styles.leaderboardItem}
+                  >
+                    <span>
+                      #{index + 1} {entry.username || "User"}
+                    </span>
+                    <span>{entry.bestScore}%</span>
+                  </div>
+                ))}
+              </div>
+            )}
+          </div>
+        )}
+        <div>
+          <button onClick={restartQuiz} style={styles.button}>
+            🔁 {t("quiz.restart")}
+          </button>
+        </div>
+      </div>
+    ) : (
+      <>
+        <div style={styles.questionCard}>
+          <h2>{t("quiz.title")}</h2>
+          <h3>
+            {safeCurrentQIndex + 1}. {currentQuestion.question}
+          </h3>
+          {currentQuestion.options.map((opt, i) => (
+            <button
+              key={i}
+              onClick={() => handleOptionClick(i)}
+              style={{
+                ...styles.optionBtn,
+                ...getOptionStyle(i),
+              }}
+            >
+              {opt}
+            </button>
+          ))}
+        </div>
+        <div>
+          {safeCurrentQIndex > 0 && (
+            <button onClick={prevQuestion} style={styles.button}>
+              ⬅️ {t("quiz.previous")}
+            </button>
+          )}
+          {safeCurrentQIndex < filteredQuestions.length - 1 && (
+            <button onClick={nextQuestion} style={styles.button}>
+              ➡️ {t("quiz.next")}
+            </button>
+          )}
+          <button onClick={finishQuiz} style={styles.button}>
+            ✅ {t("quiz.finish")}
+          </button>
+        </div>
+      </>
+    );
 
   return (
     <div style={styles.container}>
@@ -269,58 +489,74 @@ export default function QuizApp() {
           ))}
         </select>
       </div>
-      {filteredQuestions.length === 0 ? (
-        <div style={{ ...styles.questionCard, fontSize: "1.5rem" }}>
-          {t("quiz.noQuestions")}
-        </div>
-      ) : showResults ? (
-        <div style={{ ...styles.questionCard, fontSize: "1.5rem" }}>
-          📝 {t("quiz.scored")} {score} {t("quiz.outOf")}{" "}
-          {Object.keys(userAnswers).length}
-          {/* Display answers count instead of total questions */}
-          <div>
-            <button onClick={restartQuiz} style={styles.button}>
-              🔁 {t("quiz.restart")}
-            </button>
-          </div>
-        </div>
-      ) : (
-        <>
-          <div style={styles.questionCard}>
-            <h2>{t("quiz.title")}</h2>
-            <h3>
-              {safeCurrentQIndex + 1}. {currentQuestion.question}
-            </h3>
-            {currentQuestion.options.map((opt, i) => (
-              <button
-                key={i}
-                onClick={() => handleOptionClick(i)}
-                style={{
-                  ...styles.optionBtn,
-                  ...getOptionStyle(i),
-                }}
-              >
-                {opt}
-              </button>
-            ))}
-          </div>
-          <div>
-            {safeCurrentQIndex > 0 && (
-              <button onClick={prevQuestion} style={styles.button}>
-                ⬅️ {t("quiz.previous")}
-              </button>
+
+      <div style={styles.panelsWrap}>
+        <div style={styles.panelSticky}>
+          <div style={styles.statsCard}>
+            <div style={{ fontWeight: "bold", marginBottom: 6 }}>
+              {t("quiz.progressTitle")}
+            </div>
+            {!isLoggedIn && <div>{t("quiz.loginToSave")}</div>}
+            {isLoggedIn && statsLoading && <div>{t("quiz.loadingStats")}</div>}
+            {isLoggedIn &&
+              !statsLoading &&
+              !bestStats?.bestOverall &&
+              !rankStats?.rank && <div>{t("quiz.noHistoryYet")}</div>}
+            {isLoggedIn && bestStats?.bestOverall && (
+              <div>
+                {t("quiz.bestScore")}:{" "}
+                {bestStats.bestOverall.numberQuestionsGot}/
+                {bestStats.bestOverall.numberQuestionsDid} (
+                {bestStats.bestOverall.scorePercent}%)
+              </div>
             )}
-            {safeCurrentQIndex < filteredQuestions.length - 1 && (
-              <button onClick={nextQuestion} style={styles.button}>
-                ➡️ {t("quiz.next")}
-              </button>
+            {isLoggedIn && rankStats?.rank && (
+              <div>
+                {t("quiz.myRank")}: #{rankStats.rank} /{" "}
+                {rankStats.totalRankedUsers}
+              </div>
             )}
-            <button onClick={finishQuiz} style={styles.button}>
-              ✅ {t("quiz.finish")}
-            </button>
+            {isLoggedIn && topThree.length > 0 && (
+              <div style={{ marginTop: 8 }}>
+                <div style={{ fontWeight: "bold" }}>{t("quiz.topThree")}</div>
+                {topThree.map((entry, index) => (
+                  <div key={entry.userId || index} style={styles.subtleText}>
+                    #{index + 1} {entry.username || "User"} - {entry.bestScore}%
+                  </div>
+                ))}
+              </div>
+            )}
+            {isLoggedIn && bestByCategory.length > 0 && (
+              <div style={{ marginTop: 8 }}>
+                <div style={{ fontWeight: "bold" }}>
+                  {t("quiz.bestByCategory")}
+                </div>
+                <div>
+                  {bestByCategory.slice(0, 6).map((entry) => (
+                    <span key={entry.category} style={styles.categoryChip}>
+                      {entry.category}: {entry.bestAttempt?.scorePercent ?? 0}%
+                    </span>
+                  ))}
+                </div>
+              </div>
+            )}
+            {isLoggedIn && historyItems.length > 0 && (
+              <div style={{ marginTop: 8 }}>
+                <div style={{ fontWeight: "bold" }}>
+                  {t("quiz.recentAttempts")}
+                </div>
+                {historyItems.slice(0, 3).map((item) => (
+                  <div key={item._id} style={styles.subtleText}>
+                    {item.category}: {item.numberQuestionsGot}/
+                    {item.numberQuestionsDid} ({item.scorePercent}%)
+                  </div>
+                ))}
+              </div>
+            )}
           </div>
-        </>
-      )}
+        </div>
+        <div>{quizMainCard}</div>
+      </div>
     </div>
   );
 }
