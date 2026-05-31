@@ -4,7 +4,7 @@ import { MidiNumbers } from "react-piano";
 import Soundfont from "soundfont-player";
 import "react-piano/dist/styles.css";
 import { GiGrandPiano } from "react-icons/gi";
-import { Link } from "react-router-dom";
+import "./PianoInstrument.css";
 import ErrorBoundary from "./ErrorBoundary";
 import "./PaintingApp.css";
 import { useLanguage } from "./i18n/LanguageContext";
@@ -126,66 +126,6 @@ export default function PianoInstrument() {
     }
   };
 
-  const containerStyle = {
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-    paddingTop: "100px",
-    paddingBottom: "50px",
-    textAlign: "center",
-    minHeight: "100vh",
-    background: "linear-gradient(135deg, #F0F9FF 0%, #F0FFFE 50%, #F5F3FF 100%)",
-  };
-
-  const controlsStyle = {
-    marginBottom: "20px",
-    display: "flex",
-    flexDirection: "column",
-    gap: "12px",
-    alignItems: "center",
-  };
-
-  const backLinkStyle = {
-    position: "absolute",
-    top: "50px",
-    left: "10px",
-    textDecoration: "none",
-  };
-  const keysBoxStyle = {
-    background: "linear-gradient(135deg, #FFFFFF 0%, #F0F9FF 100%)",
-    borderRadius: 20,
-    boxShadow: "0 12px 24px rgba(59, 130, 246, 0.2)",
-    padding: "24px 32px",
-    marginTop: "32px",
-    maxWidth: "500px",
-    marginLeft: "auto",
-    marginRight: "auto",
-    fontFamily: "'Baloo 2', cursive",
-    color: "#1F2937",
-    border: "3px solid #3B82F6",
-  };
-  const keysTitleStyle = {
-    fontSize: "1.3rem",
-    fontWeight: "bold",
-    marginBottom: "12px",
-    color: "#1E40AF",
-    letterSpacing: "0.5px",
-  };
-  const keysListStyle = {
-    paddingLeft: "24px",
-  };
-  const keysItemStyle = {
-    fontSize: "1rem",
-    marginBottom: "10px",
-    background: "linear-gradient(135deg, #DBEAFE 0%, #BFDBFE 100%)",
-    borderRadius: 10,
-    padding: "10px 14px",
-    boxShadow: "0 4px 12px rgba(59, 130, 246, 0.1)",
-    transition: "all 200ms cubic-bezier(0.4, 0, 0.2, 1)",
-    fontWeight: "500",
-    border: "2px solid #3B82F6",
-  };
-
   const backButtonStyle = {
     padding: "10px 16px",
     fontSize: "1rem",
@@ -199,109 +139,101 @@ export default function PianoInstrument() {
     transition: "all 200ms cubic-bezier(0.4, 0, 0.2, 1)",
   };
 
+
   return (
     <ErrorBoundary>
-      <div style={containerStyle}>
-        <Link to="/" style={backLinkStyle}>
-          <button style={backButtonStyle}>⬅️ {t("piano.backHome")}</button>
-        </Link>
-        <h2>
-          <GiGrandPiano /> {t("piano.title")}
-        </h2>
-        <div style={controlsStyle}>
-          <select
-            value={selectedInstrument}
-            onChange={(e) => setSelectedInstrument(e.target.value)}
-            style={{ padding: "6px", fontSize: "1rem" }}
-          >
-            {instrumentOptions.map((opt) => (
-              <option key={opt.value} value={opt.value}>
-                {opt.label}
-              </option>
-            ))}
-          </select>
+      <div className="piano-app-wrapper">
+        <div className="piano-back-button">
+          <Link to="/">
+            <button style={backButtonStyle}>⬅️ {t("piano.backHome")}</button>
+          </Link>
+        </div>
 
-          <label>
-            <input
-              type="checkbox"
-              checked={sustain}
-              onChange={(e) => setSustain(e.target.checked)}
-            />
-            {t("piano.sustain")}
-          </label>
+        <div className="piano-header">
+          <h2>
+            <GiGrandPiano /> {t("piano.title")}
+          </h2>
+        </div>
 
-          <button
-            onClick={() => setIsRecording(!isRecording)}
-            style={{ 
-              marginTop: "5px", 
-              padding: "10px 16px", 
-              background: isRecording 
-                ? "linear-gradient(135deg, #EF4444 0%, #DC2626 100%)"
-                : "linear-gradient(135deg, #3B82F6 0%, #1E40AF 100%)",
-              color: "#fff",
-              border: "none",
-              borderRadius: "10px",
-              fontWeight: "700",
-              cursor: "pointer",
-              boxShadow: "0 4px 12px rgba(59, 130, 246, 0.2)",
-              transition: "all 200ms cubic-bezier(0.4, 0, 0.2, 1)",
-            }}
-          >
-            {isRecording
-              ? `⏹️ ${t("piano.stopRecording")}`
-              : `⏺️ ${t("piano.startRecording")}`}
-          </button>
-          {!audioReady && (
-            <button
-              onClick={initAudio}
-              style={{ 
-                marginTop: "5px", 
-                padding: "10px 16px", 
-                background: "linear-gradient(135deg, #10B981 0%, #059669 100%)",
-                color: "#fff",
-                border: "none",
-                borderRadius: "10px",
-                fontWeight: "700",
-                cursor: "pointer",
-                boxShadow: "0 4px 12px rgba(16, 185, 129, 0.2)",
-                transition: "all 200ms cubic-bezier(0.4, 0, 0.2, 1)",
-              }}
+        <div className="piano-controls">
+          <div className="piano-control-group">
+            <select
+              value={selectedInstrument}
+              onChange={(e) => setSelectedInstrument(e.target.value)}
+              className="piano-instrument-select"
             >
-              🔊 {t("piano.enableSound")}
+              {instrumentOptions.map((opt) => (
+                <option key={opt.value} value={opt.value}>
+                  {opt.label}
+                </option>
+              ))}
+            </select>
+
+            <label className="piano-sustain-label">
+              <input
+                type="checkbox"
+                checked={sustain}
+                onChange={(e) => setSustain(e.target.checked)}
+              />
+              {t("piano.sustain")}
+            </label>
+          </div>
+
+          <div className="piano-control-group">
+            <button
+              onClick={() => setIsRecording(!isRecording)}
+              className={`piano-action-button piano-record-button ${isRecording ? "active" : ""}`}
+            >
+              {isRecording
+                ? `⏹️ ${t("piano.stopRecording")}`
+                : `⏺️ ${t("piano.startRecording")}`}
             </button>
-          )}
+            {!audioReady && (
+              <button
+                onClick={initAudio}
+                className="piano-action-button piano-sound-button"
+              >
+                🔊 {t("piano.enableSound")}
+              </button>
+            )}
+          </div>
         </div>
 
-        <div style={{ width: containerWidth }}>
-          <Piano
-            noteRange={{ first: 48, last: 84 }}
-            playNote={playNote}
-            stopNote={stopNote}
-            width={containerWidth}
-            height={180}
-            keyboardShortcuts={KeyboardShortcuts.create({
-              firstNote: 48,
-              lastNote: 84,
-              keyboardConfig: KeyboardShortcuts.HOME_ROW,
-            })}
-            ref={pianoRef}
-            renderNoteLabel={({ midiNumber }) => {
-              const note = MidiNumbers.getAttributes(midiNumber).note;
-              return <div style={{ fontWeight: "bold" }}>{note[0]}</div>;
-            }}
-          />
+        <div className="piano-container-wrapper">
+          <div className="piano-keyboard-frame">
+            <div style={{ width: containerWidth }}>
+              <Piano
+                noteRange={{ first: 48, last: 84 }}
+                playNote={playNote}
+                stopNote={stopNote}
+                width={containerWidth}
+                height={200}
+                keyboardShortcuts={KeyboardShortcuts.create({
+                  firstNote: 48,
+                  lastNote: 84,
+                  keyboardConfig: KeyboardShortcuts.HOME_ROW,
+                })}
+                ref={pianoRef}
+                renderNoteLabel={({ midiNumber }) => {
+                  const note = MidiNumbers.getAttributes(midiNumber).note;
+                  return <div style={{ fontWeight: "bold", fontSize: "0.75rem" }}>{note[0]}</div>;
+                }}
+              />
+            </div>
+          </div>
         </div>
-        <div className="keys" style={keysBoxStyle}>
+
+        <div className="keys-box">
           <p>{t("piano.tryOutThese")}</p>
-          <ol style={keysListStyle}>
-            <li style={keysItemStyle}>
+          <ol className="keys-list">
+            <li className="keys-item">
               C C D C F E C C D C G C F C C C A F E D B B A F G F{" "}
             </li>
-            <li style={keysItemStyle}>
+            <li className="keys-item">
               G G G D D D E E E D D C C B B A A G G D D C C{" "}
             </li>
-            <li style={keysItemStyle}>C G B A F C F C C G B A F C F C</li>
-            <li style={keysItemStyle}>
+            <li className="keys-item">C G B A F C F C C G B A F C F C</li>
+            <li className="keys-item">
               G G A G C B B B G G A G D C C C G G G E C B A A A{" "}
             </li>
           </ol>

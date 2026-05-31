@@ -19,6 +19,7 @@ export default function Login({ onLogin }) {
       const response = await fetch(apiUrl("/api/login"), {
         method: "POST",
         headers: { "Content-Type": "application/json" },
+        credentials: "include",
         body: JSON.stringify({ email, password }),
       });
       const isJson = (response.headers.get("content-type") || "").includes(
@@ -26,11 +27,7 @@ export default function Login({ onLogin }) {
       );
       const data = isJson ? await response.json() : {};
       if (response.ok) {
-        if (!data?.token) {
-          setError("Server response was invalid. Please check API deployment.");
-          return;
-        }
-        setToken(data.token);
+        setToken(data.token || true);
         localStorage.setItem("userEmail", data.email);
         if (typeof onLogin === "function") onLogin(data.email);
         navigate("/");

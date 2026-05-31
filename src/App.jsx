@@ -20,10 +20,12 @@ import {
   LanguageProvider,
   useLanguage,
 } from "./Components/i18n/LanguageContext";
+import { ThemeProvider, useTheme } from "./Components/ThemeContext";
 
 function NavBar({ isLoggedIn, onLogout, userEmail }) {
   const navigate = useNavigate();
   const { t, toggleLanguage } = useLanguage();
+  const { isDarkMode, toggleTheme } = useTheme();
 
   const handleLogout = () => {
     onLogout();
@@ -34,32 +36,26 @@ function NavBar({ isLoggedIn, onLogout, userEmail }) {
       <Link to="/" className="app-nav-link">
         <button className="app-nav-btn">{t("nav.home")}</button>
       </Link>
-      {/* {isLoggedIn && ( */}
       <Link to="/painting" className="app-nav-link">
         <button className="app-nav-btn">{t("nav.painting")}</button>
       </Link>
-      {/* )} */}
-      {/* {isLoggedIn && ( */}
       <Link to="/quiz" className="app-nav-link">
         <button className="app-nav-btn">{t("nav.quiz")}</button>
       </Link>
-      {/* )} */}
-      {/* {isLoggedIn && ( */}
       <Link to="/story" className="app-nav-link">
         <button className="app-nav-btn">{t("nav.story")}</button>
       </Link>
-      {/* )} */}
-      {/* {isLoggedIn && ( */}
       <Link to="/piano" className="app-nav-link">
         <button className="app-nav-btn">
           <GiGrandPiano /> {t("nav.piano")}
         </button>
       </Link>
+      <button className="app-nav-btn app-nav-btn-lang" onClick={toggleTheme}>
+        {isDarkMode ? "☀️" : "🌙"}
+      </button>
       <button className="app-nav-btn app-nav-btn-lang" onClick={toggleLanguage}>
         {t("nav.langToggle")}
       </button>
-      {/* )} */}
-      {!isLoggedIn && (
         <Link to="/login" className="app-nav-link">
           <button className="app-nav-btn">{t("nav.login")}</button>
         </Link>
