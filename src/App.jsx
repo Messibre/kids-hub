@@ -20,10 +20,12 @@ import {
   LanguageProvider,
   useLanguage,
 } from "./Components/i18n/LanguageContext";
+import { ThemeProvider, useTheme } from "./Components/ThemeContext";
 
 function NavBar({ isLoggedIn, onLogout, userEmail }) {
   const navigate = useNavigate();
   const { t, toggleLanguage } = useLanguage();
+  const { isDarkMode, toggleTheme } = useTheme();
 
   const handleLogout = () => {
     onLogout();
@@ -31,57 +33,69 @@ function NavBar({ isLoggedIn, onLogout, userEmail }) {
   };
   return (
     <nav className="app-nav">
-      <Link to="/" className="app-nav-link">
-        <button className="app-nav-btn">{t("nav.home")}</button>
-      </Link>
-      {/* {isLoggedIn && ( */}
-      <Link to="/painting" className="app-nav-link">
-        <button className="app-nav-btn">{t("nav.painting")}</button>
-      </Link>
-      {/* )} */}
-      {/* {isLoggedIn && ( */}
-      <Link to="/quiz" className="app-nav-link">
-        <button className="app-nav-btn">{t("nav.quiz")}</button>
-      </Link>
-      {/* )} */}
-      {/* {isLoggedIn && ( */}
-      <Link to="/story" className="app-nav-link">
-        <button className="app-nav-btn">{t("nav.story")}</button>
-      </Link>
-      {/* )} */}
-      {/* {isLoggedIn && ( */}
-      <Link to="/piano" className="app-nav-link">
-        <button className="app-nav-btn">
-          <GiGrandPiano /> {t("nav.piano")}
-        </button>
-      </Link>
-      <button className="app-nav-btn app-nav-btn-lang" onClick={toggleLanguage}>
-        {t("nav.langToggle")}
-      </button>
-      {/* )} */}
-      {!isLoggedIn && (
-        <Link to="/login" className="app-nav-link">
-          <button className="app-nav-btn">{t("nav.login")}</button>
+      {/* Navigation Links */}
+      <div className="app-nav-links">
+        <Link to="/" className="app-nav-link">
+          <button className="app-nav-btn">{t("nav.home")}</button>
         </Link>
-      )}
-      {!isLoggedIn && (
-        <Link to="/register" className="app-nav-link">
-          <button className="app-nav-btn">{t("nav.register")}</button>
+        <Link to="/painting" className="app-nav-link">
+          <button className="app-nav-btn">{t("nav.painting")}</button>
         </Link>
-      )}
-      {isLoggedIn && (
-        <span className="app-nav-user">
-          {t("nav.welcome")}, {userEmail}
-        </span>
-      )}
-      {isLoggedIn && (
-        <button
-          className="app-nav-btn app-nav-btn-danger"
-          onClick={handleLogout}
+        <Link to="/quiz" className="app-nav-link">
+          <button className="app-nav-btn">{t("nav.quiz")}</button>
+        </Link>
+        <Link to="/story" className="app-nav-link">
+          <button className="app-nav-btn">{t("nav.story")}</button>
+        </Link>
+        <Link to="/piano" className="app-nav-link">
+          <button className="app-nav-btn">
+            <GiGrandPiano /> {t("nav.piano")}
+          </button>
+        </Link>
+      </div>
+
+      {/* Controls - Theme, Language, Auth */}
+      <div className="app-nav-controls">
+        <button 
+          className="app-nav-btn-theme" 
+          onClick={toggleTheme}
+          title={isDarkMode ? "Light mode" : "Dark mode"}
         >
-          {t("nav.logout")}
+          {isDarkMode ? "☀️" : "🌙"}
         </button>
-      )}
+        
+        <button 
+          className="app-nav-btn app-nav-btn-lang" 
+          onClick={toggleLanguage}
+        >
+          {t("nav.langToggle")}
+        </button>
+
+        {!isLoggedIn && (
+          <>
+            <Link to="/login" className="app-nav-link">
+              <button className="app-nav-btn">{t("nav.login")}</button>
+            </Link>
+            <Link to="/register" className="app-nav-link">
+              <button className="app-nav-btn">{t("nav.register")}</button>
+            </Link>
+          </>
+        )}
+
+        {isLoggedIn && (
+          <>
+            <span className="app-nav-user">
+              {t("nav.welcome")}, {userEmail}
+            </span>
+            <button
+              className="app-nav-btn app-nav-btn-danger"
+              onClick={handleLogout}
+            >
+              {t("nav.logout")}
+            </button>
+          </>
+        )}
+      </div>
     </nav>
   );
 }
@@ -107,30 +121,32 @@ export default function App() {
   return (
     <BrowserRouter>
       <LanguageProvider>
-        {/* <UserInfo /> */}
-        <NavBar
-          isLoggedIn={isLoggedIn}
-          onLogout={handleLogout}
-          userEmail={userEmail}
-        />
-        <main className="app-main">
-          <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="login" element={<Login onLogin={handleLogin} />} />
-            <Route
-              path="register"
-              element={<Register onLogin={handleLogin} />}
-            />
+        <ThemeProvider>
+          {/* <UserInfo /> */}
+          <NavBar
+            isLoggedIn={isLoggedIn}
+            onLogout={handleLogout}
+            userEmail={userEmail}
+          />
+          <main className="app-main">
+            <Routes>
+              <Route path="/" element={<HomePage />} />
+              <Route path="login" element={<Login onLogin={handleLogin} />} />
+              <Route
+                path="register"
+                element={<Register onLogin={handleLogin} />}
+              />
 
-            <Route path="/painting" element={<PaintingApp />} />
+              <Route path="/painting" element={<PaintingApp />} />
 
-            <Route path="/quiz" element={<QuizApp />} />
+              <Route path="/quiz" element={<QuizApp />} />
 
-            <Route path="/story" element={<StoryTeller />} />
+              <Route path="/story" element={<StoryTeller />} />
 
-            <Route path="/piano" element={<PianoInstrument />} />
-          </Routes>
-        </main>
+              <Route path="/piano" element={<PianoInstrument />} />
+            </Routes>
+          </main>
+        </ThemeProvider>
       </LanguageProvider>
     </BrowserRouter>
   );

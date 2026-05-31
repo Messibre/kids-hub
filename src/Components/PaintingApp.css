@@ -2,244 +2,290 @@
   width: 100%;
   min-height: 100vh;
   padding: 88px 0.7rem 2rem;
+  background: linear-gradient(135deg, #F0F9FF 0%, #F0FFFE 50%, #F5F3FF 100%);
 }
 
 .painting-app {
   width: min(980px, 96vw);
   margin: 0 auto;
-  padding: 0.9rem;
+  padding: 1.5rem;
   border-radius: 20px;
-  border: 2px solid rgba(255, 255, 255, 0.75);
-  background: linear-gradient(
-    170deg,
-    rgba(255, 255, 255, 0.9),
-    rgba(219, 243, 255, 0.85)
-  );
-  box-shadow: 0 12px 24px rgba(6, 75, 191, 0.25);
+  border: 3px solid #3B82F6;
+  background: linear-gradient(135deg, #FFFFFF 0%, #F0F9FF 100%);
+  box-shadow: 0 16px 32px rgba(59, 130, 246, 0.2);
 }
 
 .painting-app h2 {
   font-family: "Baloo 2", cursive;
-  color: #0458d9;
+  background: linear-gradient(135deg, #3B82F6 0%, #1E40AF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   text-align: center;
 }
 
 .painting-gallery-actions-row {
-  margin-top: 10px;
+  margin-top: 12px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 8px;
+  gap: 10px;
 }
 
 .painting-gallery-panel {
   width: min(760px, 96vw);
-  margin-top: 14px;
-  background: rgba(245, 249, 255, 0.9);
-  border: 1px solid rgba(79, 115, 160, 0.35);
-  border-radius: 12px;
-  padding: 10px;
-  box-shadow: 0 6px 16px rgba(18, 56, 99, 0.18);
+  margin-top: 16px;
+  background: linear-gradient(135deg, #FFFFFF 0%, #F0F9FF 100%);
+  border: 3px solid #3B82F6;
+  border-radius: 16px;
+  padding: 14px;
+  box-shadow: 0 8px 16px rgba(59, 130, 246, 0.12);
 }
 
 .painting-gallery-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 
 .painting-gallery-header h3 {
   margin: 0;
-  font-size: 0.95rem;
-  color: #17325c;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1F2937;
+  font-family: "Baloo 2", cursive;
 }
 
 .painting-gallery-header span {
   display: inline-flex;
-  min-width: 26px;
+  min-width: 32px;
   justify-content: center;
-  padding: 2px 8px;
+  padding: 4px 12px;
   border-radius: 999px;
-  background: #d7e8f7;
-  color: #17325c;
-  font-size: 0.78rem;
+  background: linear-gradient(135deg, #DBEAFE 0%, #BFDBFE 100%);
+  color: #1E40AF;
+  font-size: 0.85rem;
   font-weight: 700;
+  border: 2px solid #3B82F6;
 }
 
 .painting-gallery-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(145px, 1fr));
-  gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(155px, 1fr));
+  gap: 12px;
 }
 
 .painting-gallery-card {
-  background: #ffffff;
-  border: 1px solid #d8e2ef;
-  border-radius: 10px;
+  background: linear-gradient(135deg, #FFFFFF 0%, #F0F9FF 100%);
+  border: 2px solid #3B82F6;
+  border-radius: 12px;
   overflow: hidden;
+  transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.1);
+}
+
+.painting-gallery-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(59, 130, 246, 0.2);
+  border-color: #1E40AF;
 }
 
 .painting-gallery-card img {
   width: 100%;
-  height: 110px;
+  height: 120px;
   object-fit: cover;
   display: block;
 }
 
 .painting-gallery-card-body {
-  padding: 7px;
+  padding: 10px;
 }
 
 .painting-gallery-card-body p {
   margin: 0;
-  font-size: 0.78rem;
+  font-size: 0.85rem;
   font-weight: 700;
-  color: #243f66;
+  color: #1F2937;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
 .painting-gallery-card-actions {
-  margin-top: 6px;
+  margin-top: 8px;
   display: flex;
-  gap: 6px;
+  gap: 8px;
 }
 
 .painting-gallery-card-actions button {
   flex: 1;
-  border: none;
-  border-radius: 6px;
-  padding: 5px 6px;
-  font-size: 0.72rem;
+  border: 2px solid #3B82F6;
+  border-radius: 8px;
+  padding: 6px 8px;
+  font-size: 0.75rem;
   font-weight: 700;
-  background: #d9e8f7;
-  color: #184b7f;
+  background: linear-gradient(135deg, #DBEAFE 0%, #BFDBFE 100%);
+  color: #1E40AF;
   cursor: pointer;
+  transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.painting-gallery-card-actions button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.2);
 }
 
 .painting-gallery-card-actions button.danger {
-  background: #ffd8d8;
-  color: #952a2a;
+  background: linear-gradient(135deg, #FECACA 0%, #FCA5A5 100%);
+  color: #7F1D1D;
+  border-color: #EF4444;
+}
+
+.painting-gallery-card-actions button.danger:hover {
+  box-shadow: 0 4px 12px rgba(239, 68, 68, 0.2);
 }
 
 .painting-gallery-more-wrap {
   display: flex;
   justify-content: center;
-  margin-top: 10px;
+  margin-top: 12px;
 }
 
 .painting-gallery-more-btn {
-  border: none;
+  border: 2px solid #3B82F6;
   border-radius: 999px;
-  padding: 6px 14px;
-  font-size: 0.76rem;
+  padding: 8px 16px;
+  font-size: 0.8rem;
   font-weight: 700;
-  background: #d4e7f8;
-  color: #17497a;
+  background: linear-gradient(135deg, #3B82F6 0%, #1E40AF 100%);
+  color: #FFFFFF;
   cursor: pointer;
+  transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 8px 16px rgba(59, 130, 246, 0.16);
+}
+
+.painting-gallery-more-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 24px rgba(59, 130, 246, 0.2);
 }
 
 .painting-helper-text {
-  margin: 7px 0 4px;
+  margin: 8px 0 6px;
   text-align: center;
-  color: #334d71;
-  font-size: 0.77rem;
+  color: #6B7280;
+  font-size: 0.8rem;
+  font-weight: 500;
 }
 
 .painting-error-text {
-  margin: 6px 0 3px;
+  margin: 8px 0 6px;
   text-align: center;
-  color: #a01f1f;
-  font-size: 0.77rem;
+  color: #DC2626;
+  font-size: 0.8rem;
   font-weight: 700;
 }
 
 .painting-success-text {
-  margin: 6px 0 3px;
+  margin: 8px 0 6px;
   text-align: center;
-  color: #1c6d3b;
-  font-size: 0.77rem;
+  color: #10B981;
+  font-size: 0.8rem;
   font-weight: 700;
 }
 
 .painting-preview-overlay {
   position: fixed;
   inset: 0;
-  background: rgba(14, 26, 47, 0.62);
+  background: rgba(15, 23, 42, 0.7);
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 12px;
   z-index: 1500;
+  backdrop-filter: blur(4px);
 }
 
 .painting-preview-dialog {
   width: min(780px, 98vw);
   max-height: 94vh;
-  background: #f8fbff;
-  border-radius: 12px;
-  border: 1px solid #d8e2ef;
+  background: linear-gradient(135deg, #FFFFFF 0%, #F0F9FF 100%);
+  border-radius: 16px;
+  border: 3px solid #3B82F6;
   overflow: hidden;
+  box-shadow: 0 20px 40px rgba(59, 130, 246, 0.3);
 }
 
 .painting-preview-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 8px;
-  padding: 8px 10px;
-  border-bottom: 1px solid #dde8f6;
+  gap: 10px;
+  padding: 12px 14px;
+  border-bottom: 2px solid #E5E7EB;
+  background: linear-gradient(135deg, #F0F9FF 0%, #F8FAFE 100%);
 }
 
 .painting-preview-header p {
   margin: 0;
-  font-size: 0.82rem;
+  font-size: 0.9rem;
   font-weight: 700;
-  color: #1d3f6b;
+  color: #1F2937;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
 }
 
 .painting-preview-header button {
-  border: none;
-  border-radius: 6px;
-  padding: 4px 10px;
-  font-size: 0.74rem;
+  border: 2px solid #3B82F6;
+  border-radius: 8px;
+  padding: 6px 12px;
+  font-size: 0.8rem;
   font-weight: 700;
-  background: #d9e8f7;
-  color: #184b7f;
+  background: linear-gradient(135deg, #DBEAFE 0%, #BFDBFE 100%);
+  color: #1E40AF;
   cursor: pointer;
+  transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.painting-preview-header button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.2);
 }
 
 .painting-preview-dialog img {
   width: 100%;
-  max-height: calc(94vh - 48px);
+  max-height: calc(94vh - 60px);
   object-fit: contain;
   display: block;
-  background: #f2f7ff;
+  background: linear-gradient(135deg, #F8F9FB 0%, #F0F9FF 100%);
 }
 
 .painting-preview-nav {
   display: flex;
   justify-content: center;
-  gap: 8px;
-  padding: 8px;
-  border-top: 1px solid #dde8f6;
-  background: #f7fbff;
+  gap: 12px;
+  padding: 12px;
+  border-top: 2px solid #E5E7EB;
+  background: linear-gradient(135deg, #F8FAFE 0%, #F0F9FF 100%);
 }
 
 .painting-preview-nav button {
-  border: none;
-  border-radius: 8px;
-  padding: 5px 12px;
-  font-size: 0.74rem;
+  border: 2px solid #3B82F6;
+  border-radius: 10px;
+  padding: 8px 16px;
+  font-size: 0.8rem;
   font-weight: 700;
-  background: #d9e8f7;
-  color: #184b7f;
+  background: linear-gradient(135deg, #3B82F6 0%, #1E40AF 100%);
+  color: #FFFFFF;
   cursor: pointer;
+  transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.1);
+}
+
+.painting-preview-nav button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(59, 130, 246, 0.2);
 }
 
 @media (max-width: 700px) {

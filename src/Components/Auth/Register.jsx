@@ -20,6 +20,7 @@ export default function Register({ onLogin }) {
       const response = await fetch(apiUrl("/api/register"), {
         method: "POST",
         headers: { "Content-Type": "application/json" },
+        credentials: "include",
         body: JSON.stringify({ email, password }),
       });
       const isJson = (response.headers.get("content-type") || "").includes(
@@ -27,11 +28,7 @@ export default function Register({ onLogin }) {
       );
       const data = isJson ? await response.json() : {};
       if (response.ok) {
-        if (!data?.token) {
-          setError("Server response was invalid. Please check API deployment.");
-          return;
-        }
-        setToken(data.token);
+        setToken(data.token || true);
         localStorage.setItem("userEmail", email);
         if (typeof onLogin === "function") onLogin(email);
         setSuccess(t("auth.registerSuccess"));
