@@ -54,6 +54,206 @@ body {
   background: linear-gradient(135deg, #F0F9FF 0%, #F0FFFE 50%, #F5F3FF 100%);
   background-attachment: fixed;
   line-height: 1.5;
+  font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Baloo 2", cursive;
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+}
+
+h1 {
+  font-size: clamp(1.8rem, 4vw, 2.4rem);
+}
+
+h2 {
+  font-size: clamp(1.4rem, 3vw, 1.8rem);
+}
+
+h3 {
+  font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Unified Button System */
+button {
+  border: none;
+  border-radius: var(--radius-md);
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+  color: var(--neutral-white);
+  font-family: "Baloo 2", cursive;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  padding: 0.65rem 1.25rem;
+  cursor: pointer;
+  transition: all var(--transition-base);
+  box-shadow: var(--shadow-md);
+  position: relative;
+  overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  min-height: 40px;
+  border: 2px solid transparent;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+button:active {
+  transform: scale(0.98);
+  box-shadow: var(--shadow-sm);
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Button Variants */
+button.btn-secondary {
+  background: linear-gradient(135deg, var(--primary-light) 0%, var(--primary) 100%);
+  border: 2px solid var(--primary);
+  color: var(--neutral-white);
+}
+
+button.btn-success {
+  background: linear-gradient(135deg, var(--accent-emerald) 0%, #059669 100%);
+  box-shadow: 0 8px 16px rgba(16, 185, 129, 0.2);
+}
+
+button.btn-danger {
+  background: linear-gradient(135deg, #EF4444 0%, #DC2626 100%);
+  box-shadow: 0 8px 16px rgba(239, 68, 68, 0.2);
+}
+
+button.btn-accent {
+  background: linear-gradient(135deg, var(--accent-orange) 0%, #FB923C 100%);
+  box-shadow: 0 8px 16px rgba(249, 115, 22, 0.2);
+}
+
+button.btn-small {
+  min-height: 36px;
+  padding: 0.5rem 1rem;
+  font-size: 0.8rem;
+}
+
+button.btn-large {
+  min-height: 48px;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Back Button - Always Visible */
+.back-button-wrapper {
+  position: fixed;
+  top: 80px;
+  left: 1rem;
+  z-index: 500;
+  animation: slideInLeft 0.3s ease-out;
+}
+
+.back-button-wrapper button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: linear-gradient(135deg, var(--primary-dark) 0%, #1E3A8A 100%);
+  padding: 0.6rem 1rem;
+  font-size: 0.9rem;
+  min-height: 40px;
+  box-shadow: 0 8px 16px rgba(30, 64, 175, 0.3);
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Page Container */
+.page-container {
+  margin-top: 0;
+  padding: 2rem 1rem;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.page-header h2 {
+  color: var(--primary-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  font-size: clamp(1.4rem, 3vw, 2rem);
+}
+
+/* Control Groups */
+.control-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+  margin: 1rem 0;
+  justify-content: center;
+}
+
+.control-group select {
+  padding: 0.6rem 1rem;
+  border: 2px solid var(--primary);
+  border-radius: var(--radius-md);
+  font-family: "Nunito", sans-serif;
+  font-size: 0.9rem;
+  background: var(--neutral-white);
+  color: var(--neutral-dark);
+  cursor: pointer;
+  min-height: 40px;
+  transition: all var(--transition-base);
+}
+
+.control-group select:hover {
+  border-color: var(--primary-dark);
+  box-shadow: var(--shadow-md);
+}
+
+.control-group label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  color: var(--neutral-dark);
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.control-group input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
 }
 
 a {

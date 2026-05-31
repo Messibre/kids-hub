@@ -127,41 +127,29 @@ export default function PianoInstrument() {
     }
   };
 
-  const backButtonStyle = {
-    padding: "10px 16px",
-    fontSize: "1rem",
-    background: "linear-gradient(135deg, #1E40AF 0%, #1E3A8A 100%)",
-    border: "none",
-    borderRadius: 12,
-    cursor: "pointer",
-    color: "#fff",
-    fontWeight: "bold",
-    boxShadow: "0 8px 16px rgba(59, 130, 246, 0.2)",
-    transition: "all 200ms cubic-bezier(0.4, 0, 0.2, 1)",
-  };
-
-
   return (
     <ErrorBoundary>
       <div className="piano-app-wrapper">
-        <div className="piano-back-button">
+        {/* Fixed Back Button */}
+        <div className="back-button-wrapper">
           <Link to="/">
-            <button style={backButtonStyle}>⬅️ {t("piano.backHome")}</button>
+            <button className="btn-secondary">
+              ⬅️ {t("piano.backHome")}
+            </button>
           </Link>
         </div>
 
-        <div className="piano-header">
-          <h2>
-            <GiGrandPiano /> {t("piano.title")}
-          </h2>
-        </div>
+        <div className="page-container">
+          <div className="page-header">
+            <h2>
+              <GiGrandPiano /> {t("piano.title")}
+            </h2>
+          </div>
 
-        <div className="piano-controls">
-          <div className="piano-control-group">
+          <div className="control-group">
             <select
               value={selectedInstrument}
               onChange={(e) => setSelectedInstrument(e.target.value)}
-              className="piano-instrument-select"
             >
               {instrumentOptions.map((opt) => (
                 <option key={opt.value} value={opt.value}>
@@ -170,7 +158,7 @@ export default function PianoInstrument() {
               ))}
             </select>
 
-            <label className="piano-sustain-label">
+            <label>
               <input
                 type="checkbox"
                 checked={sustain}
@@ -180,27 +168,22 @@ export default function PianoInstrument() {
             </label>
           </div>
 
-          <div className="piano-control-group">
+          <div className="control-group">
             <button
               onClick={() => setIsRecording(!isRecording)}
-              className={`piano-action-button piano-record-button ${isRecording ? "active" : ""}`}
+              className={isRecording ? "btn-danger" : "btn-secondary"}
             >
               {isRecording
                 ? `⏹️ ${t("piano.stopRecording")}`
                 : `⏺️ ${t("piano.startRecording")}`}
             </button>
             {!audioReady && (
-              <button
-                onClick={initAudio}
-                className="piano-action-button piano-sound-button"
-              >
+              <button onClick={initAudio} className="btn-success">
                 🔊 {t("piano.enableSound")}
               </button>
             )}
           </div>
-        </div>
 
-        <div className="piano-container-wrapper">
           <div className="piano-keyboard-frame">
             <div style={{ width: containerWidth }}>
               <Piano
@@ -222,22 +205,22 @@ export default function PianoInstrument() {
               />
             </div>
           </div>
-        </div>
 
-        <div className="keys-box">
-          <p>{t("piano.tryOutThese")}</p>
-          <ol className="keys-list">
-            <li className="keys-item">
-              C C D C F E C C D C G C F C C C A F E D B B A F G F{" "}
-            </li>
-            <li className="keys-item">
-              G G G D D D E E E D D C C B B A A G G D D C C{" "}
-            </li>
-            <li className="keys-item">C G B A F C F C C G B A F C F C</li>
-            <li className="keys-item">
-              G G A G C B B B G G A G D C C C G G G E C B A A A{" "}
-            </li>
-          </ol>
+          <div className="keys-box">
+            <h3>{t("piano.tryOutThese")}</h3>
+            <ol className="keys-list">
+              <li className="keys-item">
+                C C D C F E C C D C G C F C C C A F E D B B A F G F
+              </li>
+              <li className="keys-item">
+                G G G D D D E E E D D C C B B A A G G D D C C
+              </li>
+              <li className="keys-item">C G B A F C F C C G B A F C F C</li>
+              <li className="keys-item">
+                G G A G C B B B G G A G D C C C G G G E C B A A A
+              </li>
+            </ol>
+          </div>
         </div>
       </div>
     </ErrorBoundary>
