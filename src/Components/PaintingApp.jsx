@@ -305,19 +305,21 @@ export default function PaintingApp() {
     backgroundPosition: "center",
   };
   const paintingBoxStyle = {
-    border: "3px solid #8ea2bd",
-    borderRadius: "10px",
+    border: "3px solid #3B82F6",
+    borderRadius: "14px",
     overflow: "hidden",
-    backgroundColor: "#f6f3ff",
-    boxShadow: "0 4px 8px rgba(0,0,0,0.2)",
+    backgroundColor: "#FFFFFF",
+    boxShadow: "0 12px 24px rgba(59, 130, 246, 0.16)",
   };
   const buttonStyle = {
     margin: "0 6px",
-    padding: "6px 12px",
+    padding: "8px 14px",
     border: "none",
-    borderRadius: "6px",
+    borderRadius: 8,
     cursor: "pointer",
     fontWeight: "bold",
+    transition: "all 200ms cubic-bezier(0.4, 0, 0.2, 1)",
+    fontSize: "0.85rem",
   };
   const controlsContainerStyle = {
     width: "100%",
@@ -344,8 +346,9 @@ export default function PaintingApp() {
           <button
             style={{
               ...buttonStyle,
-              backgroundColor: "#252a56",
+              background: "linear-gradient(135deg, #1E40AF 0%, #1E3A8A 100%)",
               color: "#fff",
+              boxShadow: "0 8px 16px rgba(59, 130, 246, 0.2)",
             }}
           >
             ⬅️ {t("painting.backHome")}
@@ -393,8 +396,13 @@ export default function PaintingApp() {
                 onClick={() => setBrushSize(size)}
                 style={{
                   ...buttonStyle,
-                  backgroundColor: brushSize === size ? "#5a6fb5" : "#ffe2cf",
-                  color: brushSize === size ? "#fff" : "#4a3659",
+                  background: brushSize === size 
+                    ? "linear-gradient(135deg, #3B82F6 0%, #1E40AF 100%)"
+                    : "linear-gradient(135deg, #DBEAFE 0%, #BFDBFE 100%)",
+                  color: brushSize === size ? "#fff" : "#1E40AF",
+                  fontWeight: "700",
+                  border: brushSize === size ? "2px solid #FFFFFF" : "2px solid #3B82F6",
+                  boxShadow: brushSize === size ? "0 4px 12px rgba(59, 130, 246, 0.2)" : "0 2px 8px rgba(59, 130, 246, 0.1)",
                 }}
               >
                 {size}px
@@ -408,9 +416,12 @@ export default function PaintingApp() {
               disabled={!isLoggedIn || isSavingCloud}
               style={{
                 ...buttonStyle,
-                backgroundColor: "#2f6b8a",
+                background: !isLoggedIn || isSavingCloud 
+                  ? "linear-gradient(135deg, #D1D5DB 0%, #9CA3AF 100%)"
+                  : "linear-gradient(135deg, #10B981 0%, #059669 100%)",
                 color: "#fff",
-                fontSize: "0.82rem",
+                fontSize: "0.8rem",
+                boxShadow: "0 4px 12px rgba(16, 185, 129, 0.2)",
               }}
             >
               {isSavingCloud
@@ -422,9 +433,12 @@ export default function PaintingApp() {
               disabled={!isLoggedIn || isGalleryLoading}
               style={{
                 ...buttonStyle,
-                backgroundColor: "#4d8cac",
+                background: !isLoggedIn || isGalleryLoading
+                  ? "linear-gradient(135deg, #D1D5DB 0%, #9CA3AF 100%)"
+                  : "linear-gradient(135deg, #3B82F6 0%, #1E40AF 100%)",
                 color: "#fff",
-                fontSize: "0.82rem",
+                fontSize: "0.8rem",
+                boxShadow: "0 4px 12px rgba(59, 130, 246, 0.2)",
               }}
             >
               {isGalleryLoading ? t("painting.loading") : t("painting.refresh")}
@@ -447,10 +461,14 @@ export default function PaintingApp() {
             onClick={() => setIsErasing((e) => !e)}
             style={{
               ...buttonStyle,
-              backgroundColor: isErasing ? "#8ea2bd" : "#5a6fb5",
+              background: isErasing 
+                ? "linear-gradient(135deg, #F97316 0%, #EA580C 100%)"
+                : "linear-gradient(135deg, #3B82F6 0%, #1E40AF 100%)",
               color: "#fff",
-              marginTop: 8,
-              fontSize: "0.82rem",
+              marginTop: 10,
+              fontSize: "0.8rem",
+              fontWeight: "700",
+              boxShadow: isErasing ? "0 4px 12px rgba(249, 115, 22, 0.2)" : "0 4px 12px rgba(59, 130, 246, 0.2)",
             }}
           >
             {isErasing ? t("painting.brush") : t("painting.eraser")}
@@ -460,11 +478,13 @@ export default function PaintingApp() {
             onClick={clearCanvas}
             style={{
               ...buttonStyle,
-              backgroundColor: "#5a6fb5",
+              background: "linear-gradient(135deg, #EF4444 0%, #DC2626 100%)",
               color: "#fff",
               marginLeft: 6,
-              marginTop: 8,
-              fontSize: "0.82rem",
+              marginTop: 10,
+              fontSize: "0.8rem",
+              fontWeight: "700",
+              boxShadow: "0 4px 12px rgba(239, 68, 68, 0.2)",
             }}
           >
             {t("painting.clear")}
@@ -473,11 +493,13 @@ export default function PaintingApp() {
             onClick={undo}
             style={{
               ...buttonStyle,
-              backgroundColor: "#7d8fd1",
+              background: "linear-gradient(135deg, #A855F7 0%, #9333EA 100%)",
               color: "#fff",
               marginLeft: 6,
-              marginTop: 8,
-              fontSize: "0.82rem",
+              marginTop: 10,
+              fontSize: "0.8rem",
+              fontWeight: "700",
+              boxShadow: "0 4px 12px rgba(168, 85, 247, 0.2)",
             }}
           >
             {t("painting.undo")}
@@ -486,11 +508,13 @@ export default function PaintingApp() {
             onClick={downloadImage}
             style={{
               ...buttonStyle,
-              backgroundColor: "#ffe2cf",
-              color: "#4a3659",
+              background: "linear-gradient(135deg, #06B6D4 0%, #0891B2 100%)",
+              color: "#fff",
               marginLeft: 6,
-              marginTop: 8,
-              fontSize: "0.82rem",
+              marginTop: 10,
+              fontSize: "0.8rem",
+              fontWeight: "700",
+              boxShadow: "0 4px 12px rgba(6, 182, 212, 0.2)",
             }}
           >
             {t("painting.save")}

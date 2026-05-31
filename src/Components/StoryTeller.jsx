@@ -65,11 +65,11 @@ export default function StoryTeller() {
       position: "relative",
       overflow: "hidden",
       background:
-        "radial-gradient(circle at top left, rgba(255, 209, 102, 0.22), transparent 28%), radial-gradient(circle at top right, rgba(126, 211, 255, 0.2), transparent 24%), linear-gradient(135deg, #11172f 0%, #1b2550 36%, #384c7a 72%, #5f759f 100%)",
+        "radial-gradient(circle at top left, rgba(59, 130, 246, 0.15), transparent 28%), radial-gradient(circle at top right, rgba(6, 182, 212, 0.12), transparent 24%), linear-gradient(135deg, #0F172E 0%, #1E3A8A 36%, #1E40AF 72%, #3B82F6 100%)",
       display: "flex",
       justifyContent: "center",
       padding: "24px 18px 40px",
-      fontFamily: "'Trebuchet MS', 'Verdana', sans-serif",
+      fontFamily: "'Baloo 2', cursive",
       color: "#fff",
     },
     ambient: {
@@ -83,7 +83,7 @@ export default function StoryTeller() {
       width: "280px",
       height: "280px",
       borderRadius: "50%",
-      background: "rgba(255, 196, 143, 0.22)",
+      background: "rgba(59, 130, 246, 0.2)",
       top: "40px",
       left: "-90px",
       filter: "blur(10px)",
@@ -93,7 +93,7 @@ export default function StoryTeller() {
       width: "260px",
       height: "260px",
       borderRadius: "50%",
-      background: "rgba(109, 214, 255, 0.18)",
+      background: "rgba(6, 182, 212, 0.15)",
       right: "-100px",
       top: "120px",
       filter: "blur(16px)",
@@ -312,11 +312,11 @@ export default function StoryTeller() {
       gap: "8px",
       padding: "10px 14px",
       borderRadius: "999px",
-      background: "linear-gradient(90deg, #283a7d, #4d5fa3)",
+      background: "linear-gradient(90deg, #1E40AF, #3B82F6)",
       color: "#fff",
       fontSize: "0.92rem",
       fontWeight: 800,
-      boxShadow: "0 12px 24px rgba(40, 58, 125, 0.22)",
+      boxShadow: "0 12px 24px rgba(59, 130, 246, 0.22)",
     },
     storyMeta: {
       textAlign: "right",
@@ -352,13 +352,13 @@ export default function StoryTeller() {
     navButton: {
       padding: "14px 22px",
       fontSize: "1rem",
-      background: "linear-gradient(135deg, #24336d, #6278c8)",
+      background: "linear-gradient(135deg, #1E40AF, #3B82F6)",
       border: "none",
       borderRadius: "18px",
       cursor: "pointer",
       color: "white",
       fontWeight: 800,
-      boxShadow: "0 14px 28px rgba(22, 35, 84, 0.28)",
+      boxShadow: "0 14px 28px rgba(59, 130, 246, 0.28)",
       margin: 0,
     },
     navCount: {
@@ -395,19 +395,19 @@ export default function StoryTeller() {
   const buttonStyle = {
     padding: "12px 22px",
     fontSize: "1rem",
-    backgroundColor: "#5a6fb5",
+    background: "linear-gradient(135deg, #3B82F6 0%, #1E40AF 100%)",
     border: "none",
     borderRadius: "18px",
     cursor: "pointer",
     color: "white",
     fontWeight: 800,
-    boxShadow: "0px 14px 24px rgba(0,0,0,0.22)",
+    boxShadow: "0 8px 16px rgba(59, 130, 246, 0.2)",
     margin: "0",
   };
 
   const backButtonStyle = {
     ...buttonStyle,
-    background: "linear-gradient(135deg, #11172f, #273b7d)",
+    background: "linear-gradient(135deg, #1E40AF, #1E3A8A)",
   };
 
   if (error) {

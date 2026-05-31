@@ -134,13 +134,14 @@ export default function PianoInstrument() {
     paddingBottom: "50px",
     textAlign: "center",
     minHeight: "100vh",
+    background: "linear-gradient(135deg, #F0F9FF 0%, #F0FFFE 50%, #F5F3FF 100%)",
   };
 
   const controlsStyle = {
     marginBottom: "20px",
     display: "flex",
     flexDirection: "column",
-    gap: "10px",
+    gap: "12px",
     alignItems: "center",
   };
 
@@ -151,47 +152,51 @@ export default function PianoInstrument() {
     textDecoration: "none",
   };
   const keysBoxStyle = {
-    background: "linear-gradient(135deg, #f6f3ff 0%, #e9deff 45%, #ffe2cf 100%)",
-    borderRadius: "18px",
-    boxShadow: "0 4px 16px rgba(0,0,0,0.08)",
+    background: "linear-gradient(135deg, #FFFFFF 0%, #F0F9FF 100%)",
+    borderRadius: 20,
+    boxShadow: "0 12px 24px rgba(59, 130, 246, 0.2)",
     padding: "24px 32px",
     marginTop: "32px",
     maxWidth: "500px",
     marginLeft: "auto",
     marginRight: "auto",
-    fontFamily: "'Comic Sans MS', 'Comic Sans', cursive",
-    color: "#1b1f40",
+    fontFamily: "'Baloo 2', cursive",
+    color: "#1F2937",
+    border: "3px solid #3B82F6",
   };
   const keysTitleStyle = {
     fontSize: "1.3rem",
     fontWeight: "bold",
     marginBottom: "12px",
-    color: "#252a56",
-    letterSpacing: "1px",
+    color: "#1E40AF",
+    letterSpacing: "0.5px",
   };
   const keysListStyle = {
     paddingLeft: "24px",
   };
   const keysItemStyle = {
-    fontSize: "1.1rem",
-    marginBottom: "8px",
-    background: "#f6f3ff",
-    borderRadius: "8px",
-    padding: "8px 12px",
-    boxShadow: "0 2px 6px rgba(0,0,0,0.04)",
-    transition: "background 0.2s",
+    fontSize: "1rem",
+    marginBottom: "10px",
+    background: "linear-gradient(135deg, #DBEAFE 0%, #BFDBFE 100%)",
+    borderRadius: 10,
+    padding: "10px 14px",
+    boxShadow: "0 4px 12px rgba(59, 130, 246, 0.1)",
+    transition: "all 200ms cubic-bezier(0.4, 0, 0.2, 1)",
+    fontWeight: "500",
+    border: "2px solid #3B82F6",
   };
 
   const backButtonStyle = {
-    padding: "8px 16px",
+    padding: "10px 16px",
     fontSize: "1rem",
-    backgroundColor: "#252a56",
+    background: "linear-gradient(135deg, #1E40AF 0%, #1E3A8A 100%)",
     border: "none",
-    borderRadius: "10px",
+    borderRadius: 12,
     cursor: "pointer",
     color: "#fff",
     fontWeight: "bold",
-    boxShadow: "0px 2px 5px rgba(0,0,0,0.3)",
+    boxShadow: "0 8px 16px rgba(59, 130, 246, 0.2)",
+    transition: "all 200ms cubic-bezier(0.4, 0, 0.2, 1)",
   };
 
   return (
@@ -227,7 +232,20 @@ export default function PianoInstrument() {
 
           <button
             onClick={() => setIsRecording(!isRecording)}
-            style={{ marginTop: "5px", padding: "8px 16px", backgroundColor: "#5a6fb5" }}
+            style={{ 
+              marginTop: "5px", 
+              padding: "10px 16px", 
+              background: isRecording 
+                ? "linear-gradient(135deg, #EF4444 0%, #DC2626 100%)"
+                : "linear-gradient(135deg, #3B82F6 0%, #1E40AF 100%)",
+              color: "#fff",
+              border: "none",
+              borderRadius: "10px",
+              fontWeight: "700",
+              cursor: "pointer",
+              boxShadow: "0 4px 12px rgba(59, 130, 246, 0.2)",
+              transition: "all 200ms cubic-bezier(0.4, 0, 0.2, 1)",
+            }}
           >
             {isRecording
               ? `⏹️ ${t("piano.stopRecording")}`
@@ -236,7 +254,18 @@ export default function PianoInstrument() {
           {!audioReady && (
             <button
               onClick={initAudio}
-              style={{ marginTop: "5px", padding: "8px 16px", backgroundColor: "#8ea2bd" }}
+              style={{ 
+                marginTop: "5px", 
+                padding: "10px 16px", 
+                background: "linear-gradient(135deg, #10B981 0%, #059669 100%)",
+                color: "#fff",
+                border: "none",
+                borderRadius: "10px",
+                fontWeight: "700",
+                cursor: "pointer",
+                boxShadow: "0 4px 12px rgba(16, 185, 129, 0.2)",
+                transition: "all 200ms cubic-bezier(0.4, 0, 0.2, 1)",
+              }}
             >
               🔊 {t("piano.enableSound")}
             </button>
