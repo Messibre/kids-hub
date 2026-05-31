@@ -103,30 +103,32 @@ export default function App() {
   return (
     <BrowserRouter>
       <LanguageProvider>
-        {/* <UserInfo /> */}
-        <NavBar
-          isLoggedIn={isLoggedIn}
-          onLogout={handleLogout}
-          userEmail={userEmail}
-        />
-        <main className="app-main">
-          <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="login" element={<Login onLogin={handleLogin} />} />
-            <Route
-              path="register"
-              element={<Register onLogin={handleLogin} />}
-            />
+        <ThemeProvider>
+          {/* <UserInfo /> */}
+          <NavBar
+            isLoggedIn={isLoggedIn}
+            onLogout={handleLogout}
+            userEmail={userEmail}
+          />
+          <main className="app-main">
+            <Routes>
+              <Route path="/" element={<HomePage />} />
+              <Route path="login" element={<Login onLogin={handleLogin} />} />
+              <Route
+                path="register"
+                element={<Register onLogin={handleLogin} />}
+              />
 
-            <Route path="/painting" element={<PaintingApp />} />
+              <Route path="/painting" element={<PaintingApp />} />
 
-            <Route path="/quiz" element={<QuizApp />} />
+              <Route path="/quiz" element={<QuizApp />} />
 
-            <Route path="/story" element={<StoryTeller />} />
+              <Route path="/story" element={<StoryTeller />} />
 
-            <Route path="/piano" element={<PianoInstrument />} />
-          </Routes>
-        </main>
+              <Route path="/piano" element={<PianoInstrument />} />
+            </Routes>
+          </main>
+        </ThemeProvider>
       </LanguageProvider>
     </BrowserRouter>
   );
